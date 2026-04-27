@@ -3,8 +3,18 @@
 // Because the entire app is one HTML file, caching it (and its scope './')
 // makes the academy work fully offline once the first load has succeeded.
 
-const CACHE_NAME = 'eps-water-academy-v1';
-const APP_SHELL  = ['./', './index.html'];
+const CACHE_NAME = 'eps-water-academy-v2';
+const APP_SHELL  = [
+  './',
+  './index.html',
+  './manifest.json',
+  './icon.svg',
+  './icon-192.png',
+  './icon-512.png',
+  './apple-touch-icon.png',
+  './favicon-32.png',
+  './favicon-16.png'
+];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
