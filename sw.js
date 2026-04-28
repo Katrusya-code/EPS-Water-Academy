@@ -1,4 +1,4 @@
-// EPS Water Academy — service worker
+// Water Treatment Academy — service worker
 // Strategy: cache-first with stale-while-revalidate.
 // Because the entire app is one HTML file, caching it (and its scope './')
 // makes the academy work fully offline once the first load has succeeded.
