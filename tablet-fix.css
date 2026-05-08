@@ -1,0 +1,79 @@
+/* ── Tablet Fix for EPS Water Academy ── */
+/* Targets screens between 601px and 1024px wide (tablets, small laptops) */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  /* Make the book page fill the tablet screen width */
+  .book-page {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Fix the cover page to fill the whole screen */
+  #cover {
+    min-width: 100vw;
+    width: 100%;
+    padding: 40px 32px;
+  }
+
+  /* Fix the reader to fill the screen */
+  #reader {
+    width: 100%;
+    min-width: 100vw;
+  }
+
+  /* Adjust chapter header padding */
+  .ch-header {
+    padding: 40px 32px 32px;
+  }
+
+  /* Adjust body padding */
+  .ch-body {
+    padding: 36px 32px;
+  }
+
+  /* Adjust quiz section */
+  .quiz-section {
+    padding: 40px 32px;
+  }
+
+  /* Adjust footer */
+  .ch-footer {
+    padding: 24px 32px;
+  }
+
+  /* Adjust chapter divider */
+  .ch-divider {
+    margin: 0 32px;
+  }
+
+  /* Make diagrams full width */
+  .diagram-wrap {
+    margin: 2em 0;
+  }
+
+  /* Scale down the cover title slightly for tablets */
+  .cover-title {
+    font-size: clamp(3rem, 10vw, 6rem);
+  }
+
+  /* Make stat grid use 2 columns on tablet instead of cramming 3 */
+  .stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Adjust drop cap size */
+  .ch-body p:first-child::first-letter {
+    font-size: 3.5em;
+  }
+
+  /* Make nav chapters scroll smoothly on tablet */
+  .nav-chapters {
+    overflow-x: auto;
+  }
+
+  /* Ensure cover chapter buttons wrap nicely */
+  .cover-chapters {
+    max-width: 90%;
+  }
+}
