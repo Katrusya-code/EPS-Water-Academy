@@ -3643,6 +3643,8 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;div class="nav-item" data-target="ch15" onclick="showSection('ch15',this)">&lt;span class="nav-dot">&lt;/span>15. Reverse Osmosis (RO)&lt;/div>
     &lt;div class="nav-item" data-target="ch16" onclick="showSection('ch16',this)">&lt;span class="nav-dot">&lt;/span>16. Membranes: RO, NF &amp; UF&lt;/div>
     &lt;div class="nav-item" data-target="ch17" onclick="showSection('ch17',this)">&lt;span class="nav-dot">&lt;/span>17. UV Disinfection&lt;/div>
+    &lt;div class="nav-item" data-target="ch17-spectrum" onclick="showSection('ch17-spectrum',this)">&lt;span class="nav-dot">&lt;/span>17B. From Light to UV-C&lt;/div>
+    &lt;div class="nav-item" data-target="ch17-led" onclick="showSection('ch17-led',this)">&lt;span class="nav-dot">&lt;/span>17C. UV-LED Disinfection&lt;/div>
   &lt;/div>
   &lt;div class="nav-section">
     &lt;div class="nav-section-label">Water Sources &amp; Quality&lt;/div>
@@ -3667,7 +3669,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;h1>Going &lt;em>Deeper&lt;/em> Into Water Treatment&lt;/h1>
     &lt;p>You finished Part I — brilliant! Now we go further. This part covers everything from fixing acidic water to stopping invisible "forever chemicals." All explained with real-world examples.&lt;/p>
     &lt;div class="hero-stats">
-      &lt;div class="hero-stat">&lt;strong>12&lt;/strong>&lt;span>Chapters&lt;/span>&lt;/div>
+      &lt;div class="hero-stat">&lt;strong>13&lt;/strong>&lt;span>Chapters&lt;/span>&lt;/div>
       &lt;div class="hero-stat">&lt;strong>20+&lt;/strong>&lt;span>Technologies&lt;/span>&lt;/div>
       &lt;div class="hero-stat">&lt;strong>8&lt;/strong>&lt;span>Quizzes&lt;/span>&lt;/div>
       &lt;div class="hero-stat">&lt;strong>Part II&lt;/strong>&lt;span>of II&lt;/span>&lt;/div>
@@ -3681,6 +3683,8 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;div class="module-card" onclick="showSection('ch15',document.querySelector('[data-target=ch15]'))">&lt;div class="module-icon">💎&lt;/div>&lt;h3>Reverse Osmosis&lt;/h3>&lt;p>The most powerful water purification technology you can own&lt;/p>&lt;/div>
     &lt;div class="module-card" onclick="showSection('ch16',document.querySelector('[data-target=ch16]'))">&lt;div class="module-icon">🔬&lt;/div>&lt;h3>Membrane Technology&lt;/h3>&lt;p>RO vs Nanofiltration vs Ultrafiltration — what's the difference?&lt;/p>&lt;/div>
     &lt;div class="module-card" onclick="showSection('ch17',document.querySelector('[data-target=ch17]'))">&lt;div class="module-icon">☀️&lt;/div>&lt;h3>UV Disinfection&lt;/h3>&lt;p>Killing bacteria with light — no chemicals needed&lt;/p>&lt;/div>
+    &lt;div class="module-card" onclick="showSection('ch17-spectrum',document.querySelector('[data-target=ch17-spectrum]'))">&lt;div class="module-icon">🌈&lt;/div>&lt;h3>From Light to UV-C&lt;/h3>&lt;p>The spectrum, UVC, mercury lamps vs LEDs, and mercury lamp rules&lt;/p>&lt;/div>
+    &lt;div class="module-card" onclick="showSection('ch17-led',document.querySelector('[data-target=ch17-led]'))">&lt;div class="module-icon">💠&lt;/div>&lt;h3>UV-LED Disinfection&lt;/h3>&lt;p>Advantages, real-world uses, current limits and the future of UV-LEDs&lt;/p>&lt;/div>
     &lt;div class="module-card" onclick="showSection('ch18',document.querySelector('[data-target=ch18]'))">&lt;div class="module-icon">🌧️&lt;/div>&lt;h3>Water Sources&lt;/h3>&lt;p>Groundwater, rain, rivers — what's in each one?&lt;/p>&lt;/div>
     &lt;div class="module-card" onclick="showSection('ch19',document.querySelector('[data-target=ch19]'))">&lt;div class="module-icon">⚗️&lt;/div>&lt;h3>PFAS "Forever Chemicals"&lt;/h3>&lt;p>What they are, why they're scary, and how to remove them&lt;/p>&lt;/div>
     &lt;div class="module-card" onclick="showSection('ch21',document.querySelector('[data-target=ch21]'))">&lt;div class="module-icon">📋&lt;/div>&lt;h3>Irish Law on Water&lt;/h3>&lt;p>The legal limits for what's allowed in your tap water&lt;/p>&lt;/div>
@@ -4359,6 +4363,499 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
 &lt;/ol>&lt;/div>
   &lt;div class="chapter-nav">
     &lt;button class="nav-btn" onclick="showSection('ch16',document.querySelector('[data-target=ch16]'))">← Membranes&lt;/button>
+    &lt;button class="nav-btn primary" onclick="showSection('ch17-spectrum',document.querySelector('[data-target=ch17-spectrum]'))">Next: From Light to UV-C →&lt;/button>
+  &lt;/div>
+&lt;/div>
+
+&lt;!-- ===== CHAPTER 17B: FROM THE ELECTROMAGNETIC SPECTRUM TO UV-C ===== -->
+&lt;div id="ch17-spectrum" class="chapter">
+  &lt;div class="chapter-header">
+    &lt;span class="chapter-num">CH 17B&lt;/span>
+    &lt;div>
+      &lt;div class="chapter-title">From the Electromagnetic Spectrum to UV-C&lt;/div>
+      &lt;div class="chapter-subtitle">Where UV light comes from, why UV-C disinfects water, mercury lamps vs UVC LEDs, and the rules on mercury UV lamps&lt;/div>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;p>In Chapter 17 you learned &lt;em>what&lt;/em> a UV system does. This chapter steps back and explains &lt;em>why&lt;/em> it works. We start with light itself, zoom in on ultraviolet, and finish with two questions customers ask more and more often: “Are UV LEDs as good as lamps?” and “Are mercury UV lamps being phased out?”&lt;/p>
+
+  &lt;h3>Light Is Energy Travelling in Waves&lt;/h3>
+  &lt;p>Gamma rays, X-rays, ultraviolet (UV), visible light, infrared, microwaves and radio waves are all the same thing: &lt;span class="highlight">electromagnetic radiation&lt;/span>, energy travelling as waves. What makes them different is the size of the wave.&lt;/p>
+  &lt;p>Picture shaking a skipping rope. Shake it fast and you get lots of short, tight waves. Shake it slowly and you get a few long, lazy ones. The distance from one wave peak to the next is the &lt;span class="highlight">wavelength&lt;/span>. Short wavelengths carry more energy; long wavelengths carry less.&lt;/p>
+
+  &lt;div style="overflow-x:auto;margin:0 -8px">&lt;svg viewBox="0 0 680 330" width="100%" role="img" aria-labelledby="specTitle specDesc" style="display:block;max-width:720px;margin:28px auto;min-width:560px;font-family:'Source Sans 3',sans-serif">
+  &lt;title id="specTitle">The electromagnetic spectrum, with the ultraviolet region enlarged&lt;/title>
+  &lt;desc id="specDesc">Gamma rays have the shortest wavelengths and highest energy, radio waves the longest and lowest. Ultraviolet sits next to violet visible light and is split into UVC (100 to 280 nm), UVB (280 to 315 nm) and UVA (315 to 400 nm). Mercury lamps emit at about 254 nm; UVC LEDs often emit between 260 and 280 nm.&lt;/desc>
+  &lt;defs>
+  &lt;linearGradient id="rainbow" x1="0" x2="1">&lt;stop offset="0" stop-color="#7c3aed"/>&lt;stop offset=".2" stop-color="#2563eb"/>&lt;stop offset=".4" stop-color="#16a34a"/>&lt;stop offset=".6" stop-color="#facc15"/>&lt;stop offset=".8" stop-color="#f97316"/>&lt;stop offset="1" stop-color="#dc2626"/>&lt;/linearGradient>
+  &lt;linearGradient id="rainbowZ" x1="0" x2="1">&lt;stop offset="0" stop-color="#7c3aed"/>&lt;stop offset="1" stop-color="#2563eb"/>&lt;/linearGradient>
+  &lt;marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">&lt;path d="M0,0 L10,5 L0,10 z" fill="#4a6a82"/>&lt;/marker>
+  &lt;/defs>
+  &lt;text x="40" y="22" font-size="11.5" fill="#4a6a82">Shorter wavelength, higher energy&lt;/text>
+  &lt;text x="640" y="22" font-size="11.5" fill="#4a6a82" text-anchor="end">Longer wavelength, lower energy&lt;/text>
+  &lt;line x1="40" y1="32" x2="640" y2="32" stroke="#4a6a82" stroke-width="1.2" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  &lt;path d="M40.0,62.0 L40.5,56.4 L41.0,51.8 L41.5,49.3 L42.0,49.3 L42.5,51.8 L43.0,56.2 L43.5,61.7 L44.0,67.3 L44.5,71.9 L45.0,74.5 L45.5,74.8 L46.0,72.7 L46.5,68.6 L47.0,63.2 L47.5,57.6 L48.0,52.9 L48.5,49.8 L49.0,49.0 L49.5,50.6 L50.0,54.2 L50.5,59.3 L51.0,64.8 L51.5,69.8 L52.0,73.4 L52.5,75.0 L53.0,74.2 L53.5,71.4 L54.0,66.8 L54.5,61.5 L55.0,56.2 L55.5,52.0 L56.0,49.5 L56.5,49.1 L57.0,51.0 L57.5,54.7 L58.0,59.6 L58.5,65.0 L59.0,69.8 L59.5,73.3 L60.0,74.9 L60.5,74.4 L61.0,71.8 L61.5,67.7 L62.0,62.6 L62.5,57.4 L63.0,53.0 L63.5,50.0 L64.0,49.0 L64.5,50.0 L65.0,53.0 L65.5,57.3 L66.0,62.4 L66.5,67.4 L67.0,71.6 L67.5,74.2 L68.0,75.0 L68.5,73.7 L69.0,70.7 L69.5,66.3 L70.0,61.3 L70.5,56.4 L71.0,52.4 L71.5,49.8 L72.0,49.0 L72.5,50.2 L73.0,53.1 L73.5,57.3 L74.0,62.2 L74.5,67.0 L75.0,71.2 L75.5,73.9 L76.0,75.0 L76.5,74.2 L77.0,71.7 L77.5,67.8 L78.0,63.0 L78.5,58.2 L79.0,53.9 L79.5,50.7 L80.0,49.1 L80.5,49.3 L81.0,51.3 L81.5,54.6 L82.0,59.0 L82.5,63.8 L83.0,68.3 L83.5,72.0 L84.0,74.3 L84.5,75.0 L85.0,73.9 L85.5,71.3 L86.0,67.5 L86.5,62.9 L87.0,58.3 L87.5,54.1 L88.0,51.0 L88.5,49.3 L89.0,49.2 L89.5,50.7 L90.0,53.7 L90.5,57.7 L91.0,62.3 L91.5,66.8 L92.0,70.7 L92.5,73.5 L93.0,74.9 L93.5,74.7 L94.0,73.0 L94.5,69.9 L95.0,65.9 L95.5,61.4 L96.0,57.0 L96.5,53.2 L97.0,50.5 L97.5,49.1 L98.0,49.3 L98.5,50.9 L99.0,53.8 L99.5,57.7 L100.0,62.1 L100.5,66.4 L101.0,70.2 L101.5,73.1 L102.0,74.7 L102.5,74.9 L103.0,73.6 L103.5,71.0 L104.0,67.4 L104.5,63.3 L105.0,59.0 L105.5,55.0 L106.0,51.8 L106.5,49.7 L107.0,49.0 L107.5,49.7 L108.0,51.7 L108.5,54.8 L109.0,58.6 L109.5,62.8 L110.0,66.9 L110.5,70.5 L111.0,73.2 L111.5,74.7 L112.0,74.9 L112.5,73.8 L113.0,71.4 L113.5,68.1 L114.0,64.2 L114.5,60.0 L115.0,56.1 L115.5,52.8 L116.0,50.4 L116.5,49.1 L117.0,49.2 L117.5,50.5 L118.0,52.9 L118.5,56.2 L119.0,60.1 L119.5,64.1 L120.0,68.0 L120.5,71.2 L121.0,73.6 L121.5,74.8 L122.0,74.9 L122.5,73.7 L123.0,71.4 L123.5,68.3 L124.0,64.6 L124.5,60.6 L125.0,56.8 L125.5,53.5 L126.0,50.9 L126.5,49.4 L127.0,49.0 L127.5,49.8 L128.0,51.7 L128.5,54.5 L129.0,57.9 L129.5,61.7 L130.0,65.5 L130.5,69.1 L131.0,71.9 L131.5,73.9 L132.0,74.9 L132.5,74.8 L133.0,73.5 L133.5,71.3 L134.0,68.3 L134.5,64.8 L135.0,61.0 L135.5,57.4 L136.0,54.1 L136.5,51.5 L137.0,49.7 L137.5,49.0 L138.0,49.4 L138.5,50.7 L139.0,53.0 L139.5,56.0 L140.0,59.5 L140.5,63.1 L141.0,66.7 L141.5,69.9 L142.0,72.5 L142.5,74.2 L143.0,75.0 L143.5,74.7 L144.0,73.5 L144.5,71.4 L145.0,68.6 L145.5,65.3 L146.0,61.7 L146.5,58.2 L147.0,54.9 L147.5,52.2 L148.0,50.3 L148.5,49.2 L149.0,49.1 L149.5,49.9 L150.0,51.6 L150.5,54.0 L151.0,57.1 L151.5,60.5 L152.0,63.9 L152.5,67.3 L153.0,70.2 L153.5,72.6 L154.0,74.2 L154.5,75.0 L155.0,74.8 L155.5,73.7 L156.0,71.9 L156.5,69.3 L157.0,66.3 L157.5,63.0 L158.0,59.6 L158.5,56.4 L159.0,53.5 L159.5,51.3 L160.0,49.8 L160.5,49.0 L161.0,49.2 L161.5,50.2 L162.0,52.0 L162.5,54.4 L163.0,57.3 L163.5,60.5 L164.0,63.8 L164.5,67.0 L165.0,69.8 L165.5,72.2 L166.0,73.9 L166.5,74.8 L167.0,75.0 L167.5,74.3 L168.0,72.8 L168.5,70.7 L169.0,68.1 L169.5,65.1 L170.0,61.9 L170.5,58.7 L171.0,55.7 L171.5,53.2 L172.0,51.1 L172.5,49.7 L173.0,49.1 L173.5,49.2 L174.0,50.0 L174.5,51.6 L175.0,53.8 L175.5,56.4 L176.0,59.4 L176.5,62.5 L177.0,65.5 L177.5,68.4 L178.0,70.9 L178.5,72.9 L179.0,74.2 L179.5,74.9 L180.0,74.9 L180.5,74.1 L181.0,72.7 L181.5,70.7 L182.0,68.2 L182.5,65.4 L183.0,62.4 L183.5,59.4 L184.0,56.5 L184.5,54.0 L185.0,51.8 L185.5,50.3 L186.0,49.3 L186.5,49.0 L187.0,49.4 L187.5,50.4 L188.0,52.1 L188.5,54.2 L189.0,56.8 L189.5,59.6 L190.0,62.5 L190.5,65.4 L191.0,68.1 L191.5,70.5 L192.0,72.5 L192.5,73.9 L193.0,74.8 L193.5,75.0 L194.0,74.6 L194.5,73.5 L195.0,72.0 L195.5,69.9 L196.0,67.4 L196.5,64.7 L197.0,61.9 L197.5,59.1 L198.0,56.4 L198.5,54.0 L199.0,52.0 L199.5,50.5 L200.0,49.4 L200.5,49.0 L201.0,49.2 L201.5,49.9 L202.0,51.2 L202.5,53.0 L203.0,55.2 L203.5,57.7 L204.0,60.4 L204.5,63.1 L205.0,65.8 L205.5,68.3 L206.0,70.6 L206.5,72.4 L207.0,73.8 L207.5,74.7 L208.0,75.0 L208.5,74.8 L209.0,74.0 L209.5,72.7 L210.0,71.0 L210.5,68.9 L211.0,66.5 L211.5,63.9 L212.0,61.2 L212.5,58.6 L213.0,56.2 L213.5,53.9 L214.0,52.1 L214.5,50.6 L215.0,49.6 L215.5,49.1 L216.0,49.1 L216.5,49.6 L217.0,50.6 L217.5,52.1 L218.0,53.9 L218.5,56.1 L219.0,58.5 L219.5,61.0 L220.0,63.6 L220.5,66.1 L221.0,68.4 L221.5,70.5 L222.0,72.2 L222.5,73.6 L223.0,74.5 L223.5,75.0 L224.0,74.9 L224.5,74.4 L225.0,73.4 L225.5,72.1 L226.0,70.3 L226.5,68.3 L227.0,66.0 L227.5,63.6 L228.0,61.1 L228.5,58.7 L229.0,56.4 L229.5,54.3 L230.0,52.5 L230.5,51.0 L231.0,49.9 L231.5,49.2 L232.0,49.0 L232.5,49.2 L233.0,49.9 L233.5,51.0 L234.0,52.4 L234.5,54.2 L235.0,56.2 L235.5,58.4 L236.0,60.8 L236.5,63.1 L237.0,65.5 L237.5,67.7 L238.0,69.7 L238.5,71.4 L239.0,72.9 L239.5,74.0 L240.0,74.7 L240.5,75.0 L241.0,74.9 L241.5,74.3 L242.0,73.4 L242.5,72.2 L243.0,70.6 L243.5,68.7 L244.0,66.7 L244.5,64.5 L245.0,62.2 L245.5,59.9 L246.0,57.7 L246.5,55.7 L247.0,53.8 L247.5,52.2 L248.0,50.9 L248.5,49.9 L249.0,49.2 L249.5,49.0 L250.0,49.1 L250.5,49.7 L251.0,50.5 L251.5,51.7 L252.0,53.2 L252.5,55.0 L253.0,56.9 L253.5,59.0 L254.0,61.2 L254.5,63.3 L255.0,65.5 L255.5,67.5 L256.0,69.4 L256.5,71.1 L257.0,72.5 L257.5,73.6 L258.0,74.4 L258.5,74.9 L259.0,75.0 L259.5,74.8 L260.0,74.2 L260.5,73.3 L261.0,72.1 L261.5,70.6 L262.0,69.0 L262.5,67.1 L263.0,65.1 L263.5,63.0 L264.0,60.9 L264.5,58.9 L265.0,56.9 L265.5,55.1 L266.0,53.4 L266.5,52.0 L267.0,50.8 L267.5,49.9 L268.0,49.3 L268.5,49.0 L269.0,49.1 L269.5,49.4 L270.0,50.1 L270.5,51.0 L271.0,52.3 L271.5,53.7 L272.0,55.4 L272.5,57.2 L273.0,59.1 L273.5,61.1 L274.0,63.0 L274.5,65.0 L275.0,66.9 L275.5,68.7 L276.0,70.3 L276.5,71.7 L277.0,72.9 L277.5,73.8 L278.0,74.5 L278.5,74.9 L279.0,75.0 L279.5,74.8 L280.0,74.3 L280.5,73.6 L281.0,72.5 L281.5,71.3 L282.0,69.9 L282.5,68.3 L283.0,66.5 L283.5,64.7 L284.0,62.8 L284.5,60.9 L285.0,59.0 L285.5,57.2 L286.0,55.5 L286.5,54.0 L287.0,52.6 L287.5,51.4 L288.0,50.4 L288.5,49.7 L289.0,49.2 L289.5,49.0 L290.0,49.1 L290.5,49.4 L291.0,50.0 L291.5,50.8 L292.0,51.8 L292.5,53.1 L293.0,54.5 L293.5,56.0 L294.0,57.7 L294.5,59.4 L295.0,61.2 L295.5,63.1 L296.0,64.8 L296.5,66.6 L297.0,68.2 L297.5,69.7 L298.0,71.1 L298.5,72.3 L299.0,73.3 L299.5,74.0 L300.0,74.6 L300.5,74.9 L301.0,75.0 L301.5,74.8 L302.0,74.5 L302.5,73.8 L303.0,73.0 L303.5,72.0 L304.0,70.8 L304.5,69.4 L305.0,68.0 L305.5,66.4 L306.0,64.7 L306.5,63.0 L307.0,61.3 L307.5,59.6 L308.0,57.9 L308.5,56.4 L309.0,54.9 L309.5,53.5 L310.0,52.3 L310.5,51.3 L311.0,50.4 L311.5,49.8 L312.0,49.3 L312.5,49.0 L313.0,49.0 L313.5,49.2 L314.0,49.6 L314.5,50.2 L315.0,51.0 L315.5,51.9 L316.0,53.0 L316.5,54.3 L317.0,55.7 L317.5,57.1 L318.0,58.7 L318.5,60.3 L319.0,61.9 L319.5,63.5 L320.0,65.1 L320.5,66.6 L321.0,68.1 L321.5,69.5 L322.0,70.7 L322.5,71.8 L323.0,72.8 L323.5,73.6 L324.0,74.2 L324.5,74.7 L325.0,74.9 L325.5,75.0 L326.0,74.9 L326.5,74.6 L327.0,74.1 L327.5,73.4 L328.0,72.6 L328.5,71.6 L329.0,70.5 L329.5,69.2 L330.0,67.9 L330.5,66.5 L331.0,65.0 L331.5,63.5 L332.0,62.0 L332.5,60.5 L333.0,59.0 L333.5,57.5 L334.0,56.1 L334.5,54.8 L335.0,53.6 L335.5,52.5 L336.0,51.6 L336.5,50.7 L337.0,50.1 L337.5,49.6 L338.0,49.2 L338.5,49.0 L339.0,49.0 L339.5,49.2 L340.0,49.5 L340.5,50.0 L341.0,50.6 L341.5,51.4 L342.0,52.3 L342.5,53.3 L343.0,54.5 L343.5,55.7 L344.0,57.0 L344.5,58.4 L345.0,59.8 L345.5,61.2 L346.0,62.6 L346.5,64.0 L347.0,65.4 L347.5,66.8 L348.0,68.1 L348.5,69.3 L349.0,70.4 L349.5,71.5 L350.0,72.4 L350.5,73.1 L351.0,73.8 L351.5,74.3 L352.0,74.7 L352.5,74.9 L353.0,75.0 L353.5,74.9 L354.0,74.7 L354.5,74.4 L355.0,73.9 L355.5,73.2 L356.0,72.5 L356.5,71.6 L357.0,70.6 L357.5,69.6 L358.0,68.4 L358.5,67.2 L359.0,66.0 L359.5,64.7 L360.0,63.3 L360.5,62.0 L361.0,60.7 L361.5,59.3 L362.0,58.1 L362.5,56.8 L363.0,55.6 L363.5,54.5 L364.0,53.5 L364.5,52.5 L365.0,51.7 L365.5,50.9 L366.0,50.3 L366.5,49.8 L367.0,49.4 L367.5,49.1 L368.0,49.0 L368.5,49.0 L369.0,49.1 L369.5,49.4 L370.0,49.8 L370.5,50.3 L371.0,50.9 L371.5,51.6 L372.0,52.4 L372.5,53.3 L373.0,54.3 L373.5,55.3 L374.0,56.5 L374.5,57.6 L375.0,58.8 L375.5,60.0 L376.0,61.3 L376.5,62.5 L377.0,63.8 L377.5,65.0 L378.0,66.2 L378.5,67.3 L379.0,68.4 L379.5,69.5 L380.0,70.4 L380.5,71.3 L381.0,72.1 L381.5,72.9 L382.0,73.5 L382.5,74.0 L383.0,74.4 L383.5,74.7 L384.0,74.9 L384.5,75.0 L385.0,75.0 L385.5,74.8 L386.0,74.6 L386.5,74.2 L387.0,73.8 L387.5,73.2 L388.0,72.6 L388.5,71.9 L389.0,71.1 L389.5,70.2 L390.0,69.2 L390.5,68.2 L391.0,67.2 L391.5,66.1 L392.0,65.0 L392.5,63.8 L393.0,62.7 L393.5,61.5 L394.0,60.4 L394.5,59.3 L395.0,58.2 L395.5,57.1 L396.0,56.0 L396.5,55.1 L397.0,54.1 L397.5,53.3 L398.0,52.5 L398.5,51.7 L399.0,51.1 L399.5,50.5 L400.0,50.0 L400.5,49.6 L401.0,49.3 L401.5,49.1 L402.0,49.0 L402.5,49.0 L403.0,49.1 L403.5,49.3 L404.0,49.5 L404.5,49.9 L405.0,50.3 L405.5,50.8 L406.0,51.4 L406.5,52.1 L407.0,52.8 L407.5,53.6 L408.0,54.5 L408.5,55.4 L409.0,56.3 L409.5,57.3 L410.0,58.3 L410.5,59.3 L411.0,60.4 L411.5,61.4 L412.0,62.5 L412.5,63.6 L413.0,64.6 L413.5,65.6 L414.0,66.6 L414.5,67.6 L415.0,68.5 L415.5,69.4 L416.0,70.2 L416.5,71.0 L417.0,71.7 L417.5,72.4 L418.0,73.0 L418.5,73.5 L419.0,73.9 L419.5,74.3 L420.0,74.6 L420.5,74.8 L421.0,74.9 L421.5,75.0 L422.0,75.0 L422.5,74.9 L423.0,74.7 L423.5,74.4 L424.0,74.1 L424.5,73.7 L425.0,73.3 L425.5,72.7 L426.0,72.1 L426.5,71.5 L427.0,70.8 L427.5,70.0 L428.0,69.2 L428.5,68.4 L429.0,67.5 L429.5,66.6 L430.0,65.7 L430.5,64.8 L431.0,63.8 L431.5,62.8 L432.0,61.9 L432.5,60.9 L433.0,60.0 L433.5,59.0 L434.0,58.1 L434.5,57.2 L435.0,56.3 L435.5,55.5 L436.0,54.7 L436.5,53.9 L437.0,53.2 L437.5,52.5 L438.0,51.9 L438.5,51.3 L439.0,50.8 L439.5,50.4 L440.0,50.0 L440.5,49.7 L441.0,49.4 L441.5,49.2 L442.0,49.1 L442.5,49.0 L443.0,49.0 L443.5,49.1 L444.0,49.2 L444.5,49.4 L445.0,49.6 L445.5,49.9 L446.0,50.3 L446.5,50.7 L447.0,51.2 L447.5,51.7 L448.0,52.3 L448.5,52.9 L449.0,53.6 L449.5,54.3 L450.0,55.0 L450.5,55.8 L451.0,56.6 L451.5,57.4 L452.0,58.3 L452.5,59.1 L453.0,60.0 L453.5,60.8 L454.0,61.7 L454.5,62.6 L455.0,63.4 L455.5,64.3 L456.0,65.2 L456.5,66.0 L457.0,66.8 L457.5,67.6 L458.0,68.3 L458.5,69.1 L459.0,69.8 L459.5,70.4 L460.0,71.1 L460.5,71.7 L461.0,72.2 L461.5,72.7 L462.0,73.2 L462.5,73.6 L463.0,73.9 L463.5,74.2 L464.0,74.5 L464.5,74.7 L465.0,74.8 L465.5,74.9 L466.0,75.0 L466.5,75.0 L467.0,74.9 L467.5,74.8 L468.0,74.7 L468.5,74.5 L469.0,74.2 L469.5,73.9 L470.0,73.5 L470.5,73.1 L471.0,72.7 L471.5,72.2 L472.0,71.7 L472.5,71.2 L473.0,70.6 L473.5,70.0 L474.0,69.3 L474.5,68.6 L475.0,67.9 L475.5,67.2 L476.0,66.5 L476.5,65.8 L477.0,65.0 L477.5,64.2 L478.0,63.5 L478.5,62.7 L479.0,61.9 L479.5,61.1 L480.0,60.3 L480.5,59.6 L481.0,58.8 L481.5,58.1 L482.0,57.4 L482.5,56.7 L483.0,56.0 L483.5,55.3 L484.0,54.7 L484.5,54.0 L485.0,53.5 L485.5,52.9 L486.0,52.4 L486.5,51.9 L487.0,51.4 L487.5,51.0 L488.0,50.6 L488.5,50.3 L489.0,50.0 L489.5,49.7 L490.0,49.5 L490.5,49.3 L491.0,49.2 L491.5,49.1 L492.0,49.0 L492.5,49.0 L493.0,49.0 L493.5,49.1 L494.0,49.2 L494.5,49.3 L495.0,49.5 L495.5,49.7 L496.0,50.0 L496.5,50.3 L497.0,50.6 L497.5,51.0 L498.0,51.4 L498.5,51.8 L499.0,52.3 L499.5,52.8 L500.0,53.3 L500.5,53.8 L501.0,54.4 L501.5,54.9 L502.0,55.5 L502.5,56.2 L503.0,56.8 L503.5,57.4 L504.0,58.1 L504.5,58.8 L505.0,59.4 L505.5,60.1 L506.0,60.8 L506.5,61.5 L507.0,62.2 L507.5,62.9 L508.0,63.5 L508.5,64.2 L509.0,64.9 L509.5,65.5 L510.0,66.2 L510.5,66.8 L511.0,67.4 L511.5,68.0 L512.0,68.6 L512.5,69.2 L513.0,69.7 L513.5,70.3 L514.0,70.8 L514.5,71.2 L515.0,71.7 L515.5,72.1 L516.0,72.5 L516.5,72.9 L517.0,73.2 L517.5,73.5 L518.0,73.8 L518.5,74.1 L519.0,74.3 L519.5,74.5 L520.0,74.7 L520.5,74.8 L521.0,74.9 L521.5,75.0 L522.0,75.0 L522.5,75.0 L523.0,75.0 L523.5,74.9 L524.0,74.8 L524.5,74.7 L525.0,74.6 L525.5,74.4 L526.0,74.2 L526.5,73.9 L527.0,73.7 L527.5,73.4 L528.0,73.1 L528.5,72.7 L529.0,72.4 L529.5,72.0 L530.0,71.6 L530.5,71.2 L531.0,70.7 L531.5,70.3 L532.0,69.8 L532.5,69.3 L533.0,68.8 L533.5,68.2 L534.0,67.7 L534.5,67.2 L535.0,66.6 L535.5,66.0 L536.0,65.5 L536.5,64.9 L537.0,64.3 L537.5,63.7 L538.0,63.1 L538.5,62.5 L539.0,61.9 L539.5,61.3 L540.0,60.7 L540.5,60.2 L541.0,59.6 L541.5,59.0 L542.0,58.5 L542.5,57.9 L543.0,57.3 L543.5,56.8 L544.0,56.3 L544.5,55.8 L545.0,55.3 L545.5,54.8 L546.0,54.3 L546.5,53.9 L547.0,53.4 L547.5,53.0 L548.0,52.6 L548.5,52.2 L549.0,51.9 L549.5,51.5 L550.0,51.2 L550.5,50.9 L551.0,50.6 L551.5,50.4 L552.0,50.1 L552.5,49.9 L553.0,49.7 L553.5,49.5 L554.0,49.4 L554.5,49.3 L555.0,49.2 L555.5,49.1 L556.0,49.0 L556.5,49.0 L557.0,49.0 L557.5,49.0 L558.0,49.1 L558.5,49.1 L559.0,49.2 L559.5,49.3 L560.0,49.4 L560.5,49.6 L561.0,49.7 L561.5,49.9 L562.0,50.1 L562.5,50.4 L563.0,50.6 L563.5,50.9 L564.0,51.1 L564.5,51.4 L565.0,51.8 L565.5,52.1 L566.0,52.4 L566.5,52.8 L567.0,53.2 L567.5,53.6 L568.0,54.0 L568.5,54.4 L569.0,54.8 L569.5,55.2 L570.0,55.7 L570.5,56.1 L571.0,56.6 L571.5,57.0 L572.0,57.5 L572.5,58.0 L573.0,58.5 L573.5,59.0 L574.0,59.5 L574.5,60.0 L575.0,60.5 L575.5,61.0 L576.0,61.5 L576.5,62.0 L577.0,62.4 L577.5,62.9 L578.0,63.4 L578.5,63.9 L579.0,64.4 L579.5,64.9 L580.0,65.4 L580.5,65.8 L581.0,66.3 L581.5,66.8 L582.0,67.2 L582.5,67.6 L583.0,68.1 L583.5,68.5 L584.0,68.9 L584.5,69.3 L585.0,69.7 L585.5,70.1 L586.0,70.5 L586.5,70.8 L587.0,71.2 L587.5,71.5 L588.0,71.8 L588.5,72.1 L589.0,72.4 L589.5,72.7 L590.0,72.9 L590.5,73.2 L591.0,73.4 L591.5,73.6 L592.0,73.8 L592.5,74.0 L593.0,74.2 L593.5,74.3 L594.0,74.5 L594.5,74.6 L595.0,74.7 L595.5,74.8 L596.0,74.9 L596.5,74.9 L597.0,75.0 L597.5,75.0 L598.0,75.0 L598.5,75.0 L599.0,75.0 L599.5,74.9 L600.0,74.9 L600.5,74.8 L601.0,74.7 L601.5,74.6 L602.0,74.5 L602.5,74.4 L603.0,74.3 L603.5,74.1 L604.0,74.0 L604.5,73.8 L605.0,73.6 L605.5,73.4 L606.0,73.2 L606.5,72.9 L607.0,72.7 L607.5,72.5 L608.0,72.2 L608.5,71.9 L609.0,71.6 L609.5,71.3 L610.0,71.0 L610.5,70.7 L611.0,70.4 L611.5,70.1 L612.0,69.7 L612.5,69.4 L613.0,69.0 L613.5,68.7 L614.0,68.3 L614.5,68.0 L615.0,67.6 L615.5,67.2 L616.0,66.8 L616.5,66.4 L617.0,66.0 L617.5,65.7 L618.0,65.3 L618.5,64.9 L619.0,64.5 L619.5,64.1 L620.0,63.6 L620.5,63.2 L621.0,62.8 L621.5,62.4 L622.0,62.0 L622.5,61.6 L623.0,61.2 L623.5,60.8 L624.0,60.4 L624.5,60.0 L625.0,59.6 L625.5,59.2 L626.0,58.9 L626.5,58.5 L627.0,58.1 L627.5,57.7 L628.0,57.4 L628.5,57.0 L629.0,56.6 L629.5,56.3 L630.0,55.9 L630.5,55.6 L631.0,55.3 L631.5,54.9 L632.0,54.6 L632.5,54.3 L633.0,54.0 L633.5,53.7 L634.0,53.4 L634.5,53.1 L635.0,52.8 L635.5,52.6 L636.0,52.3 L636.5,52.1 L637.0,51.8 L637.5,51.6 L638.0,51.4 L638.5,51.2 L639.0,51.0 L639.5,50.8 L640.0,50.6" fill="none" stroke="#0077b6" stroke-width="1.6"/>
+  &lt;rect x="40" y="86" width="93" height="26" fill="#1e3a5f"/>
+  &lt;text x="86.5" y="128" font-size="11" fill="#1e2d3d" text-anchor="middle" font-weight="400">Gamma rays&lt;/text>
+  &lt;rect x="133" y="86" width="93" height="26" fill="#285a85"/>
+  &lt;text x="179.5" y="128" font-size="11" fill="#1e2d3d" text-anchor="middle" font-weight="400">X-rays&lt;/text>
+  &lt;rect x="226" y="86" width="93" height="26" fill="#6d28d9"/>
+  &lt;text x="272.5" y="128" font-size="11" fill="#1e2d3d" text-anchor="middle" font-weight="600">Ultraviolet&lt;/text>
+  &lt;rect x="319" y="86" width="40" height="26" fill="url(#rainbow)"/>
+  &lt;text x="339.0" y="128" font-size="11" fill="#1e2d3d" text-anchor="middle" font-weight="600">Visible&lt;/text>
+  &lt;rect x="359" y="86" width="93" height="26" fill="#9a3412"/>
+  &lt;text x="405.5" y="128" font-size="11" fill="#1e2d3d" text-anchor="middle" font-weight="400">Infrared&lt;/text>
+  &lt;rect x="452" y="86" width="93" height="26" fill="#5b6b7a"/>
+  &lt;text x="498.5" y="128" font-size="11" fill="#1e2d3d" text-anchor="middle" font-weight="400">Microwaves&lt;/text>
+  &lt;rect x="545" y="86" width="95" height="26" fill="#7d8b98"/>
+  &lt;text x="592.5" y="128" font-size="11" fill="#1e2d3d" text-anchor="middle" font-weight="400">Radio waves&lt;/text>
+  &lt;rect x="40" y="86" width="600" height="26" fill="none" stroke="rgba(0,0,0,0.15)"/>
+  &lt;path d="M226,136 L40,196 M339,136 L640,196" stroke="#9aa9b6" stroke-dasharray="3 3" fill="none"/>
+  &lt;path d="M226,136 L339,136 L640,196 L40,196 Z" fill="rgba(109,40,217,0.05)"/>
+  &lt;rect x="40.0" y="196" width="308.6" height="34" fill="#4c1d95"/>
+  &lt;text x="194.3" y="218" font-size="12.5" fill="#fff" text-anchor="middle" font-weight="600">UVC&lt;/text>
+  &lt;rect x="348.6" y="196" width="60.0" height="34" fill="#7c3aed"/>
+  &lt;text x="378.6" y="218" font-size="12.5" fill="#fff" text-anchor="middle" font-weight="600">UVB&lt;/text>
+  &lt;rect x="408.6" y="196" width="145.7" height="34" fill="#a78bfa"/>
+  &lt;text x="481.4" y="218" font-size="12.5" fill="#fff" text-anchor="middle" font-weight="600">UVA&lt;/text>
+  &lt;rect x="554.3" y="196" width="85.7" height="34" fill="url(#rainbowZ)"/>
+  &lt;text x="597.1" y="218" font-size="11" fill="#fff" text-anchor="middle">Visible&lt;/text>
+  &lt;line x1="40.0" y1="230" x2="40.0" y2="236" stroke="#4a6a82"/>&lt;text x="40.0" y="248" font-size="10.5" fill="#4a6a82" text-anchor="middle">100 nm&lt;/text>
+  &lt;line x1="211.4" y1="230" x2="211.4" y2="236" stroke="#4a6a82"/>&lt;text x="211.4" y="248" font-size="10.5" fill="#4a6a82" text-anchor="middle">200 nm&lt;/text>
+  &lt;line x1="348.6" y1="230" x2="348.6" y2="236" stroke="#4a6a82"/>&lt;text x="348.6" y="248" font-size="10.5" fill="#4a6a82" text-anchor="middle">280 nm&lt;/text>
+  &lt;line x1="408.6" y1="230" x2="408.6" y2="236" stroke="#4a6a82"/>&lt;text x="408.6" y="248" font-size="10.5" fill="#4a6a82" text-anchor="middle">315 nm&lt;/text>
+  &lt;line x1="554.3" y1="230" x2="554.3" y2="236" stroke="#4a6a82"/>&lt;text x="554.3" y="248" font-size="10.5" fill="#4a6a82" text-anchor="middle">400 nm&lt;/text>
+  &lt;line x1="304.0" y1="174" x2="304.0" y2="230" stroke="#b45309" stroke-width="2"/>
+  &lt;text x="300.0" y="170" font-size="11.5" fill="#b45309" text-anchor="end" font-weight="600">Mercury lamp, about 254 nm&lt;/text>
+  &lt;rect x="314.3" y="258" width="34.3" height="8" rx="2" fill="#047857"/>
+  &lt;path d="M331.4,266 L331.4,280" stroke="#047857"/>
+  &lt;text x="331.4" y="294" font-size="11.5" fill="#047857" text-anchor="middle" font-weight="600">UVC LEDs, often 260 to 280 nm&lt;/text>
+  &lt;text x="340" y="322" font-size="11" fill="#4a6a82" text-anchor="middle">Bar widths are illustrative, not to scale.&lt;/text>
+  &lt;/svg>&lt;/div>
+
+  &lt;p>So gamma rays, with the shortest wavelengths, carry the most energy, and radio waves, with the longest, carry the least. &lt;span class="highlight">Visible light&lt;/span>, the only part our eyes can detect, is just a narrow slice in the middle.&lt;/p>
+
+  &lt;div class="cards-grid">
+    &lt;div class="card">&lt;div class="card-icon">☢️&lt;/div>&lt;h4>Gamma rays &amp;amp; X-rays&lt;/h4>&lt;p>Shortest waves, highest energy. Used in hospitals to image bones and to treat cancer.&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">☀️&lt;/div>&lt;h4>Ultraviolet (UV)&lt;/h4>&lt;p>Just beyond violet light. Causes sunburn, and in the right band, disinfects water.&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">🌈&lt;/div>&lt;h4>Visible light&lt;/h4>&lt;p>The colours we see, from violet (shortest) to red (longest).&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">📡&lt;/div>&lt;h4>Infrared, microwaves &amp;amp; radio&lt;/h4>&lt;p>Longest waves, lowest energy. Heat from a fire, a microwave oven, radio broadcasts.&lt;/p>&lt;/div>
+  &lt;/div>
+
+  &lt;h3>Meet Ultraviolet: UVA, UVB and UVC&lt;/h3>
+  &lt;p>“Ultra” means “beyond”, so ultraviolet simply means “beyond violet”: wavelengths a little shorter than the violet end of the rainbow. The World Health Organization (WHO) divides UV into three bands, measured in &lt;span class="highlight">nanometres (nm)&lt;/span>, which are billionths of a metre.&lt;/p>
+
+  &lt;table class="data-table">
+    &lt;thead>&lt;tr>&lt;th>Band&lt;/th>&lt;th>Wavelength&lt;/th>&lt;th>What you need to know&lt;/th>&lt;/tr>&lt;/thead>
+    &lt;tbody>
+      &lt;tr>&lt;td>&lt;strong>UVA&lt;/strong>&lt;/td>&lt;td>315–400 nm&lt;/td>&lt;td>Closest to visible light, lowest energy of the three&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>&lt;strong>UVB&lt;/strong>&lt;/td>&lt;td>280–315 nm&lt;/td>&lt;td>The main cause of sunburn&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>&lt;strong>UVC&lt;/strong>&lt;/td>&lt;td>100–280 nm&lt;/td>&lt;td>Highest energy of the three. Sunlight’s UVC is blocked by the atmosphere, so a UV water system has to make its own. This is the band used for disinfection.&lt;/td>&lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+
+  &lt;div class="info-box blue">
+    &lt;strong>💡 Memory trick&lt;/strong>
+    Think of the letters as going down the energy ladder backwards: &lt;b>C&lt;/b> is the strongest UV, &lt;b>A&lt;/b> the weakest. Water disinfection lives in the C band.
+  &lt;/div>
+
+  &lt;h3>Why UVC Stops Micro-organisms&lt;/h3>
+  &lt;p>Every bacterium, virus and parasite carries genetic material (DNA or RNA), the instruction manual it needs to reproduce. That genetic material absorbs UVC strongly. The absorbed energy damages it, so the organism can no longer copy itself.&lt;/p>
+
+  &lt;div class="process-flow">
+    &lt;div class="process-step">&lt;div class="step-icon">💡&lt;/div>&lt;div class="step-label">UVC reaches the cell&lt;/div>&lt;div class="step-desc">Light passes through the clear water&lt;/div>&lt;/div>
+    &lt;div class="process-arrow">→&lt;/div>
+    &lt;div class="process-step">&lt;div class="step-icon">🧬&lt;/div>&lt;div class="step-label">DNA/RNA absorbs it&lt;/div>&lt;div class="step-desc">The genetic “instruction manual” is damaged&lt;/div>&lt;/div>
+    &lt;div class="process-arrow">→&lt;/div>
+    &lt;div class="process-step">&lt;div class="step-icon">🚫&lt;/div>&lt;div class="step-label">Can’t reproduce&lt;/div>&lt;div class="step-desc">The organism is inactivated&lt;/div>&lt;/div>
+    &lt;div class="process-arrow">→&lt;/div>
+    &lt;div class="process-step">&lt;div class="step-icon">✅&lt;/div>&lt;div class="step-label">Can’t infect&lt;/div>&lt;div class="step-desc">An organism that can’t multiply can’t make you ill&lt;/div>&lt;/div>
+  &lt;/div>
+
+  &lt;p>Water professionals say UV &lt;span class="highlight">inactivates&lt;/span> micro-organisms rather than “kills” them, because the goal is to stop them reproducing, not necessarily to destroy them.&lt;/p>
+
+  &lt;div class="info-box gold">
+    &lt;strong>⚠️ “It’s UVC” is not enough&lt;/strong>
+    How well a UV system disinfects depends on four things working together: the &lt;b>effective UV dose&lt;/b> the water actually receives, the &lt;b>wavelength&lt;/b>, the &lt;b>organism&lt;/b> (some are much tougher than others), and the &lt;b>design and operation of the reactor&lt;/b>.
+  &lt;/div>
+
+  &lt;h3>What Is UV Dose?&lt;/h3>
+  &lt;p>UV dose is the amount of UV energy the water actually receives as it flows through the chamber. Think of getting a suntan: the result depends on &lt;em>how strong&lt;/em> the sun is and &lt;em>how long&lt;/em> you stay in it. UV disinfection follows the same rule:&lt;/p>
+  &lt;div class="media-spec">
+    &lt;h4>UV dose = UV intensity × exposure time&lt;/h4>
+    &lt;div class="spec-row">&lt;span class="spec-key">Unit&lt;/span>&lt;span class="spec-val">mJ/cm² (millijoules per square centimetre)&lt;/span>&lt;/div>
+    &lt;div class="spec-row">&lt;span class="spec-key">Higher flow rate&lt;/span>&lt;span class="spec-val">Less time in the chamber, so lower dose&lt;/span>&lt;/div>
+    &lt;div class="spec-row">&lt;span class="spec-key">Cloudy, coloured or iron-laden water&lt;/span>&lt;span class="spec-val">Less light gets through, so lower dose&lt;/span>&lt;/div>
+    &lt;div class="spec-row">&lt;span class="spec-key">Dirty quartz sleeve or ageing lamp&lt;/span>&lt;span class="spec-val">Weaker light, so lower dose&lt;/span>&lt;/div>
+  &lt;/div>
+  &lt;p>That’s why the dose a lamp &lt;em>could&lt;/em> deliver and the dose the water &lt;em>actually&lt;/em> receives can be very different. Chapter 17 covers recommended design doses.&lt;/p>
+
+  &lt;h3>Two Ways to Make UVC: Mercury Lamps and LEDs&lt;/h3>
+  &lt;div class="two-col">
+    &lt;div class="col-box">
+      &lt;h4>🔦 Low-pressure mercury lamp&lt;/h4>
+      &lt;ul>
+        &lt;li>The conventional, long-established UV source&lt;/li>
+        &lt;li>Produces most of its germicidal output at about 254 nm&lt;/li>
+        &lt;li>Light comes from mercury vapour inside the lamp&lt;/li>
+        &lt;li>Contains mercury, so spent lamps need proper disposal&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+    &lt;div class="col-box">
+      &lt;h4>💠 UVC LED&lt;/h4>
+      &lt;ul>
+        &lt;li>Produces light using a semiconductor chip&lt;/li>
+        &lt;li>Can be designed to emit at chosen wavelengths, often 260–280 nm&lt;/li>
+        &lt;li>Contains no mercury&lt;/li>
+        &lt;li>Switches on instantly, with no warm-up&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;h3>Do UVC LEDs Actually Work?&lt;/h3>
+  &lt;p>Research shows they can disinfect water effectively, but results depend on the wavelength and the system. In one laboratory study, researchers compared a 260 nm LED with a low-pressure mercury lamp. Here is the UV dose each needed to reduce the organisms by 99.99% (a “4-log” reduction):&lt;/p>
+
+  &lt;table class="data-table">
+    &lt;thead>&lt;tr>&lt;th>Test organism&lt;/th>&lt;th>260 nm LED&lt;/th>&lt;th>Mercury lamp&lt;/th>&lt;th>Result&lt;/th>&lt;/tr>&lt;/thead>
+    &lt;tbody>
+      &lt;tr>&lt;td>E. coli (bacteria)&lt;/td>&lt;td>6.2 mJ/cm²&lt;/td>&lt;td>6.5 mJ/cm²&lt;/td>&lt;td>No significant difference&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>MS2 (a virus)&lt;/td>&lt;td>58 mJ/cm²&lt;/td>&lt;td>59.3 mJ/cm²&lt;/td>&lt;td>No significant difference&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>Bacterial spores&lt;/td>&lt;td>18.7 mJ/cm²&lt;/td>&lt;td>30.0 mJ/cm²&lt;/td>&lt;td>Results differed&lt;/td>&lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+
+  &lt;div class="info-box blue">
+    &lt;strong>💡 Read the evidence carefully&lt;/strong>
+    This study supports the &lt;em>potential&lt;/em> of UVC LEDs. It does not show that every LED unit performs like every mercury system. It tested one LED wavelength under laboratory conditions, not complete commercial products in real installations. Lab doses also vary between studies and strains, which is why real systems are designed with safety margins.
+  &lt;/div>
+
+  &lt;h3>How to Judge a Commercial UV System&lt;/h3>
+  &lt;p>Whether it uses a lamp or LEDs, the question that matters is simple: &lt;span class="highlight">does the complete reactor reliably deliver its claimed disinfection performance at its rated flow and under its specified water conditions?&lt;/span> These are the points to check:&lt;/p>
+
+  &lt;div class="expand-section" onclick="toggleExpand(this)">
+    &lt;div class="expand-header">&lt;h4>1. Is the performance claim tied to a flow rate and water quality?&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
+    &lt;div class="expand-body">&lt;p>A claim only means something if it states the flow rate and the water conditions it applies to. The same unit delivers a lower dose at higher flow or in less clear water.&lt;/p>&lt;/div>
+  &lt;/div>
+  &lt;div class="expand-section" onclick="toggleExpand(this)">
+    &lt;div class="expand-header">&lt;h4>2. Was it tested properly?&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
+    &lt;div class="expand-body">&lt;p>Testing should use a suitable disinfection benchmark and be carried out by a competent test facility, so the result reflects what the whole reactor delivers to the water.&lt;/p>&lt;/div>
+  &lt;/div>
+  &lt;div class="expand-section" onclick="toggleExpand(this)">
+    &lt;div class="expand-header">&lt;h4>3. Does the testing account for the LED wavelength and the UV sensor?&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
+    &lt;div class="expand-body">&lt;p>For LED systems, testing should account for the LED’s wavelength and for the system’s UV sensor, the part that monitors whether enough light is reaching the water.&lt;/p>&lt;/div>
+  &lt;/div>
+
+
+  &lt;h3>Are Mercury UV Lamps Being Phased Out?&lt;/h3>
+  &lt;p>Two different sets of rules often get mixed up here: a global treaty and an EU law. They do different things, so it helps to look at them one at a time.&lt;/p>
+
+  &lt;h4>1. The Minamata Convention (global treaty)&lt;/h4>
+  &lt;p>The &lt;span class="highlight">Minamata Convention on Mercury&lt;/span> is an international treaty that controls mercury, partly by phasing out specified mercury-added products listed in its &lt;strong>Annex A&lt;/strong>. For lamps, its scope is &lt;em>general lighting&lt;/em>: fluorescent lamps and high-pressure mercury-vapour lamps used to light rooms and streets. Special-purpose lamps that emit ultraviolet light, including UV disinfection lamps, fall outside its scope, so the Convention does not phase them out.&lt;/p>
+
+  &lt;h4>2. The EU RoHS Directive (applies in Ireland)&lt;/h4>
+  &lt;p>In the EU, the rule that does affect UV lamps is the &lt;span class="highlight">RoHS Directive&lt;/span> (2011/65/EU). RoHS restricts mercury in electrical and electronic equipment, including lamps. Mercury UV lamps are still allowed only because of &lt;strong>time-limited exemptions&lt;/strong>:&lt;/p>
+
+  &lt;table class="data-table">
+    &lt;thead>&lt;tr>&lt;th>Exemption&lt;/th>&lt;th>What it covers&lt;/th>&lt;th>Current expiry date&lt;/th>&lt;/tr>&lt;/thead>
+    &lt;tbody>
+      &lt;tr>&lt;td>&lt;strong>4(a)-I&lt;/strong>&lt;/td>&lt;td>Low-pressure UV lamps (the type used in most water disinfection units), up to 15 mg of mercury per lamp&lt;/td>&lt;td>24 February 2027&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>&lt;strong>4(f)-IV&lt;/strong>&lt;/td>&lt;td>Other mercury lamps emitting UV light, such as medium-pressure lamps&lt;/td>&lt;td>24 February 2027&lt;/td>&lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+
+  &lt;p>The lighting and UV industry has applied to &lt;strong>renew (prolong)&lt;/strong> both exemptions. Under RoHS, an exemption stays valid while a renewal application is being assessed. The EU’s public consultation on these renewals closed on 1 August 2026, and the European Commission’s decision is still pending. It could renew the exemptions, narrow them, or let them end.&lt;/p>
+
+  &lt;div class="two-col">
+    &lt;div class="col-box">
+      &lt;h4>❌ Myth&lt;/h4>
+      &lt;ul>
+        &lt;li>“The Minamata Convention bans mercury UV lamps for water treatment.”&lt;/li>
+        &lt;li>“Mercury UV lamps are unaffected by any mercury rules.”&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+    &lt;div class="col-box">
+      &lt;h4>✅ Fact&lt;/h4>
+      &lt;ul>
+        &lt;li>Minamata covers lamps for general lighting, not UV disinfection lamps.&lt;/li>
+        &lt;li>In the EU, RoHS restricts mercury in lamps. UV lamps stay on the market through exemptions currently due to expire on 24 February 2027, with renewal requests under review.&lt;/li>
+        &lt;li>The UK has its own RoHS regulations, so check UK requirements separately.&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="info-box gold">
+    &lt;strong>⚠️ Watch this space&lt;/strong>
+    This is a live regulatory topic. Check the current status of RoHS exemptions 4(a)-I and 4(f)-IV before advising a customer on long-term lamp availability.
+  &lt;/div>
+
+  &lt;div class="info-box green">
+    &lt;strong>✅ Key takeaways&lt;/strong>
+    Light is energy in waves: shorter waves carry more energy. UVC (100–280 nm) damages the DNA/RNA of micro-organisms so they can’t reproduce. Mercury lamps emit at about 254 nm; UVC LEDs often at 260–280 nm, with no mercury and instant start. LEDs can work well, but judge any system on the dose its complete reactor delivers at rated flow. Minamata does not cover UV disinfection lamps, but in the EU the RoHS Directive does: mercury UV lamps stay on the market through time-limited exemptions that are currently under review.
+  &lt;/div>
+
+  &lt;div class="quiz-box">
+    &lt;h3>🎓 Quick Quiz — Chapter 17B&lt;/h3>
+    &lt;p>Light, UVC and LEDs: four questions to test your understanding.&lt;/p>
+    &lt;div class="quiz-question" id="quvs1">
+      &lt;div class="quiz-q">1. Which statement about the electromagnetic spectrum is correct?&lt;/div>
+      &lt;div class="quiz-options">
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs1',false,'A')">&lt;span class="quiz-letter">A&lt;/span> Radio waves have the shortest wavelength and highest energy&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs1',true,'B')">&lt;span class="quiz-letter">B&lt;/span> Gamma rays have the shortest wavelength and highest energy&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs1',false,'C')">&lt;span class="quiz-letter">C&lt;/span> Visible light covers most of the spectrum&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs1',false,'D')">&lt;span class="quiz-letter">D&lt;/span> All types of radiation carry the same energy&lt;/div>
+      &lt;/div>
+      &lt;div class="quiz-feedback" id="fb-quvs1">&lt;/div>
+    &lt;/div>
+    &lt;div class="quiz-question" id="quvs2">
+      &lt;div class="quiz-q">2. Which UV band is used for water disinfection?&lt;/div>
+      &lt;div class="quiz-options">
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs2',false,'A')">&lt;span class="quiz-letter">A&lt;/span> UVA, 315–400 nm&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs2',false,'B')">&lt;span class="quiz-letter">B&lt;/span> UVB, 280–315 nm&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs2',true,'C')">&lt;span class="quiz-letter">C&lt;/span> UVC, 100–280 nm&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs2',false,'D')">&lt;span class="quiz-letter">D&lt;/span> Infrared&lt;/div>
+      &lt;/div>
+      &lt;div class="quiz-feedback" id="fb-quvs2">&lt;/div>
+    &lt;/div>
+    &lt;div class="quiz-question" id="quvs3">
+      &lt;div class="quiz-q">3. A supplier says their LED unit emits at 265 nm. What does that tell you about its disinfection performance?&lt;/div>
+      &lt;div class="quiz-options">
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs3',false,'A')">&lt;span class="quiz-letter">A&lt;/span> It is guaranteed to perform like a mercury lamp&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs3',true,'B')">&lt;span class="quiz-letter">B&lt;/span> Not enough on its own: you need tested performance for the complete reactor at its rated flow and water conditions&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs3',false,'C')">&lt;span class="quiz-letter">C&lt;/span> It will inactivate every organism at any flow rate&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs3',false,'D')">&lt;span class="quiz-letter">D&lt;/span> It cannot disinfect water, because only 254 nm works&lt;/div>
+      &lt;/div>
+      &lt;div class="quiz-feedback" id="fb-quvs3">&lt;/div>
+    &lt;/div>
+    &lt;div class="quiz-question" id="quvs4">
+      &lt;div class="quiz-q">4. In Ireland, which rules allow mercury UV disinfection lamps to stay on the market?&lt;/div>
+      &lt;div class="quiz-options">
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs4',false,'A')">&lt;span class="quiz-letter">A&lt;/span> The Minamata Convention lists them as approved products&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs4',true,'B')">&lt;span class="quiz-letter">B&lt;/span> Time-limited exemptions under the EU RoHS Directive, currently under review for renewal&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs4',false,'C')">&lt;span class="quiz-letter">C&lt;/span> No rules apply to mercury in lamps&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'quvs4',false,'D')">&lt;span class="quiz-letter">D&lt;/span> They were banned in 2020 and only old stock is sold&lt;/div>
+      &lt;/div>
+      &lt;div class="quiz-feedback" id="fb-quvs4">&lt;/div>
+    &lt;/div>
+    &lt;div class="quiz-score" id="score-ch17-spectrum">&lt;/div>
+    &lt;button class="quiz-submit-btn" onclick="submitQuiz('ch17-spectrum',['quvs1','quvs2','quvs3','quvs4'])">Submit Answers&lt;/button>
+  &lt;/div>
+
+  &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 17B&lt;/h5>&lt;ol>
+&lt;li>NASA Science. &lt;em>The Electromagnetic Spectrum.&lt;/em> science.nasa.gov/asset/webb/the-electromagnetic-spectrum — Order of the spectrum; wavelength and energy.&lt;/li>
+&lt;li>World Health Organization. &lt;em>Ultraviolet radiation&lt;/em> (health topic). who.int/health-topics/ultraviolet-radiation — UVA, UVB and UVC wavelength bands.&lt;/li>
+&lt;li>Water Environment Research (Wiley). doi.org/10.1002/wer.10947 — Mercury lamps vs UVC LEDs; testing and validation of LED reactors.&lt;/li>
+&lt;li>Sholtes, K.A. et al. (2016). Comparison of ultraviolet light-emitting diodes and low-pressure mercury-arc lamps for disinfection of water. &lt;em>Environmental Technology&lt;/em> 37(17): 2183–2188. PubMed 26888599.&lt;/li>
+&lt;li>UN Environment Programme. &lt;em>Minamata Convention on Mercury&lt;/em>, Annex A: Mercury-added products. mercuryconvention.org&lt;/li>
+&lt;li>Directive 2011/65/EU (RoHS), Annex III exemptions 4(a)-I and 4(f)-IV. European Commission, &lt;em>RoHS Directive implementation&lt;/em> (Pack 29 consultation, 29 May–1 August 2026). environment.ec.europa.eu&lt;/li>
+&lt;li>Oeko-Institut. &lt;em>RoHS Exemptions: 2026 Consultation 1&lt;/em>. rohs.exemptions.oeko.info&lt;/li>
+&lt;li>LightingEurope (2025). &lt;em>Statement on RoHS lamp exemptions&lt;/em> — renewal applications for UV lamp exemptions beyond 24 February 2027.&lt;/li>
+&lt;/ol>&lt;/div>
+  &lt;div class="chapter-nav">
+    &lt;button class="nav-btn" onclick="showSection('ch17',document.querySelector('[data-target=ch17]'))">← UV Disinfection&lt;/button>
+    &lt;button class="nav-btn primary" onclick="showSection('ch17-led',document.querySelector('[data-target=ch17-led]'))">Next: UV-LED Disinfection →&lt;/button>
+  &lt;/div>
+&lt;/div>
+
+&lt;!-- ===== CHAPTER 17C: UV-LED WATER DISINFECTION ===== -->
+&lt;div id="ch17-led" class="chapter">
+  &lt;div class="chapter-header">
+    &lt;span class="chapter-num">CH 17C&lt;/span>
+    &lt;div>
+      &lt;div class="chapter-title">UV-LED Water Disinfection&lt;/div>
+      &lt;div class="chapter-subtitle">What UV-LEDs do well, where they already work, what still needs research, and where the technology is heading&lt;/div>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;p>Chapter 17B introduced UVC LEDs as a mercury-free way to make germicidal light. This chapter looks at them in more depth, using peer-reviewed research only: their advantages, the places they have been tested in real water systems, their current limits, and what researchers expect next.&lt;/p>
+
+  &lt;h3>What Is a UV-LED?&lt;/h3>
+  &lt;p>A UV-LED is a small semiconductor chip, usually made from aluminium gallium nitride (AlGaN), that gives off ultraviolet light when electricity flows through it. Unlike a mercury lamp, it has no gas, no mercury and no warm-up. Its wavelength is set when the chip is made; the UVC LEDs studied for water disinfection typically emit between about 255 and 285 nm.&lt;/p>
+
+  &lt;h3>The Advantages&lt;/h3>
+  &lt;p>Research reviews list a consistent set of benefits. A 2025 study summarised them as wavelength selectivity, compact size, design flexibility, instant on/off, adjustable power output and mercury-free operation.&lt;/p>
+  &lt;div class="cards-grid">
+    &lt;div class="card">&lt;div class="card-icon">⚡&lt;/div>&lt;h4>Instant on and off&lt;/h4>&lt;p>No warm-up time. The light can switch on the moment water starts flowing and off when it stops, which suits taps and systems that aren’t used all day.&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">♻️&lt;/div>&lt;h4>Mercury-free&lt;/h4>&lt;p>No mercury to break, leak or dispose of, and unaffected by the mercury rules covered in Chapter 17B.&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">📦&lt;/div>&lt;h4>Compact&lt;/h4>&lt;p>Chips are tiny, so a disinfection unit can be built into a tap, a showerhead, a dispenser or a small inline housing.&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">🎯&lt;/div>&lt;h4>Chosen wavelength&lt;/h4>&lt;p>The wavelength can be matched to where microbial DNA absorbs UV strongly, rather than being fixed at 254 nm.&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">🔋&lt;/div>&lt;h4>Low power, low voltage&lt;/h4>&lt;p>Runs on low-voltage DC power. One 2025 study estimated 6–10 kWh a year for the LEDs in a household point-of-use unit.&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">💪&lt;/div>&lt;h4>Robust&lt;/h4>&lt;p>Field researchers in Japan list compactness, physical robustness and quick start-up among the properties that suit remote sites.&lt;/p>&lt;/div>
+  &lt;/div>
+
+  &lt;h3>How a Flow-Activated UV-LED Unit Works&lt;/h3>
+  &lt;div class="process-flow">
+    &lt;div class="process-step">&lt;div class="step-icon">🚰&lt;/div>&lt;div class="step-label">Tap opens&lt;/div>&lt;div class="step-desc">Water starts to flow&lt;/div>&lt;/div>
+    &lt;div class="process-arrow">→&lt;/div>
+    &lt;div class="process-step">&lt;div class="step-icon">📟&lt;/div>&lt;div class="step-label">Sensor detects flow&lt;/div>&lt;div class="step-desc">Signals the LEDs to switch on&lt;/div>&lt;/div>
+    &lt;div class="process-arrow">→&lt;/div>
+    &lt;div class="process-step">&lt;div class="step-icon">💡&lt;/div>&lt;div class="step-label">LEDs on instantly&lt;/div>&lt;div class="step-desc">Full UVC output with no warm-up&lt;/div>&lt;/div>
+    &lt;div class="process-arrow">→&lt;/div>
+    &lt;div class="process-step">&lt;div class="step-icon">⏹️&lt;/div>&lt;div class="step-label">Tap closes&lt;/div>&lt;div class="step-desc">LEDs switch off, saving energy and LED life&lt;/div>&lt;/div>
+  &lt;/div>
+
+  &lt;h3>Where UV-LEDs Are Already Used&lt;/h3>
+  &lt;p>So far, UV-LEDs have mostly been used in small systems. A 2019 review explained why: high cost, low output power and low efficiency kept them to small-scale and point-of-use applications, where longer exposure times make up for the lower output. Here is what the research shows for each type of application.&lt;/p>
+
+  &lt;table class="data-table">
+    &lt;thead>&lt;tr>&lt;th>Application&lt;/th>&lt;th>Why UV-LED suits it&lt;/th>&lt;th>Research evidence&lt;/th>&lt;/tr>&lt;/thead>
+    &lt;tbody>
+      &lt;tr>&lt;td>&lt;strong>Small community and remote water supplies&lt;/strong>&lt;/td>&lt;td>Simple, compact, no chemicals to store&lt;/td>&lt;td>✅ Year-long field studies in the USA and Japan (see case studies below)&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>&lt;strong>Point-of-use: taps, showerheads, dispensers&lt;/strong>&lt;/td>&lt;td>Fits inside fittings; switches on only when water flows&lt;/td>&lt;td>✅ Laboratory and prototype studies, e.g. a 280 nm UV-LED built into a showerhead and tested against bacteria in tap water&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>&lt;strong>Portable and stored water: bottles, containers&lt;/strong>&lt;/td>&lt;td>Battery powered, treats water in place&lt;/td>&lt;td>✅ Laboratory studies show high inactivation of bacteria in bottles and household containers&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>&lt;strong>Homes, holiday homes, yachts and campervans&lt;/strong>&lt;/td>&lt;td>Instant on/off suits water that is used only now and then; low-voltage power suits boats and off-grid sites&lt;/td>&lt;td>✅ A strong match for the documented strengths of UV-LEDs: instant start, low-voltage power, compact size and no mercury (see below)&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>&lt;strong>Full-scale municipal supply&lt;/strong>&lt;/td>&lt;td>Mercury-free option for larger plants&lt;/td>&lt;td>🆕 First full-scale UV-LED reactor in the Americas validated in 2026 (see below)&lt;/td>&lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+
+  &lt;h3>Ideal Applications: Taps, Homes, Holiday Homes, Yachts and Campervans&lt;/h3>
+  &lt;p>The strengths of UV-LEDs line up closely with the needs of small, independent water systems. That makes them a great fit for the places below.&lt;/p>
+  &lt;div class="cards-grid">
+    &lt;div class="card">&lt;div class="card-icon">🚰&lt;/div>&lt;h4>Drinking water taps&lt;/h4>&lt;p>An LED unit is small enough to sit in or just under a tap. It switches on the moment the tap opens and treats the water right before you drink it. Point-of-use LED units have been studied since 2010, and one 2025 study estimated the LEDs in a household unit use only 6–10 kWh a year.&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">🏡&lt;/div>&lt;h4>Homes&lt;/h4>&lt;p>For a home on a private well or other small supply, UV-LED offers chemical-free, mercury-free disinfection in a compact unit. Researchers see disinfection at the point of entry or point of use as a growing part of how water will be protected in future.&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">🏖️&lt;/div>&lt;h4>Holiday homes&lt;/h4>&lt;p>Water use comes and goes with visitors. Because LEDs need no warm-up, the system delivers full UV output from the first litre whenever the taps are used, and draws power only when water is flowing.&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">⛵&lt;/div>&lt;h4>Yachts and boats&lt;/h4>&lt;p>On board, space and power are limited and nobody wants a glass mercury lamp that could break at sea. UV-LEDs are compact, physically robust, mercury-free and run on low-voltage DC power.&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">🚐&lt;/div>&lt;h4>Campervans and motorhomes&lt;/h4>&lt;p>The same strengths apply on the road: a compact unit, low-voltage power from the vehicle’s battery system, and instant treatment whenever the tap is opened from the onboard tank.&lt;/p>&lt;/div>
+  &lt;/div>
+
+  &lt;div class="info-box blue">
+    &lt;strong>💡 Why mercury-free matters in small spaces&lt;/strong>
+    Researchers point out that mercury lamps bring a disposal challenge, a handling hazard and a risk of mercury reaching the water if a lamp breaks. In a boat, a campervan or a kitchen tap, an LED removes that risk completely.
+  &lt;/div>
+
+  &lt;div class="info-box blue">
+    &lt;strong>📍 Case study 1: Colorado, USA (2019)&lt;/strong>
+    US researchers ran the world’s first commercial UVC LED water disinfection reactor for a year at a small water treatment plant fed by a creek. It sat after slow sand filtration and was compared side by side with the plant’s existing chlorination. Over the year, it delivered disinfection equivalent to the chlorination system.
+  &lt;/div>
+
+  &lt;div class="info-box blue">
+    &lt;strong>📍 Case study 2: Three remote sites in Japan (2020–2023)&lt;/strong>
+    The same UV-LED module was tested for one to two years at three sites: a community supply for about 40 residents, a visitor water station in a national park, and a river intake. At the community site, the source water often contained E. coli, but the treated water tested negative throughout two years except for one single detection, and the module ran without cleaning or LED replacement. Based on the results, the community adopted UV-LED (together with chlorine) in three supply systems, and the park chose it as its main disinfection step.
+  &lt;/div>
+
+  &lt;div class="info-box green">
+    &lt;strong>🆕 Scaling up: the first full-scale validation (2026)&lt;/strong>
+    In 2026, researchers published the validation of a full-scale 280 nm UV-LED reactor at a municipal well, tested at flows of up to about 1,000 US gallons per minute and installed to disinfect against Legionella. Until then, no peer-reviewed study had validated a full-scale UV-LED reactor. The authors also called for regulatory guidance specific to UV-LED.
+  &lt;/div>
+
+  &lt;h3>Limits: Where Development Is Still Needed&lt;/h3>
+  &lt;p>UV-LEDs are not yet a like-for-like replacement for mercury lamps everywhere. These are the open issues the research identifies:&lt;/p>
+
+  &lt;div class="expand-section" onclick="toggleExpand(this)">
+    &lt;div class="expand-header">&lt;h4>1. Energy efficiency is still lower&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
+    &lt;div class="expand-body">&lt;p>“Wall-plug efficiency” is the share of electricity a light source turns into useful UV light. A 2022 review put low-pressure mercury lamps at roughly 15–35% and 265 nm UVC LEDs at roughly 1–3%. Most of the rest becomes heat. This is why LEDs currently suit small flows best, and why efficiency is the main research target.&lt;/p>&lt;/div>
+  &lt;/div>
+  &lt;div class="expand-section" onclick="toggleExpand(this)">
+    &lt;div class="expand-header">&lt;h4>2. Light output fades over time&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
+    &lt;div class="expand-body">&lt;p>LED output declines with use. The Colorado study reported a 27% drop in output after about a year of operation. The module in the Japanese study had a rated life of 35,000 hours to a 30% drop in output. A good system therefore needs a UV sensor and enough design margin to cope with this decline.&lt;/p>&lt;/div>
+  &lt;/div>
+  &lt;div class="expand-section" onclick="toggleExpand(this)">
+    &lt;div class="expand-header">&lt;h4>3. No residual protection after treatment&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
+    &lt;div class="expand-body">&lt;p>Like all UV, LEDs treat water only as it passes through. Bacteria can regrow further downstream, and damaged organisms can sometimes repair themselves. For water that is stored or piped onwards, researchers suggest combining UV with chlorine as a double barrier where possible.&lt;/p>&lt;/div>
+  &lt;/div>
+  &lt;div class="expand-section" onclick="toggleExpand(this)">
+    &lt;div class="expand-header">&lt;h4>4. Testing methods are still being developed&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
+    &lt;div class="expand-body">&lt;p>Existing UV validation guidance was written for mercury lamps. Researchers stress that dose data measured at 254 nm cannot simply be reused to design an LED unit at another wavelength, because microbes respond differently to different wavelengths. LED-specific test methods and regulations are still catching up.&lt;/p>&lt;/div>
+  &lt;/div>
+
+  &lt;h3>The Future of UV-LED&lt;/h3>
+  &lt;div class="two-col">
+    &lt;div class="col-box">
+      &lt;h4>🔬 What researchers are working on&lt;/h4>
+      &lt;ul>
+        &lt;li>Higher-efficiency chips: laboratory devices have already reached external quantum efficiencies above 20% at 275 nm&lt;/li>
+        &lt;li>Better heat management to protect output and lifetime&lt;/li>
+        &lt;li>Combining wavelengths, and pulsed rather than constant light&lt;/li>
+        &lt;li>Validation protocols and regulations written for LEDs&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+    &lt;div class="col-box">
+      &lt;h4>🌍 Where it is heading&lt;/h4>
+      &lt;ul>
+        &lt;li>Disinfection at the point of entry and point of use, closer to the tap, as part of the wider water network&lt;/li>
+        &lt;li>Larger flows as efficiency rises and costs fall&lt;/li>
+        &lt;li>More remote and decentralised supplies&lt;/li>
+        &lt;li>A mercury-free option, as mercury lamps face disposal, handling and possible future regulatory challenges&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="info-box gold">
+    &lt;strong>⚠️ Not every promising idea has worked&lt;/strong>
+    Researchers tested whether combining 260 nm and 280 nm LEDs would work better than either alone. They found no extra benefit for any of the four microorganisms tested. Future gains are expected mainly from better chips and reactor design.
+  &lt;/div>
+
+  &lt;div class="info-box green">
+    &lt;strong>✅ Key takeaways&lt;/strong>
+    UV-LEDs are mercury-free, compact and switch on instantly, which makes them a great fit for drinking water taps, homes, holiday homes, yachts and campervans. Year-long field studies in the USA and Japan show they can disinfect real water supplies, and the first full-scale validation was published in 2026. Their main limits today are lower energy efficiency than mercury lamps and output that fades with time. Efficiency is improving, and research is moving toward larger flows and LED-specific standards.
+  &lt;/div>
+
+  &lt;div class="quiz-box">
+    &lt;h3>🎓 Quick Quiz — Chapter 17C&lt;/h3>
+    &lt;p>UV-LEDs in practice: four questions to test your understanding.&lt;/p>
+    &lt;div class="quiz-question" id="qled1">
+      &lt;div class="quiz-q">1. Why are UV-LEDs well suited to taps and systems that aren’t used all day?&lt;/div>
+      &lt;div class="quiz-options">
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled1',false,'A')">&lt;span class="quiz-letter">A&lt;/span> They leave a chlorine residual in the pipes&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled1',true,'B')">&lt;span class="quiz-letter">B&lt;/span> They switch on instantly with no warm-up, so they can run only when water flows&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled1',false,'C')">&lt;span class="quiz-letter">C&lt;/span> They never lose output over time&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled1',false,'D')">&lt;span class="quiz-letter">D&lt;/span> They work in cloudy water without pre-filtration&lt;/div>
+      &lt;/div>
+      &lt;div class="quiz-feedback" id="fb-qled1">&lt;/div>
+    &lt;/div>
+    &lt;div class="quiz-question" id="qled2">
+      &lt;div class="quiz-q">2. What is the main reason UV-LEDs have mostly been used in small systems so far?&lt;/div>
+      &lt;div class="quiz-options">
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled2',false,'A')">&lt;span class="quiz-letter">A&lt;/span> They contain more mercury than lamps&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled2',false,'B')">&lt;span class="quiz-letter">B&lt;/span> They cannot inactivate bacteria&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled2',true,'C')">&lt;span class="quiz-letter">C&lt;/span> Lower output power and energy efficiency, plus higher cost&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled2',false,'D')">&lt;span class="quiz-letter">D&lt;/span> They are banned in large plants&lt;/div>
+      &lt;/div>
+      &lt;div class="quiz-feedback" id="fb-qled2">&lt;/div>
+    &lt;/div>
+    &lt;div class="quiz-question" id="qled3">
+      &lt;div class="quiz-q">3. Which combination of features makes UV-LED a great fit for yachts and campervans?&lt;/div>
+      &lt;div class="quiz-options">
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled3',false,'A')">&lt;span class="quiz-letter">A&lt;/span> It adds chlorine and needs a mains supply&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled3',true,'B')">&lt;span class="quiz-letter">B&lt;/span> Compact, mercury-free, instant-on and runs on low-voltage DC power&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled3',false,'C')">&lt;span class="quiz-letter">C&lt;/span> It removes salt from seawater&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled3',false,'D')">&lt;span class="quiz-letter">D&lt;/span> It needs a 10-minute warm-up before each use&lt;/div>
+      &lt;/div>
+      &lt;div class="quiz-feedback" id="fb-qled3">&lt;/div>
+    &lt;/div>
+    &lt;div class="quiz-question" id="qled4">
+      &lt;div class="quiz-q">4. Why do UV-LED systems need a UV sensor and a design margin?&lt;/div>
+      &lt;div class="quiz-options">
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled4',false,'A')">&lt;span class="quiz-letter">A&lt;/span> To measure the chlorine in the water&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled4',false,'B')">&lt;span class="quiz-letter">B&lt;/span> Because LEDs need a warm-up period&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled4',true,'C')">&lt;span class="quiz-letter">C&lt;/span> Because LED output declines with use, so the system must confirm it still delivers enough dose&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'qled4',false,'D')">&lt;span class="quiz-letter">D&lt;/span> To change the LED wavelength automatically&lt;/div>
+      &lt;/div>
+      &lt;div class="quiz-feedback" id="fb-qled4">&lt;/div>
+    &lt;/div>
+    &lt;div class="quiz-score" id="score-ch17-led">&lt;/div>
+    &lt;button class="quiz-submit-btn" onclick="submitQuiz('ch17-led',['qled1','qled2','qled3','qled4'])">Submit Answers&lt;/button>
+  &lt;/div>
+
+  &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 17C (peer-reviewed)&lt;/h5>&lt;ol>
+&lt;li>Song, K., Mohseni, M. &amp;amp; Taghipour, F. (2016). Application of ultraviolet light-emitting diodes (UV-LEDs) for water disinfection: A review. &lt;em>Water Research&lt;/em> 94: 341–349.&lt;/li>
+&lt;li>Chen, J., Loeb, S. &amp;amp; Kim, J.-H. (2017). LED revolution: fundamentals and prospects for UV disinfection applications. &lt;em>Environmental Science: Water Research &amp;amp; Technology&lt;/em> 3(2): 188–202.&lt;/li>
+&lt;li>Chatterley, C. &amp;amp; Linden, K. (2010). Demonstration and evaluation of germicidal UV-LEDs for point-of-use water disinfection. &lt;em>Journal of Water and Health&lt;/em> 8: 479–486.&lt;/li>
+&lt;li>Beck, S.E. et al. (2017). Evaluating UV-C LED disinfection performance and investigating potential dual-wavelength synergy. &lt;em>Water Research&lt;/em> 109: 207–216.&lt;/li>
+&lt;li>Hull, N.M., Herold, W.H. &amp;amp; Linden, K.G. (2019). UV LED water disinfection: Validation and small system demonstration study. &lt;em>AWWA Water Science&lt;/em> 1(4): e1148.&lt;/li>
+&lt;li>Jarvis, P., Autin, O., Goslan, E.H. &amp;amp; Hassard, F. (2019). Application of ultraviolet light-emitting diodes (UV-LED) to full-scale drinking-water disinfection. &lt;em>Water&lt;/em> 11(9): 1894.&lt;/li>
+&lt;li>Linden, K.G., Hull, N. &amp;amp; Speight, V. (2019). Thinking outside the treatment plant: UV for water distribution system disinfection. &lt;em>Accounts of Chemical Research&lt;/em> 52(5): 1226–1233.&lt;/li>
+&lt;li>Oguma, K. (2023). Field demonstration of UV-LED disinfection at small and decentralized water facilities. &lt;em>Journal of Water and Health&lt;/em> 21(9): 1369.&lt;/li>
+&lt;li>Ray, H. &amp;amp; Atkinson, A.J. (2026). Full-scale UV-LED validation with organism-specific dose determination. &lt;em>Environmental Science &amp;amp; Technology&lt;/em> 60(8): 6725–6735.&lt;/li>
+&lt;li>Bright future of deep-ultraviolet photonics: emerging UVC chip-scale light-source technology platforms, benchmarking, challenges, and outlook for UV disinfection (2022). &lt;em>ACS Photonics&lt;/em>, doi:10.1021/acsphotonics.2c00041.&lt;/li>
+&lt;li>Takano, T. et al. (2017). Deep-ultraviolet light-emitting diodes with external quantum efficiency higher than 20% at 275 nm achieved by improving light-extraction efficiency. &lt;em>Applied Physics Express&lt;/em>.&lt;/li>
+&lt;li>Evaluating disinfection performance and energy efficiency of a dual-wavelength UV-LED flow-through device for point-of-use water treatment (2025). &lt;em>Water&lt;/em> 17(20): 2965.&lt;/li>
+&lt;li>Inactivation kinetics of 280 nm UV-LEDs against &lt;em>Mycobacterium abscessus&lt;/em> in water (2023). &lt;em>Scientific Reports&lt;/em>, doi:10.1038/s41598-023-29338-w.&lt;/li>
+&lt;li>UV-LED-incorporated showerhead for point-of-use disinfection of drinking water (2024). &lt;em>Journal of Environmental Chemical Engineering&lt;/em> (ScienceDirect S2213343724027040).&lt;/li>
+&lt;li>Mariita, R.M. et al. (2021). Disinfection performance of a drinking water bottle system with a UV subtype C LED cap against waterborne pathogens and heterotrophic contaminants. &lt;em>Frontiers in Microbiology&lt;/em> 12: 719578.&lt;/li>
+&lt;li>Caduff, L., Englert, A., Meierhofer, R. &amp;amp; Burkhardt, M. (2025). Comparison of two different container designs and UV-C LED configurations in their drinking water disinfection efficiency. &lt;em>Frontiers in Water&lt;/em> 7: 1490541.&lt;/li>
+&lt;/ol>&lt;/div>
+  &lt;div class="chapter-nav">
+    &lt;button class="nav-btn" onclick="showSection('ch17-spectrum',document.querySelector('[data-target=ch17-spectrum]'))">← From Light to UV-C&lt;/button>
     &lt;button class="nav-btn primary" onclick="showSection('ch18',document.querySelector('[data-target=ch18]'))">Next: Water Sources →&lt;/button>
   &lt;/div>
 &lt;/div>
@@ -4437,7 +4934,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
 &lt;li>LeChevallier, M.W. &amp;amp; Au, K.K. (2004). &lt;em>WHO — Water Treatment and Pathogen Control.&lt;/em> — Chlorine, THM formation in distribution systems.&lt;/li>
 &lt;/ol>&lt;/div>
   &lt;div class="chapter-nav">
-    &lt;button class="nav-btn" onclick="showSection('ch17',document.querySelector('[data-target=ch17]'))">← UV Disinfection&lt;/button>
+    &lt;button class="nav-btn" onclick="showSection('ch17-led',document.querySelector('[data-target=ch17-led]'))">← UV-LED Disinfection&lt;/button>
     &lt;button class="nav-btn primary" onclick="showSection('ch19',document.querySelector('[data-target=ch19]'))">Next: PFAS Forever Chemicals →&lt;/button>
   &lt;/div>
 &lt;/div>
@@ -4867,7 +5364,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
 
 &lt;script>
 const visited = new Set();
-const totalSections = 12; // home + 11 chapters
+const totalSections = 14; // home + 13 chapters
 
 function showSection(id, navEl) {
   document.querySelectorAll('.chapter, #home-screen').forEach(el => {
