@@ -127,6 +127,24 @@
     line-height: 1.6;
   }
 
+
+  /* ═══════ COVER ILLUSTRATION ═══════ */
+  .pano {
+    max-width: 1280px; width: 100%; margin: -16px auto 56px;
+    border-radius: 22px; overflow: hidden; background: #f3f9fc;
+    border: 1px solid var(--border);
+    box-shadow: 0 30px 60px -30px rgba(13,42,61,0.35);
+  }
+  .pano-scroll { overflow-x: auto; }
+  .pano-svg { display: block; width: 100%; height: auto; min-width: 760px; }
+  .pl-small { font: 600 12px 'Inter', system-ui, sans-serif; fill: #0d2a3d; }
+  .pl-under { font: 600 12px 'Inter', system-ui, sans-serif; fill: #ffffff; }
+  .pl-tag  { font: 700 10.5px 'Inter', system-ui, sans-serif; fill: #1b6ea0; }
+  .pl-tagw { font: 700 10.5px 'Inter', system-ui, sans-serif; fill: #ffffff; }
+  .pl-zone { font: 700 14px 'Inter', system-ui, sans-serif; fill: #0d2a3d; }
+  .pflow { stroke-dasharray: 6 10; animation: pflow 1.1s linear infinite; }
+  @keyframes pflow { to { stroke-dashoffset: -16; } }
+  @media (prefers-reduced-motion: reduce) { .pflow { animation: none; } }
   /* ═══════ TABS / BOOK CARDS ═══════ */
   .tabs-label {
     max-width: 1280px; width: 100%; margin: 0 auto 18px;
@@ -341,6 +359,439 @@
     <p>Your complete learning library — four interactive books covering Irish water quality, the fundamentals of treatment, advanced techniques, and a full quiz to test your knowledge. Pick a book to begin.</p>
   </section>
 
+  <figure class="pano"><div class="pano-scroll">
+<svg class="pano-svg" viewBox="0 0 1200 470" role="img" aria-labelledby="panoT panoD" xmlns="http://www.w3.org/2000/svg">
+<title id="panoT">From source to tap</title>
+<desc id="panoD">Illustration: a rural house drawing well water from a borehole in an aquifer; a municipal treatment plant and water tower supplying a town; and a home with a water softener, sediment filter, UV unit and reverse osmosis system under the kitchen sink.</desc>
+<defs>
+ <linearGradient id="pSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe8f6"/><stop offset="1" stop-color="#f3f9fc"/></linearGradient>
+ <linearGradient id="pHill1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9dcb8"/><stop offset="1" stop-color="#8fcfa4"/></linearGradient>
+ <linearGradient id="pHill2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7cc394"/><stop offset="1" stop-color="#62b07f"/></linearGradient>
+ <linearGradient id="pSoil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9a77f"/><stop offset="1" stop-color="#b48e66"/></linearGradient>
+ <linearGradient id="pAq" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6cc6ee"/><stop offset="1" stop-color="#3a9fd0"/></linearGradient>
+ <linearGradient id="pSteel" x1="0" x2="1"><stop offset="0" stop-color="#9fb3c1"/><stop offset=".45" stop-color="#e8eff4"/><stop offset="1" stop-color="#8aa0b0"/></linearGradient>
+ <linearGradient id="pVessel" x1="0" x2="1"><stop offset="0" stop-color="#1b6ea0"/><stop offset=".45" stop-color="#4ec3ff"/><stop offset="1" stop-color="#17608c"/></linearGradient>
+ <linearGradient id="pWater" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd3f5"/><stop offset="1" stop-color="#3fa9dc"/></linearGradient>
+ <radialGradient id="pUV" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#b28cff" stop-opacity=".9"/><stop offset="1" stop-color="#b28cff" stop-opacity="0"/></radialGradient>
+ <clipPath id="pClip"><rect width="1200" height="470" rx="22"/></clipPath>
+</defs>
+<g clip-path="url(#pClip)">
+<rect width="1200" height="470" fill="url(#pSky)"/>
+<circle cx="470" cy="92" r="30" fill="#fff6d8"/><circle cx="470" cy="92" r="50" fill="#fff6d8" opacity=".35"/>
+<path d="M0 250 C120 205 230 215 330 240 C430 262 520 210 640 222 C760 234 820 200 940 214 C1050 226 1130 210 1200 220 L1200 310 L0 310Z" fill="url(#pHill1)"/>
+<path d="M0 280 C140 255 260 268 400 285 C520 298 600 272 720 282 C860 294 980 276 1200 286 L1200 310 L0 310Z" fill="url(#pHill2)"/>
+
+<rect x="0" y="306" width="1200" height="50" fill="url(#pSoil)"/>
+<rect x="0" y="356" width="1200" height="48" fill="#a99b8c"/>
+<circle cx="283" cy="364" r="2.5" fill="#8f8172" opacity=".55"/>
+<circle cx="186" cy="363" r="2.5" fill="#8f8172" opacity=".55"/>
+<circle cx="1102" cy="392" r="3.4" fill="#8f8172" opacity=".55"/>
+<circle cx="266" cy="381" r="2.2" fill="#8f8172" opacity=".55"/>
+<circle cx="207" cy="364" r="2.0" fill="#8f8172" opacity=".55"/>
+<circle cx="1113" cy="393" r="3.5" fill="#8f8172" opacity=".55"/>
+<circle cx="961" cy="368" r="2.3" fill="#8f8172" opacity=".55"/>
+<circle cx="752" cy="389" r="3.6" fill="#8f8172" opacity=".55"/>
+<circle cx="1056" cy="363" r="3.0" fill="#8f8172" opacity=".55"/>
+<circle cx="806" cy="380" r="1.9" fill="#8f8172" opacity=".55"/>
+<circle cx="568" cy="364" r="3.8" fill="#8f8172" opacity=".55"/>
+<circle cx="1039" cy="382" r="2.3" fill="#8f8172" opacity=".55"/>
+<circle cx="1091" cy="383" r="3.7" fill="#8f8172" opacity=".55"/>
+<circle cx="1018" cy="380" r="2.5" fill="#8f8172" opacity=".55"/>
+<circle cx="719" cy="377" r="1.9" fill="#8f8172" opacity=".55"/>
+<circle cx="366" cy="393" r="1.6" fill="#8f8172" opacity=".55"/>
+<circle cx="56" cy="385" r="2.2" fill="#8f8172" opacity=".55"/>
+<circle cx="642" cy="379" r="2.4" fill="#8f8172" opacity=".55"/>
+<circle cx="1197" cy="368" r="2.5" fill="#8f8172" opacity=".55"/>
+<circle cx="243" cy="385" r="2.2" fill="#8f8172" opacity=".55"/>
+<circle cx="427" cy="390" r="2.3" fill="#8f8172" opacity=".55"/>
+<circle cx="670" cy="396" r="1.8" fill="#8f8172" opacity=".55"/>
+<circle cx="74" cy="369" r="3.4" fill="#8f8172" opacity=".55"/>
+<circle cx="739" cy="369" r="2.3" fill="#8f8172" opacity=".55"/>
+<circle cx="213" cy="378" r="1.6" fill="#8f8172" opacity=".55"/>
+<circle cx="837" cy="396" r="3.9" fill="#8f8172" opacity=".55"/>
+<circle cx="882" cy="398" r="1.5" fill="#8f8172" opacity=".55"/>
+<circle cx="347" cy="399" r="3.4" fill="#8f8172" opacity=".55"/>
+<circle cx="493" cy="398" r="3.1" fill="#8f8172" opacity=".55"/>
+<circle cx="982" cy="372" r="2.0" fill="#8f8172" opacity=".55"/>
+<circle cx="533" cy="365" r="2.5" fill="#8f8172" opacity=".55"/>
+<circle cx="1154" cy="373" r="1.5" fill="#8f8172" opacity=".55"/>
+<circle cx="54" cy="367" r="3.5" fill="#8f8172" opacity=".55"/>
+<circle cx="435" cy="372" r="1.7" fill="#8f8172" opacity=".55"/>
+<circle cx="1178" cy="377" r="2.0" fill="#8f8172" opacity=".55"/>
+<circle cx="71" cy="362" r="1.9" fill="#8f8172" opacity=".55"/>
+<circle cx="812" cy="366" r="1.6" fill="#8f8172" opacity=".55"/>
+<circle cx="589" cy="370" r="4.0" fill="#8f8172" opacity=".55"/>
+<circle cx="147" cy="381" r="3.4" fill="#8f8172" opacity=".55"/>
+<circle cx="491" cy="400" r="2.7" fill="#8f8172" opacity=".55"/>
+<circle cx="290" cy="376" r="1.6" fill="#8f8172" opacity=".55"/>
+<circle cx="505" cy="370" r="3.7" fill="#8f8172" opacity=".55"/>
+<circle cx="997" cy="380" r="1.6" fill="#8f8172" opacity=".55"/>
+<circle cx="305" cy="370" r="2.0" fill="#8f8172" opacity=".55"/>
+<circle cx="278" cy="395" r="1.9" fill="#8f8172" opacity=".55"/>
+<circle cx="62" cy="397" r="2.9" fill="#8f8172" opacity=".55"/>
+<circle cx="1189" cy="376" r="3.8" fill="#8f8172" opacity=".55"/>
+<circle cx="785" cy="392" r="3.4" fill="#8f8172" opacity=".55"/>
+<circle cx="593" cy="364" r="2.0" fill="#8f8172" opacity=".55"/>
+<circle cx="1049" cy="396" r="3.8" fill="#8f8172" opacity=".55"/>
+<circle cx="404" cy="386" r="3.5" fill="#8f8172" opacity=".55"/>
+<circle cx="771" cy="393" r="2.8" fill="#8f8172" opacity=".55"/>
+<circle cx="786" cy="387" r="2.2" fill="#8f8172" opacity=".55"/>
+<circle cx="1107" cy="398" r="1.7" fill="#8f8172" opacity=".55"/>
+<circle cx="1165" cy="398" r="3.2" fill="#8f8172" opacity=".55"/>
+<circle cx="53" cy="396" r="1.8" fill="#8f8172" opacity=".55"/>
+<circle cx="1162" cy="387" r="1.7" fill="#8f8172" opacity=".55"/>
+<circle cx="201" cy="385" r="2.9" fill="#8f8172" opacity=".55"/>
+<circle cx="896" cy="397" r="2.0" fill="#8f8172" opacity=".55"/>
+<circle cx="4" cy="397" r="1.5" fill="#8f8172" opacity=".55"/>
+<circle cx="1052" cy="365" r="3.5" fill="#8f8172" opacity=".55"/>
+<circle cx="940" cy="395" r="2.9" fill="#8f8172" opacity=".55"/>
+<circle cx="1054" cy="368" r="3.2" fill="#8f8172" opacity=".55"/>
+<circle cx="397" cy="396" r="3.4" fill="#8f8172" opacity=".55"/>
+<circle cx="566" cy="381" r="1.6" fill="#8f8172" opacity=".55"/>
+<circle cx="41" cy="384" r="2.7" fill="#8f8172" opacity=".55"/>
+<circle cx="1038" cy="384" r="1.8" fill="#8f8172" opacity=".55"/>
+<circle cx="435" cy="391" r="2.8" fill="#8f8172" opacity=".55"/>
+<circle cx="13" cy="394" r="3.6" fill="#8f8172" opacity=".55"/>
+<circle cx="102" cy="382" r="2.5" fill="#8f8172" opacity=".55"/>
+<circle cx="945" cy="372" r="2.1" fill="#8f8172" opacity=".55"/>
+<circle cx="584" cy="399" r="1.7" fill="#8f8172" opacity=".55"/>
+<circle cx="137" cy="385" r="3.7" fill="#8f8172" opacity=".55"/>
+<circle cx="615" cy="377" r="3.6" fill="#8f8172" opacity=".55"/>
+<circle cx="932" cy="363" r="3.7" fill="#8f8172" opacity=".55"/>
+<circle cx="235" cy="372" r="3.6" fill="#8f8172" opacity=".55"/>
+<circle cx="507" cy="392" r="1.9" fill="#8f8172" opacity=".55"/>
+<circle cx="1049" cy="367" r="1.9" fill="#8f8172" opacity=".55"/>
+<circle cx="593" cy="374" r="2.9" fill="#8f8172" opacity=".55"/>
+<circle cx="1085" cy="388" r="1.5" fill="#8f8172" opacity=".55"/>
+<circle cx="374" cy="382" r="2.7" fill="#8f8172" opacity=".55"/>
+<circle cx="859" cy="379" r="1.7" fill="#8f8172" opacity=".55"/>
+<circle cx="295" cy="394" r="2.4" fill="#8f8172" opacity=".55"/>
+<circle cx="920" cy="399" r="3.1" fill="#8f8172" opacity=".55"/>
+<circle cx="812" cy="384" r="2.3" fill="#8f8172" opacity=".55"/>
+<circle cx="1095" cy="379" r="3.8" fill="#8f8172" opacity=".55"/>
+<circle cx="367" cy="395" r="3.5" fill="#8f8172" opacity=".55"/>
+<circle cx="736" cy="378" r="1.9" fill="#8f8172" opacity=".55"/>
+<circle cx="925" cy="374" r="3.2" fill="#8f8172" opacity=".55"/>
+<circle cx="160" cy="363" r="1.9" fill="#8f8172" opacity=".55"/>
+<circle cx="971" cy="367" r="3.8" fill="#8f8172" opacity=".55"/>
+<circle cx="446" cy="383" r="2.4" fill="#8f8172" opacity=".55"/>
+<circle cx="745" cy="364" r="2.5" fill="#8f8172" opacity=".55"/>
+<circle cx="1123" cy="367" r="3.1" fill="#8f8172" opacity=".55"/>
+<circle cx="392" cy="372" r="1.6" fill="#8f8172" opacity=".55"/>
+<circle cx="24" cy="398" r="3.6" fill="#8f8172" opacity=".55"/>
+<circle cx="961" cy="392" r="3.9" fill="#8f8172" opacity=".55"/>
+<circle cx="190" cy="383" r="2.7" fill="#8f8172" opacity=".55"/>
+<circle cx="689" cy="398" r="3.4" fill="#8f8172" opacity=".55"/>
+<circle cx="1162" cy="365" r="3.1" fill="#8f8172" opacity=".55"/>
+<circle cx="810" cy="390" r="3.0" fill="#8f8172" opacity=".55"/>
+<circle cx="998" cy="372" r="3.8" fill="#8f8172" opacity=".55"/>
+<circle cx="487" cy="384" r="3.7" fill="#8f8172" opacity=".55"/>
+<circle cx="844" cy="372" r="2.1" fill="#8f8172" opacity=".55"/>
+<circle cx="392" cy="385" r="4.0" fill="#8f8172" opacity=".55"/>
+<circle cx="1079" cy="376" r="2.5" fill="#8f8172" opacity=".55"/>
+<circle cx="981" cy="371" r="2.5" fill="#8f8172" opacity=".55"/>
+<circle cx="16" cy="367" r="2.9" fill="#8f8172" opacity=".55"/>
+<circle cx="832" cy="385" r="2.4" fill="#8f8172" opacity=".55"/>
+<circle cx="1141" cy="385" r="1.9" fill="#8f8172" opacity=".55"/>
+<circle cx="81" cy="399" r="4.0" fill="#8f8172" opacity=".55"/>
+<circle cx="1104" cy="384" r="2.3" fill="#8f8172" opacity=".55"/>
+<circle cx="110" cy="370" r="2.1" fill="#8f8172" opacity=".55"/>
+<circle cx="1114" cy="396" r="3.4" fill="#8f8172" opacity=".55"/>
+<circle cx="178" cy="370" r="2.2" fill="#8f8172" opacity=".55"/>
+<circle cx="1138" cy="367" r="3.5" fill="#8f8172" opacity=".55"/>
+<circle cx="817" cy="382" r="3.9" fill="#8f8172" opacity=".55"/>
+<circle cx="315" cy="381" r="1.9" fill="#8f8172" opacity=".55"/>
+<circle cx="116" cy="361" r="2.3" fill="#8f8172" opacity=".55"/>
+<circle cx="146" cy="362" r="4.0" fill="#8f8172" opacity=".55"/>
+<circle cx="347" cy="396" r="3.3" fill="#8f8172" opacity=".55"/>
+<circle cx="878" cy="386" r="3.9" fill="#8f8172" opacity=".55"/>
+<circle cx="1054" cy="389" r="2.9" fill="#8f8172" opacity=".55"/>
+<circle cx="833" cy="389" r="2.9" fill="#8f8172" opacity=".55"/>
+<circle cx="603" cy="366" r="3.6" fill="#8f8172" opacity=".55"/>
+<circle cx="581" cy="363" r="1.9" fill="#8f8172" opacity=".55"/>
+<circle cx="1050" cy="370" r="2.5" fill="#8f8172" opacity=".55"/>
+<circle cx="819" cy="394" r="2.3" fill="#8f8172" opacity=".55"/>
+<circle cx="464" cy="377" r="1.6" fill="#8f8172" opacity=".55"/>
+<circle cx="1052" cy="361" r="3.9" fill="#8f8172" opacity=".55"/>
+<circle cx="183" cy="366" r="3.6" fill="#8f8172" opacity=".55"/>
+<circle cx="988" cy="369" r="2.9" fill="#8f8172" opacity=".55"/>
+<circle cx="572" cy="389" r="2.0" fill="#8f8172" opacity=".55"/>
+<circle cx="991" cy="400" r="3.3" fill="#8f8172" opacity=".55"/>
+<circle cx="1105" cy="397" r="2.4" fill="#8f8172" opacity=".55"/>
+<circle cx="1017" cy="393" r="3.0" fill="#8f8172" opacity=".55"/>
+<circle cx="129" cy="385" r="3.8" fill="#8f8172" opacity=".55"/>
+<circle cx="366" cy="386" r="3.7" fill="#8f8172" opacity=".55"/>
+<circle cx="720" cy="361" r="3.1" fill="#8f8172" opacity=".55"/>
+<circle cx="307" cy="394" r="3.2" fill="#8f8172" opacity=".55"/>
+<rect x="0" y="404" width="1200" height="66" fill="url(#pAq)"/>
+<circle cx="369" cy="460" r="2.8" fill="#ffffff" opacity=".35"/>
+<circle cx="407" cy="457" r="3.3" fill="#ffffff" opacity=".35"/>
+<circle cx="1072" cy="459" r="2.8" fill="#ffffff" opacity=".35"/>
+<circle cx="838" cy="444" r="2.6" fill="#ffffff" opacity=".35"/>
+<circle cx="1185" cy="430" r="1.7" fill="#ffffff" opacity=".35"/>
+<circle cx="856" cy="438" r="2.6" fill="#ffffff" opacity=".35"/>
+<circle cx="717" cy="424" r="1.9" fill="#ffffff" opacity=".35"/>
+<circle cx="86" cy="454" r="3.3" fill="#ffffff" opacity=".35"/>
+<circle cx="836" cy="417" r="3.5" fill="#ffffff" opacity=".35"/>
+<circle cx="992" cy="439" r="1.5" fill="#ffffff" opacity=".35"/>
+<circle cx="1013" cy="445" r="2.7" fill="#ffffff" opacity=".35"/>
+<circle cx="22" cy="451" r="1.6" fill="#ffffff" opacity=".35"/>
+<circle cx="574" cy="418" r="2.2" fill="#ffffff" opacity=".35"/>
+<circle cx="1068" cy="452" r="3.1" fill="#ffffff" opacity=".35"/>
+<circle cx="358" cy="432" r="2.7" fill="#ffffff" opacity=".35"/>
+<circle cx="41" cy="433" r="3.4" fill="#ffffff" opacity=".35"/>
+<circle cx="905" cy="458" r="2.1" fill="#ffffff" opacity=".35"/>
+<circle cx="829" cy="454" r="2.9" fill="#ffffff" opacity=".35"/>
+<circle cx="525" cy="420" r="1.5" fill="#ffffff" opacity=".35"/>
+<circle cx="1064" cy="462" r="2.1" fill="#ffffff" opacity=".35"/>
+<circle cx="907" cy="433" r="2.8" fill="#ffffff" opacity=".35"/>
+<circle cx="1010" cy="428" r="2.7" fill="#ffffff" opacity=".35"/>
+<circle cx="307" cy="439" r="1.6" fill="#ffffff" opacity=".35"/>
+<circle cx="316" cy="426" r="3.3" fill="#ffffff" opacity=".35"/>
+<circle cx="159" cy="452" r="1.7" fill="#ffffff" opacity=".35"/>
+<circle cx="1184" cy="419" r="1.7" fill="#ffffff" opacity=".35"/>
+<circle cx="254" cy="462" r="2.8" fill="#ffffff" opacity=".35"/>
+<circle cx="1069" cy="438" r="1.7" fill="#ffffff" opacity=".35"/>
+<circle cx="409" cy="436" r="3.5" fill="#ffffff" opacity=".35"/>
+<circle cx="200" cy="424" r="3.2" fill="#ffffff" opacity=".35"/>
+<circle cx="137" cy="464" r="2.1" fill="#ffffff" opacity=".35"/>
+<circle cx="681" cy="447" r="3.3" fill="#ffffff" opacity=".35"/>
+<circle cx="91" cy="457" r="1.9" fill="#ffffff" opacity=".35"/>
+<circle cx="862" cy="412" r="3.0" fill="#ffffff" opacity=".35"/>
+<circle cx="217" cy="422" r="1.6" fill="#ffffff" opacity=".35"/>
+<circle cx="389" cy="428" r="3.5" fill="#ffffff" opacity=".35"/>
+<circle cx="728" cy="430" r="3.5" fill="#ffffff" opacity=".35"/>
+<circle cx="206" cy="422" r="3.4" fill="#ffffff" opacity=".35"/>
+<circle cx="1142" cy="448" r="3.5" fill="#ffffff" opacity=".35"/>
+<circle cx="69" cy="461" r="2.9" fill="#ffffff" opacity=".35"/>
+<circle cx="802" cy="457" r="1.7" fill="#ffffff" opacity=".35"/>
+<circle cx="239" cy="418" r="2.5" fill="#ffffff" opacity=".35"/>
+<circle cx="655" cy="440" r="2.2" fill="#ffffff" opacity=".35"/>
+<circle cx="892" cy="457" r="3.0" fill="#ffffff" opacity=".35"/>
+<circle cx="45" cy="419" r="1.9" fill="#ffffff" opacity=".35"/>
+<circle cx="286" cy="442" r="1.9" fill="#ffffff" opacity=".35"/>
+<circle cx="750" cy="429" r="2.2" fill="#ffffff" opacity=".35"/>
+<circle cx="850" cy="463" r="1.9" fill="#ffffff" opacity=".35"/>
+<circle cx="418" cy="465" r="1.9" fill="#ffffff" opacity=".35"/>
+<circle cx="32" cy="421" r="3.2" fill="#ffffff" opacity=".35"/>
+<circle cx="878" cy="463" r="2.5" fill="#ffffff" opacity=".35"/>
+<circle cx="50" cy="427" r="2.9" fill="#ffffff" opacity=".35"/>
+<circle cx="471" cy="418" r="2.3" fill="#ffffff" opacity=".35"/>
+<circle cx="556" cy="430" r="2.4" fill="#ffffff" opacity=".35"/>
+<circle cx="164" cy="412" r="3.1" fill="#ffffff" opacity=".35"/>
+<circle cx="879" cy="433" r="1.7" fill="#ffffff" opacity=".35"/>
+<circle cx="355" cy="441" r="3.3" fill="#ffffff" opacity=".35"/>
+<circle cx="578" cy="465" r="2.6" fill="#ffffff" opacity=".35"/>
+<circle cx="217" cy="444" r="2.7" fill="#ffffff" opacity=".35"/>
+<circle cx="719" cy="451" r="1.5" fill="#ffffff" opacity=".35"/>
+<circle cx="524" cy="455" r="1.8" fill="#ffffff" opacity=".35"/>
+<circle cx="51" cy="420" r="2.1" fill="#ffffff" opacity=".35"/>
+<circle cx="522" cy="428" r="2.8" fill="#ffffff" opacity=".35"/>
+<circle cx="204" cy="429" r="2.9" fill="#ffffff" opacity=".35"/>
+<circle cx="653" cy="464" r="3.4" fill="#ffffff" opacity=".35"/>
+<circle cx="310" cy="429" r="2.6" fill="#ffffff" opacity=".35"/>
+<circle cx="653" cy="430" r="3.2" fill="#ffffff" opacity=".35"/>
+<circle cx="236" cy="436" r="1.7" fill="#ffffff" opacity=".35"/>
+<circle cx="1060" cy="443" r="3.5" fill="#ffffff" opacity=".35"/>
+<circle cx="172" cy="450" r="2.7" fill="#ffffff" opacity=".35"/>
+<circle cx="62" cy="456" r="3.2" fill="#ffffff" opacity=".35"/>
+<circle cx="97" cy="463" r="3.1" fill="#ffffff" opacity=".35"/>
+<circle cx="725" cy="440" r="2.0" fill="#ffffff" opacity=".35"/>
+<circle cx="69" cy="437" r="3.2" fill="#ffffff" opacity=".35"/>
+<circle cx="251" cy="436" r="2.1" fill="#ffffff" opacity=".35"/>
+<circle cx="829" cy="464" r="3.3" fill="#ffffff" opacity=".35"/>
+<circle cx="345" cy="433" r="1.5" fill="#ffffff" opacity=".35"/>
+<circle cx="635" cy="458" r="3.2" fill="#ffffff" opacity=".35"/>
+<circle cx="86" cy="434" r="1.7" fill="#ffffff" opacity=".35"/>
+<circle cx="509" cy="461" r="2.1" fill="#ffffff" opacity=".35"/>
+<circle cx="1015" cy="463" r="3.1" fill="#ffffff" opacity=".35"/>
+<circle cx="242" cy="461" r="3.3" fill="#ffffff" opacity=".35"/>
+<circle cx="1198" cy="411" r="1.5" fill="#ffffff" opacity=".35"/>
+<circle cx="350" cy="439" r="2.3" fill="#ffffff" opacity=".35"/>
+<circle cx="111" cy="446" r="2.8" fill="#ffffff" opacity=".35"/>
+<circle cx="756" cy="439" r="2.6" fill="#ffffff" opacity=".35"/>
+<circle cx="828" cy="414" r="2.4" fill="#ffffff" opacity=".35"/>
+<circle cx="163" cy="416" r="3.0" fill="#ffffff" opacity=".35"/>
+<circle cx="389" cy="429" r="2.1" fill="#ffffff" opacity=".35"/>
+<circle cx="705" cy="417" r="2.8" fill="#ffffff" opacity=".35"/>
+<circle cx="84" cy="463" r="1.8" fill="#ffffff" opacity=".35"/>
+<circle cx="921" cy="441" r="2.3" fill="#ffffff" opacity=".35"/>
+<circle cx="365" cy="430" r="3.0" fill="#ffffff" opacity=".35"/>
+<circle cx="630" cy="440" r="2.0" fill="#ffffff" opacity=".35"/>
+<circle cx="750" cy="420" r="2.5" fill="#ffffff" opacity=".35"/>
+<circle cx="782" cy="440" r="2.7" fill="#ffffff" opacity=".35"/>
+<circle cx="684" cy="421" r="3.4" fill="#ffffff" opacity=".35"/>
+<circle cx="821" cy="451" r="3.4" fill="#ffffff" opacity=".35"/>
+<circle cx="542" cy="429" r="2.1" fill="#ffffff" opacity=".35"/>
+<circle cx="380" cy="427" r="2.1" fill="#ffffff" opacity=".35"/>
+<circle cx="251" cy="437" r="2.1" fill="#ffffff" opacity=".35"/>
+<circle cx="442" cy="447" r="2.1" fill="#ffffff" opacity=".35"/>
+<circle cx="1036" cy="455" r="2.2" fill="#ffffff" opacity=".35"/>
+<circle cx="1001" cy="420" r="1.7" fill="#ffffff" opacity=".35"/>
+<circle cx="1194" cy="412" r="1.5" fill="#ffffff" opacity=".35"/>
+<circle cx="1041" cy="410" r="2.8" fill="#ffffff" opacity=".35"/>
+<circle cx="667" cy="422" r="2.0" fill="#ffffff" opacity=".35"/>
+<circle cx="1161" cy="432" r="2.0" fill="#ffffff" opacity=".35"/>
+<circle cx="530" cy="451" r="2.1" fill="#ffffff" opacity=".35"/>
+<circle cx="107" cy="454" r="1.7" fill="#ffffff" opacity=".35"/>
+<rect x="0" y="304" width="1200" height="4" fill="#5aa874"/>
+<text x="22" y="446" class="pl-under">Groundwater aquifer</text>
+<rect x="38" y="282" width="5" height="22" fill="#7a5b3e"/>
+<circle cx="40" cy="268" r="19" fill="#4f9d6a"/><circle cx="29" cy="278" r="13" fill="#5aae76"/><circle cx="52" cy="275" r="13" fill="#479260"/>
+<rect x="343" y="286" width="4" height="18" fill="#7a5b3e"/>
+<circle cx="345" cy="274" r="16" fill="#4f9d6a"/><circle cx="336" cy="282" r="11" fill="#5aae76"/><circle cx="355" cy="280" r="11" fill="#479260"/>
+<rect x="370" y="290" width="3" height="14" fill="#7a5b3e"/>
+<circle cx="372" cy="280" r="13" fill="#4f9d6a"/><circle cx="365" cy="286" r="9" fill="#5aae76"/><circle cx="380" cy="285" r="9" fill="#479260"/>
+<g>
+<rect x="70" y="236" width="120" height="68" fill="#fbfaf6" stroke="#c9d3da"/>
+<path d="M60 240 L130 196 L200 240Z" fill="#3b5568"/>
+<rect x="160" y="200" width="12" height="26" fill="#3b5568"/>
+<rect x="88" y="254" width="22" height="20" fill="#bfe3f5" stroke="#8fb6c9"/>
+<rect x="150" y="254" width="22" height="20" fill="#bfe3f5" stroke="#8fb6c9"/>
+<rect x="119" y="266" width="20" height="38" fill="#c9773a"/>
+</g>
+<g>
+<rect x="262" y="306" width="14" height="128" fill="url(#pSteel)" stroke="#6e8494" stroke-width="1"/>
+<rect x="263" y="412" width="12" height="26" rx="5" fill="#1b6ea0"/>
+<rect x="256" y="284" width="26" height="22" rx="3" fill="url(#pSteel)" stroke="#6e8494"/>
+<rect x="252" y="280" width="34" height="7" rx="3" fill="#5b7282"/>
+</g>
+<path d="M269 318 L200 318 Q190 318 190 308 L190 300" fill="none" stroke="#5b7282" stroke-width="7" stroke-linecap="round"/>
+<path class="pflow" d="M269 318 L200 318 Q190 318 190 308 L190 300" fill="none" stroke="#7fd3f5" stroke-width="3" stroke-linecap="round"/>
+<text x="290" y="330" class="pl-small">Borehole</text>
+<rect x="600" y="234" width="34" height="70" fill="#c8dce8"/>
+<rect x="606" y="242" width="4" height="6" fill="#e9f3f9"/>
+<rect x="616" y="242" width="4" height="6" fill="#e9f3f9"/>
+<rect x="626" y="242" width="4" height="6" fill="#e9f3f9"/>
+<rect x="606" y="256" width="4" height="6" fill="#e9f3f9"/>
+<rect x="616" y="256" width="4" height="6" fill="#e9f3f9"/>
+<rect x="626" y="256" width="4" height="6" fill="#e9f3f9"/>
+<rect x="606" y="270" width="4" height="6" fill="#e9f3f9"/>
+<rect x="616" y="270" width="4" height="6" fill="#e9f3f9"/>
+<rect x="626" y="270" width="4" height="6" fill="#e9f3f9"/>
+<rect x="606" y="284" width="4" height="6" fill="#e9f3f9"/>
+<rect x="616" y="284" width="4" height="6" fill="#e9f3f9"/>
+<rect x="626" y="284" width="4" height="6" fill="#e9f3f9"/>
+<rect x="606" y="298" width="4" height="6" fill="#e9f3f9"/>
+<rect x="616" y="298" width="4" height="6" fill="#e9f3f9"/>
+<rect x="626" y="298" width="4" height="6" fill="#e9f3f9"/>
+<rect x="638" y="208" width="26" height="96" fill="#c8dce8"/>
+<rect x="644" y="216" width="4" height="6" fill="#e9f3f9"/>
+<rect x="654" y="216" width="4" height="6" fill="#e9f3f9"/>
+<rect x="644" y="230" width="4" height="6" fill="#e9f3f9"/>
+<rect x="654" y="230" width="4" height="6" fill="#e9f3f9"/>
+<rect x="644" y="244" width="4" height="6" fill="#e9f3f9"/>
+<rect x="654" y="244" width="4" height="6" fill="#e9f3f9"/>
+<rect x="644" y="258" width="4" height="6" fill="#e9f3f9"/>
+<rect x="654" y="258" width="4" height="6" fill="#e9f3f9"/>
+<rect x="644" y="272" width="4" height="6" fill="#e9f3f9"/>
+<rect x="654" y="272" width="4" height="6" fill="#e9f3f9"/>
+<rect x="644" y="286" width="4" height="6" fill="#e9f3f9"/>
+<rect x="654" y="286" width="4" height="6" fill="#e9f3f9"/>
+<rect x="668" y="246" width="40" height="58" fill="#c8dce8"/>
+<rect x="674" y="254" width="4" height="6" fill="#e9f3f9"/>
+<rect x="684" y="254" width="4" height="6" fill="#e9f3f9"/>
+<rect x="694" y="254" width="4" height="6" fill="#e9f3f9"/>
+<rect x="674" y="268" width="4" height="6" fill="#e9f3f9"/>
+<rect x="684" y="268" width="4" height="6" fill="#e9f3f9"/>
+<rect x="694" y="268" width="4" height="6" fill="#e9f3f9"/>
+<rect x="674" y="282" width="4" height="6" fill="#e9f3f9"/>
+<rect x="684" y="282" width="4" height="6" fill="#e9f3f9"/>
+<rect x="694" y="282" width="4" height="6" fill="#e9f3f9"/>
+<rect x="674" y="296" width="4" height="6" fill="#e9f3f9"/>
+<rect x="684" y="296" width="4" height="6" fill="#e9f3f9"/>
+<rect x="694" y="296" width="4" height="6" fill="#e9f3f9"/>
+<rect x="712" y="220" width="30" height="84" fill="#c8dce8"/>
+<rect x="718" y="228" width="4" height="6" fill="#e9f3f9"/>
+<rect x="728" y="228" width="4" height="6" fill="#e9f3f9"/>
+<rect x="718" y="242" width="4" height="6" fill="#e9f3f9"/>
+<rect x="728" y="242" width="4" height="6" fill="#e9f3f9"/>
+<rect x="718" y="256" width="4" height="6" fill="#e9f3f9"/>
+<rect x="728" y="256" width="4" height="6" fill="#e9f3f9"/>
+<rect x="718" y="270" width="4" height="6" fill="#e9f3f9"/>
+<rect x="728" y="270" width="4" height="6" fill="#e9f3f9"/>
+<rect x="718" y="284" width="4" height="6" fill="#e9f3f9"/>
+<rect x="728" y="284" width="4" height="6" fill="#e9f3f9"/>
+<rect x="718" y="298" width="4" height="6" fill="#e9f3f9"/>
+<rect x="728" y="298" width="4" height="6" fill="#e9f3f9"/>
+<path d="M395 304 C415 288 500 286 525 304Z" fill="url(#pWater)"/>
+<path d="M410 298 h20 M455 294 h26 M492 299 h18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+<text x="420" y="282" class="pl-small">River / lake</text>
+<path d="M500 314 L560 314 L560 300" fill="none" stroke="#5b7282" stroke-width="7" stroke-linecap="round"/>
+<path class="pflow" d="M500 314 L560 314 L560 300" fill="none" stroke="#7fd3f5" stroke-width="3" stroke-linecap="round"/>
+<g>
+<rect x="540" y="246" width="78" height="58" fill="#eef4f8" stroke="#aebfcb"/>
+<path d="M536 248 L579 228 L622 248Z" fill="#1b6ea0"/>
+<rect x="552" y="260" width="14" height="12" fill="#bfe3f5"/><rect x="574" y="260" width="14" height="12" fill="#bfe3f5"/><rect x="596" y="260" width="14" height="12" fill="#bfe3f5"/>
+<rect x="570" y="282" width="18" height="22" fill="#7d93a3"/>
+</g>
+<rect x="628" y="276" width="44" height="28" fill="#dfe8ee" stroke="#9fb3c1"/>
+<ellipse cx="650" cy="276" rx="22" ry="6" fill="url(#pWater)" stroke="#9fb3c1"/>
+<rect x="678" y="276" width="44" height="28" fill="#dfe8ee" stroke="#9fb3c1"/>
+<ellipse cx="700" cy="276" rx="22" ry="6" fill="url(#pWater)" stroke="#9fb3c1"/>
+<text x="545" y="222" class="pl-small">Treatment plant</text>
+<g>
+<path d="M752 304 L766 214 M800 304 L786 214 M758 270 L794 270 M762 244 L790 244" stroke="#5b7282" stroke-width="4" fill="none"/>
+<path d="M746 214 L806 214 L800 172 Q776 156 752 172Z" fill="url(#pVessel)"/>
+<rect x="744" y="210" width="64" height="7" rx="3" fill="#17608c"/>
+<path d="M776 170 L776 160" stroke="#17608c" stroke-width="3"/>
+</g>
+<text x="776" y="146" class="pl-small" text-anchor="middle">Water tower</text>
+<path d="M776 304 L776 326 L880 326 Q890 326 890 316 L890 300" fill="none" stroke="#5b7282" stroke-width="7" stroke-linecap="round"/>
+<path class="pflow" d="M776 304 L776 326 L880 326 Q890 326 890 316 L890 300" fill="none" stroke="#7fd3f5" stroke-width="3" stroke-linecap="round"/>
+<path d="M560 304 L560 336 L776 336 L776 326" fill="none" stroke="#5b7282" stroke-width="7" stroke-linecap="round"/>
+<path class="pflow" d="M560 304 L560 336 L776 336 L776 326" fill="none" stroke="#7fd3f5" stroke-width="3" stroke-linecap="round"/>
+<text x="610" y="352" class="pl-under">Mains supply</text>
+<g>
+<path d="M858 172 L1015 98 L1172 172Z" fill="#3b5568"/>
+<rect x="868" y="168" width="294" height="136" fill="#ffffff" stroke="#b9c7d1" stroke-width="2"/>
+<rect x="868" y="168" width="294" height="136" fill="#f4f8fb"/>
+<line x1="1012" y1="168" x2="1012" y2="304" stroke="#c9d6df" stroke-width="3"/>
+<rect x="868" y="300" width="294" height="5" fill="#9fb3c1"/>
+</g>
+<path d="M890 300 L890 196 L1150 196" fill="none" stroke="#7d93a3" stroke-width="5" stroke-linecap="round"/>
+<path class="pflow" d="M890 300 L890 196 L1150 196" fill="none" stroke="#7fd3f5" stroke-width="2" stroke-linecap="round"/>
+<g>
+<rect x="909" y="198" width="22" height="9" rx="2" fill="#1b6ea0"/>
+<rect x="912" y="207" width="16" height="36" rx="5" fill="#d9f0fb" stroke="#7aa9c2"/>
+<rect x="916" y="211" width="8" height="28" rx="2" fill="#f4e4c4"/>
+</g>
+<g>
+<rect x="940" y="222" width="24" height="78" rx="11" fill="url(#pVessel)"/>
+<rect x="938" y="212" width="28" height="13" rx="3" fill="#24394a"/>
+<path d="M952 212 L952 198" stroke="#7d93a3" stroke-width="4"/>
+<rect x="970" y="250" width="32" height="50" rx="4" fill="#ffffff" stroke="#9fb3c1"/>
+<rect x="968" y="246" width="36" height="7" rx="3" fill="#cfdbe3"/>
+<rect x="974" y="282" width="24" height="15" fill="#eef3f6"/>
+</g>
+<g>
+<ellipse cx="1030" cy="226" rx="20" ry="34" fill="url(#pUV)"/>
+<rect x="1024" y="198" width="12" height="56" rx="5" fill="url(#pSteel)" stroke="#7d93a3"/>
+<rect x="1042" y="214" width="16" height="22" rx="3" fill="#24394a"/>
+<circle cx="1050" cy="221" r="2.5" fill="#4fd97a"/>
+</g>
+<g>
+<rect x="1066" y="248" width="94" height="52" fill="#e9eef2" stroke="#b9c7d1"/>
+<rect x="1062" y="244" width="100" height="6" rx="2" fill="#8aa0b0"/>
+<path d="M1100 244 L1100 222 Q1100 214 1108 214 L1116 214 L1116 222" fill="none" stroke="#7d93a3" stroke-width="4" stroke-linecap="round"/>
+<path d="M1130 244 L1130 230 Q1130 226 1134 226 L1138 226" fill="none" stroke="#7d93a3" stroke-width="3" stroke-linecap="round"/>
+<path d="M1150 196 L1150 244" stroke="#7d93a3" stroke-width="4"/>
+<rect x="1072" y="258" width="7" height="30" rx="3" fill="#d9f0fb" stroke="#7aa9c2"/>
+<rect x="1082" y="258" width="7" height="30" rx="3" fill="#d9f0fb" stroke="#7aa9c2"/>
+<rect x="1092" y="258" width="7" height="30" rx="3" fill="#f2f6f9" stroke="#7aa9c2"/>
+<rect x="1070" y="254" width="31" height="5" rx="2" fill="#1b6ea0"/>
+<rect x="1110" y="260" width="20" height="34" rx="9" fill="#4ec3ff" stroke="#1b6ea0"/>
+</g>
+<text x="920" y="262" class="pl-tag" text-anchor="middle">Filter</text>
+<text x="960" y="322" class="pl-tagw" text-anchor="middle">Softener</text>
+<text x="1030" y="272" class="pl-tag" text-anchor="middle">UV</text>
+<text x="1112" y="322" class="pl-tagw" text-anchor="middle">Reverse osmosis</text>
+<g><rect x="136" y="22" width="118" height="32" rx="16" fill="#ffffff" fill-opacity=".9" stroke="#0d2a3d" stroke-opacity=".12"/><text x="195" y="43" class="pl-zone" text-anchor="middle">Well water</text></g>
+<g><rect x="560" y="22" width="160" height="32" rx="16" fill="#ffffff" fill-opacity=".9" stroke="#0d2a3d" stroke-opacity=".12"/><text x="640" y="43" class="pl-zone" text-anchor="middle">Municipal water</text></g>
+<g><rect x="927" y="22" width="177" height="32" rx="16" fill="#ffffff" fill-opacity=".9" stroke="#0d2a3d" stroke-opacity=".12"/><text x="1015" y="43" class="pl-zone" text-anchor="middle">Treatment at home</text></g>
+</g></svg>
+  </div></figure>
+
   <div class="tabs-label">Choose a Book</div>
 
   <div class="tabs" id="tabs">
@@ -390,7 +841,7 @@
       <div class="tab-title">Water Treatment — Part II</div>
       <div class="tab-sub">Going Deeper Into Water Treatment — from acidic water to forever chemicals.</div>
       <div class="tab-foot">
-        <div class="tab-meta">12 Chapters · Intermediate · Real-world Examples</div>
+        <div class="tab-meta">13 Chapters · Intermediate · Real-world Examples</div>
         <span class="tab-cta">Open
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </span>
@@ -797,14 +1248,14 @@ const chapters = [
     &lt;/div>
 
     &lt;h2 class="section-title">How Water Gets to Your Home&lt;/h2>
-    &lt;p>In Ireland, &lt;strong>80% of the population&lt;/strong> is served by centralised public water supplies operated by Uisce Éireann (formerly Irish Water). The remaining 20% is served by a mix of sources: 643 public group water schemes serve 2.3% of the population; 486 private group schemes serve 4.7%; 1,429 small private supplies serve 0.7%; and private wells exempt from regulation serve approximately &lt;strong>12.3%&lt;/strong> — that's about 600,000 people. &lt;span class="source-tag">EPA Ireland 2024&lt;/span>&lt;/p>
+    &lt;p>According to the 2022 Census, &lt;strong>80.1% of households&lt;/strong> are connected to the public mains, supplied by Uisce Éireann (formerly Irish Water). Group water schemes (public and private) supply &lt;strong>7.7%&lt;/strong> of households, and other private sources — mostly private wells — supply &lt;strong>9.9%&lt;/strong>, roughly 1 in 10 homes. Note that these figures count households, not people. &lt;span class="source-tag">CSO Census 2022&lt;/span>&lt;/p>
 
     &lt;h2 class="section-title">How Much Water Do We Use?&lt;/h2>
 
     &lt;div class="stat-grid">
       &lt;div class="stat-box">&lt;div class="stat-number">133L&lt;/div>&lt;div class="stat-label">average litres used per person per day in Ireland&lt;/div>&lt;/div>
       &lt;div class="stat-box blue">&lt;div class="stat-number">345L&lt;/div>&lt;div class="stat-label">average litres per household per day (CRU 2022)&lt;/div>&lt;/div>
-      &lt;div class="stat-box amber">&lt;div class="stat-number">~40%&lt;/div>&lt;div class="stat-label">of all treated water lost to leaks in the network&lt;/div>&lt;/div>
+      &lt;div class="stat-box amber">&lt;div class="stat-number">36%&lt;/div>&lt;div class="stat-label">of all treated water lost to leaks in the network (EPA 2026)&lt;/div>&lt;/div>
     &lt;/div>
 
     &lt;p>The average person in Ireland uses about 133 litres of water per day, and the average household uses approximately 345 litres per day. Of all the water coming into a home, people actually drink less than 1 percent — the rest goes on washing, cooking, flushing toilets, and watering gardens. &lt;span class="source-tag">Uisce Éireann / CRU&lt;/span>&lt;/p>
@@ -812,13 +1263,13 @@ const chapters = [
 
 
     &lt;h2 class="section-title">The Cost of Water in Ireland&lt;/h2>
-    &lt;p>Since 2015, domestic water services in Ireland have been provided by Uisce Éireann and are funded through general taxation for households — there are no standard domestic water charges for most households, though an excess usage charge system exists in principle. Non-domestic users (businesses, industry) pay for their consumption. The Minister for the Environment sets an annual household allowance of 213,000 litres per year (584 litres per day), above which excess charges may apply. &lt;span class="source-tag">CRU / Department of Housing&lt;/span>&lt;/p>
+    &lt;p>Domestic water charges were introduced in 2015, suspended in 2016 and abolished in 2017. Household water services provided by Uisce Éireann are now funded through general taxation. Non-domestic users (businesses, industry) pay for their consumption. The Water Services Act 2017 provides for an annual household allowance of 213,000 litres per year (about 584 litres per day), above which excess-use charges could apply. &lt;span class="source-tag">CRU / Department of Housing&lt;/span>&lt;/p>
   `,
   quiz:[
     {q:"What percentage of Ireland's drinking water comes from surface water (rivers and lakes)?",opts:["50%","65%","82%","95%"],correct:2,exp:"According to Uisce Éireann and the Geological Survey Ireland, 82% of Ireland's drinking water is sourced from rivers and lakes — well above the EU average and reflecting our high rainfall and abundant surface water resources."},
     {q:"Approximately how many litres of water per day does an average Irish household use?",opts:["80 litres","133 litres","345 litres","600 litres"],correct:2,exp:"The CRU reported an average household consumption of approximately 345 litres per day (equivalent to 126,000 litres per year). Per person, this works out to about 133 litres per day per individual."},
-    {q:"Roughly what percentage of all treated water in Ireland is lost through leaks?",opts:["10%","20%","40%","65%"],correct:2,exp:"Approximately 40% of all treated water — around 626 million litres per day — is lost through leaking pipes. This is one of Ireland's most significant water infrastructure challenges, and Uisce Éireann runs active leak reduction programmes to address it."},
-    {q:"What percentage of the Irish population is served by Uisce Éireann's centralised public water supply?",opts:["50%","65%","80%","95%"],correct:2,exp:"About 80% of Ireland's population is connected to centralised public water supplies operated by Uisce Éireann. The remaining 20% are served by group water schemes, small private supplies, or private wells."},
+    {q:"Roughly what percentage of all treated water in Ireland is lost through leaks?",opts:["10%","20%","36%","65%"],correct:2,exp:"According to the EPA's 2025 drinking water report, 36% of treated water is lost daily through leakage — down from 48% in 2014, but still more than a third. Uisce Éireann runs active leak reduction programmes to address it."},
+    {q:"According to the 2022 Census, roughly what share of Irish households are connected to the public mains supply?",opts:["50%","65%","80%","95%"],correct:2,exp:"The 2022 Census found 80.1% of households connected to the public mains. Group water schemes supplied 7.7% of households and other private sources, mostly private wells, 9.9%."},
   ]
 },
 
@@ -831,7 +1282,7 @@ const chapters = [
 
     &lt;div class="callout callout-ireland">
       &lt;div class="callout-label">🇮🇪 Irish Public Water Quality&lt;/div>
-      &lt;p>The good news: according to the EPA's &lt;em>Drinking Water Quality in Public Supplies 2024&lt;/em> report, over &lt;strong>99.8% of samples&lt;/strong> from Irish public water supplies comply with bacterial and chemical limits. Ireland's public tap water is safe to drink. However, the EPA warns that the &lt;em>resilience&lt;/em> of many supplies needs to improve to guarantee long-term safety. &lt;span class="source-tag">EPA Ireland 2025&lt;/span>&lt;/p>
+      &lt;p>The good news: according to the EPA's &lt;em>Drinking Water Quality in Public Supplies 2025&lt;/em> report (published July 2026), &lt;strong>99.8% of samples&lt;/strong> from Irish public water supplies complied with microbiological limits and 99.7% with chemical limits. Ireland's public tap water is safe to drink. However, the EPA warns that the &lt;em>resilience&lt;/em> of many supplies needs to improve to guarantee long-term safety. &lt;span class="source-tag">EPA Ireland 2026&lt;/span>&lt;/p>
     &lt;/div>
 
     &lt;h2 class="section-title">Waterborne Diseases&lt;/h2>
@@ -880,29 +1331,29 @@ const chapters = [
 
     &lt;h2 class="section-title">Trihalomethanes (THMs) — Ireland's Biggest Compliance Issue&lt;/h2>
     &lt;p>Trihalomethanes are disinfection byproducts formed when chlorine (used to kill bacteria) reacts with naturally occurring organic matter in source water — particularly the high levels of dissolved organic carbon in Ireland's peat-rich rivers and lakes. Long-term exposure is linked to increased cancer risk and liver, kidney, and central nervous system problems.&lt;/p>
-    &lt;p>This is Ireland's most widespread water quality compliance failure. In 2024, there were &lt;strong>19 supplies serving approximately 245,000 people&lt;/strong> on the EPA's Remedial Action List specifically for THM exceedances — including major supplies such as Cavanhill (Louth) and Longford Central. &lt;span class="source-tag">EPA Ireland 2025&lt;/span>&lt;/p>
+    &lt;p>This is Ireland's most widespread water quality compliance failure. In 2025, THM limits were exceeded in &lt;strong>24 public supplies&lt;/strong>, and THMs were the most common reason for supplies being on the EPA's Remedial Action List — &lt;strong>15 of the 35 supplies&lt;/strong> listed at the end of 2025, serving about 270,000 people, including Limerick City Environs, Cavanhill (Louth) and Longford Central. &lt;span class="source-tag">EPA Ireland 2026&lt;/span>&lt;/p>
 
     &lt;div class="stat-grid">
-      &lt;div class="stat-box red">&lt;div class="stat-number">497,000&lt;/div>&lt;div class="stat-label">people served by "at-risk" supplies in 2024 (EPA Remedial Action List)&lt;/div>&lt;/div>
-      &lt;div class="stat-box amber">&lt;div class="stat-number">33&lt;/div>&lt;div class="stat-label">long-term boil water notices in place in 2024&lt;/div>&lt;/div>
-      &lt;div class="stat-box blue">&lt;div class="stat-number">99.8%&lt;/div>&lt;div class="stat-label">of public supply samples meeting bacterial &amp; chemical standards (2024)&lt;/div>&lt;/div>
+      &lt;div class="stat-box red">&lt;div class="stat-number">467,000&lt;/div>&lt;div class="stat-label">people served by "at-risk" supplies at the end of 2025 (EPA Remedial Action List)&lt;/div>&lt;/div>
+      &lt;div class="stat-box amber">&lt;div class="stat-number">28&lt;/div>&lt;div class="stat-label">long-term boil water notices in place in 2025&lt;/div>&lt;/div>
+      &lt;div class="stat-box blue">&lt;div class="stat-number">99.8%&lt;/div>&lt;div class="stat-label">of public supply samples meeting microbiological standards (2025)&lt;/div>&lt;/div>
     &lt;/div>
 
     &lt;h2 class="section-title">Hard Water &amp; Your Appliances&lt;/h2>
     &lt;p>Water hardness varies significantly across Ireland. In general, groundwater in limestone-rich areas (particularly the midlands and east) tends to be harder, while surface water in the west — flowing over granite and other hard rock — is naturally softer and acidic. Hard water causes scale buildup in appliances, poor soap lathering, and increased energy costs for heating water.&lt;/p>
-    &lt;p>Research has shown that hard water can reduce water heater efficiency by up to 48%, cause showerheads to lose 75% of their flow rate within 18 months, and cause tankless heaters to fail after as little as 1.6 years. Softened water, by contrast, allows you to use half the laundry detergent while achieving the same or better results — saving money and reducing environmental impact.&lt;/p>
+    &lt;p>A US study funded by the water treatment industry (Battelle Memorial Institute for the Water Quality Research Foundation, 2009) reported that hard water reduced water heater efficiency, caused showerheads to lose much of their flow, and shortened the life of tankless heaters, and that softened water allowed lower detergent doses. These results come from US test conditions, so treat the exact figures with caution — but the direction is clear: scale costs money.&lt;/p>
 
     &lt;div class="callout callout-tip">
       &lt;div class="callout-label">✅ Practical Tip&lt;/div>
-      &lt;p>If you live in the midlands or east of Ireland, your water is likely harder due to limestone geology. Check with your local authority or Uisce Éireann, or simply test your water. A water softener could reduce detergent use by 50% and extend appliance life significantly.&lt;/p>
+      &lt;p>If you live in the midlands or east of Ireland, your water is likely harder due to limestone geology. Check with your local authority or Uisce Éireann, or simply test your water. A water softener can reduce detergent use and help protect appliances from scale.&lt;/p>
     &lt;/div>
 
     &lt;h2 class="section-title">Private Wells — Know Your Risk&lt;/h2>
-    &lt;p>About 12.3% of the Irish population relies on private wells exempt from public supply regulations. The EPA's monitoring of private group schemes found E. coli compliance rates of only 94.1% in 2023 — compared to 99.95% for public supplies. Private well owners in Ireland bear full responsibility for their own water quality. The EPA strongly recommends annual testing, and local authorities and the HSE can provide advice and sometimes assistance with testing costs. &lt;span class="source-tag">EPA / CSO 2024&lt;/span>&lt;/p>
+    &lt;p>About 1 in 10 Irish households (9.9% in the 2022 Census) get their water from private sources — mostly private wells that are exempt from public supply regulations. The EPA's monitoring of private group schemes found E. coli compliance rates of only 94.1% in 2023 — compared to 99.95% for public supplies. Private well owners in Ireland bear full responsibility for their own water quality. The EPA strongly recommends annual testing, and local authorities and the HSE can provide advice and sometimes assistance with testing costs. &lt;span class="source-tag">EPA / CSO&lt;/span>&lt;/p>
   `,
   quiz:[
-    {q:"What percentage of Irish public water supply samples complied with bacterial and chemical standards in 2024?",opts:["95.5%","97.6%","99.8%","100%"],correct:2,exp:"According to the EPA's Drinking Water Quality in Public Supplies 2024 report, over 99.8% of samples complied with bacterial and chemical limits — meaning Irish public tap water is safe to drink, though resilience issues remain."},
-    {q:"What is the main compliance problem affecting around 245,000 people on Ireland's Remedial Action List?",opts:["Lead contamination","Cryptosporidium","Trihalomethanes (THMs)","Arsenic"],correct:2,exp:"Trihalomethanes (THMs) are disinfection byproducts formed when chlorine reacts with organic matter in Ireland's peat-rich source water. In 2024, 19 supplies serving about 245,000 people were on the EPA's list specifically for THM exceedances."},
+    {q:"What percentage of Irish public water supply samples complied with microbiological limits in 2025?",opts:["95.5%","97.6%","99.8%","100%"],correct:2,exp:"According to the EPA's Drinking Water Quality in Public Supplies 2025 report, 99.8% of samples complied with microbiological limits (and 99.7% with chemical limits) — meaning Irish public tap water is safe to drink, though resilience issues remain."},
+    {q:"What was the most common reason for supplies being on the EPA's Remedial Action List at the end of 2025?",opts:["Lead contamination","Cryptosporidium","Trihalomethanes (THMs)","Arsenic"],correct:2,exp:"Trihalomethanes (THMs) are disinfection byproducts formed when chlorine reacts with organic matter in Ireland's peat-rich source water. THMs were listed for 15 of the 35 supplies on the EPA's Remedial Action List at the end of 2025."},
     {q:"What proportion of public-sided lead connections has Uisce Éireann removed, as of the EPA's 2025 report?",opts:["10%","37%","60%","85%"],correct:1,exp:"Despite Ireland's National Lead Strategy being in place since 2015, only an estimated 37% of public-sided lead connections had been removed as of the EPA's 2025 report. The legal limit for lead in drinking water will halve in 2036, making acceleration essential."},
     {q:"What caused a 5-month boil water notice in Galway in 2007?",opts:["A burst water main","A THM exceedance","A cryptosporidiosis outbreak","Lead contamination"],correct:2,exp:"A waterborne cryptosporidiosis outbreak in 2007 affected over 240 people in Galway and led to a boil water notice lasting 5 months during the peak tourist season — one of the most significant water quality failures in Irish history."},
   ]
@@ -917,7 +1368,7 @@ const chapters = [
 
     &lt;div class="callout callout-ireland">
       &lt;div class="callout-label">🇮🇪 Irish Water Quality&lt;/div>
-      &lt;p>Uisce Éireann carries out extensive monitoring of public water supplies across thousands of sample points nationally. The overall compliance rate for microbiological and chemical parameters remains above 99.8%. However, trihalomethane (THM) compliance remains a significant challenge — in 2024, 19 supplies serving approximately 245,000 people were on the EPA Remedial Action List specifically for THM exceedances. &lt;span class="source-tag">EPA Ireland 2025&lt;/span>&lt;/p>
+      &lt;p>Uisce Éireann carries out extensive monitoring of public water supplies across thousands of sample points nationally. In 2025, 99.8% of samples met microbiological limits and 99.7% met chemical limits. However, trihalomethane (THM) compliance remains a significant challenge — THM limits were exceeded in 24 supplies in 2025, and THMs were the reason for 15 of the 35 supplies on the EPA Remedial Action List. &lt;span class="source-tag">EPA Ireland 2026&lt;/span>&lt;/p>
     &lt;/div>
 
     &lt;h2 class="section-title">How Contaminants Enter Irish Water&lt;/h2>
@@ -974,7 +1425,7 @@ const chapters = [
     &lt;p>This microscopic parasite is one of Ireland's most significant water quality concerns. It occurs naturally in surface water, especially in agricultural catchments where cattle slurry can contaminate rivers and lakes. Crucially, it is &lt;strong>resistant to standard chlorine disinfection&lt;/strong>, meaning treatment plants must use UV disinfection, ozone, or specialist filtration. Supplies lacking adequate cryptosporidium treatment feature prominently on the EPA's Remedial Action List.&lt;/p>
 
     &lt;h3 class="sub-title">Nitrates&lt;/h3>
-    &lt;p>Nitrate contamination from fertiliser and slurry spreading is a growing problem in Irish groundwater, particularly in the east, southeast, and south. High nitrate levels can cause methemoglobinemia (blue baby syndrome) in infants under 12 months old. The drinking water standard for nitrates in Ireland is &lt;strong>50 mg/L NO₃&lt;/strong>, in line with EU Drinking Water Directive limits. In 2024, nitrate levels in Irish rivers reduced nationally compared to 2023, but remain elevated in the southeast. &lt;span class="source-tag">EPA 2025&lt;/span>&lt;/p>
+    &lt;p>Nitrate contamination from fertiliser and slurry spreading is a growing problem in Irish groundwater, particularly in the east, southeast, and south. High nitrate levels can cause methemoglobinemia (blue baby syndrome) in bottle-fed infants, especially those under 6 months old. The drinking water standard for nitrates in Ireland is &lt;strong>50 mg/L NO₃&lt;/strong>, in line with EU Drinking Water Directive limits. In 2024, nitrate levels in Irish rivers reduced nationally compared to 2023, but remain elevated in the southeast. &lt;span class="source-tag">EPA 2025&lt;/span>&lt;/p>
 
     &lt;div class="callout callout-warning">
       &lt;div class="callout-label">⚠️ Private Well Warning&lt;/div>
@@ -986,7 +1437,7 @@ const chapters = [
     &lt;p>The EPA also publishes its annual &lt;em>Drinking Water Quality in Public Supplies&lt;/em> report, which includes a full Remedial Action List identifying all supplies where resilience must be improved. This is your key document for understanding the state of your local supply. &lt;span class="source-tag">EPA Ireland&lt;/span>&lt;/p>
 
     &lt;h2 class="section-title">Hard vs. Soft Water in Ireland&lt;/h2>
-    &lt;p>Water hardness in Ireland follows geology. The limestone-rich midlands and east produce harder water, while the granite and quartzite uplands of the west produce naturally soft, often acidic water. The EPA and Uisce Éireann publish hardness data for each supply zone. Hard water (above 1 grain per gallon / 17.1 mg/L) causes scale buildup in kettles and boilers, spots on dishes, and reduced appliance efficiency.&lt;/p>
+    &lt;p>Water hardness in Ireland follows geology. The limestone-rich midlands and east produce harder water, while the granite and quartzite uplands of the west produce naturally soft, often acidic water. The EPA and Uisce Éireann publish hardness data for each supply zone. Water above about 120 mg/L (as calcium carbonate) is generally described as hard, and above 180 mg/L as very hard (US Geological Survey classification; other countries use different bands). Hard water causes scale buildup in kettles and boilers, spots on dishes, and reduced appliance efficiency.&lt;/p>
   `,
   quiz:[
     {q:"Why is trihalomethane (THM) contamination a particular problem in Ireland?",opts:["Because Ireland uses more chlorine than other countries","Because Ireland's peat-rich source water contains high organic matter that reacts with chlorine","Because Irish pipes are older than European average","Because fluoride reacts with chlorine"],correct:1,exp:"Ireland's extensive peatlands release dissolved organic carbon into rivers and lakes. This organic matter reacts with chlorine used for disinfection to form trihalomethanes (THMs). It's not about using more chlorine — it's about the high organic content of Irish source water."},
@@ -1076,7 +1527,7 @@ const chapters = [
 
     &lt;div class="callout callout-tip">
       &lt;div class="callout-label">✅ For Private Well Owners in Ireland&lt;/div>
-      &lt;p>If you're on a private well, the HSE and EPA recommend at minimum: annual water testing; a sediment prefilter; UV disinfection to kill bacteria and cryptosporidium; and an activated carbon filter for chemical removal. Contact your local authority or the Water Quality Association of Ireland for guidance on certified products.&lt;/p>
+      &lt;p>If you're on a private well, the EPA recommends testing your water at least once a year for microbiological contamination and every three years for chemical contamination. Treatment should then match the results — for example, UV disinfection (with a sediment prefilter to protect it) where bacteria are found. Your local authority or HSE Environmental Health Officer can advise on testing and next steps.&lt;/p>
     &lt;/div>
 
     &lt;h2 class="section-title">Activated Carbon Filtration&lt;/h2>
@@ -1155,7 +1606,7 @@ const chapters = [
     &lt;/ul>
 
     &lt;h3 class="sub-title">Group Water Schemes&lt;/h3>
-    &lt;p>A distinctive feature of Irish rural water supply is the group water scheme (GWS) — cooperative arrangements where communities collectively manage their own water supply, often groundwater. There are 643 public group water schemes and 486 private group water schemes. These serve about 7% of the population and face greater challenges maintaining compliance than centralised Uisce Éireann supplies. The Department of Housing, Local Government and Heritage provides funding support for scheme upgrades. &lt;span class="source-tag">EPA Ireland 2024&lt;/span>&lt;/p>
+    &lt;p>A distinctive feature of Irish rural water supply is the group water scheme (GWS) — cooperative arrangements where communities collectively manage their own water supply, often groundwater. There are 643 public group water schemes and 486 private group water schemes. These supply about 8% of households (7.7% in the 2022 Census) and face greater challenges maintaining compliance than centralised Uisce Éireann supplies. The Department of Housing, Local Government and Heritage provides funding support for scheme upgrades. &lt;span class="source-tag">EPA Ireland / CSO 2022&lt;/span>&lt;/p>
 
     &lt;h2 class="section-title">The Dublin Water Supply Challenge&lt;/h2>
     &lt;p>The Greater Dublin Area faces the most acute water supply pressure in Ireland. In 2025, demand for treated water in Dublin reached &lt;strong>record levels&lt;/strong>, putting severe strain on existing supplies serving Dublin, Kildare, Wicklow, and Meath. The existing sources — primarily Poulaphouca, Vartry, and the Liffey — are under growing stress from population growth and climate variability.&lt;/p>
@@ -1163,7 +1614,7 @@ const chapters = [
 
     &lt;div class="callout callout-warning">
       &lt;div class="callout-label">⚠️ The Leakage Challenge&lt;/div>
-      &lt;p>Uisce Éireann produces 1.7 billion litres of treated drinking water per day. The national leakage rate has fallen from &lt;strong>48% in 2014 to 36% in 2024/25&lt;/strong> — but this still means more than a third of all treated water is lost through leaking pipes before reaching a customer. Uisce Éireann missed its CRU leakage reduction target for 2020–2024 and was fined €20 million by the regulator as a result. A national Leakage Reduction Programme and the First Fix Free scheme are ongoing. &lt;span class="source-tag">CRU / Uisce Éireann Nov 2025&lt;/span>&lt;/p>
+      &lt;p>Uisce Éireann produces 1.7 billion litres of treated drinking water per day. The national leakage rate has fallen from &lt;strong>48% in 2014 to 36% in 2024/25&lt;/strong> — but this still means more than a third of all treated water is lost through leaking pipes before reaching a customer. Uisce Éireann missed its CRU leakage reduction target for 2020–2024 and was penalised €20 million by the regulator as a result; in 2026 the CRU confirmed a total penalty of €31 million, which also included €11 million for missing bad-debt targets. A national Leakage Reduction Programme and the First Fix Free scheme are ongoing. &lt;span class="source-tag">CRU / Uisce Éireann 2025–2026&lt;/span>&lt;/p>
     &lt;/div>
 
     &lt;h2 class="section-title">Water Regulation in Ireland&lt;/h2>
@@ -1173,7 +1624,7 @@ const chapters = [
     {q:"What is the name of Ireland's national public water utility, established in 2013?",opts:["Irish Water Services","An Bord Uisce","Uisce Éireann","Water Ireland Authority"],correct:2,exp:"Uisce Éireann (Irish for 'Water Ireland') was established in July 2013 under the Water Services Act 2013. Previously known as Irish Water, it was renamed following the commencement of the Water Services (Amendment) Act 2022, and consolidated water services from all 31 local authorities."},
     {q:"Which reservoir is Ireland's largest by area and a critical supply for the Greater Dublin Area?",opts:["Vartry Reservoir","Lough Corrib","Poulaphouca Reservoir (Blessington Lakes)","Lough Derg"],correct:2,exp:"Poulaphouca Reservoir — also known as the Blessington Lakes in Co. Wicklow — is Ireland's largest reservoir by area and is a critical water source for the Greater Dublin Area. Demand on Dublin's water supply reached record levels in 2025, prompting plans for a new source from the Lower Shannon."},
     {q:"What percentage of Ireland's drinking water comes from surface water sources like rivers and lakes?",opts:["50%","65%","82%","95%"],correct:2,exp:"82% of Ireland's drinking water comes from surface water — rivers and lakes — well above the EU average. The remaining 18% comes from groundwater (10.5%) and springs (7.5%). This high reliance on surface water is why organic matter in peat catchments causing THMs is such a significant issue."},
-    {q:"What is a 'group water scheme' in an Irish context?",opts:["A commercial bottled water operation","A cooperative arrangement where rural communities manage their own water supply","An EPA monitoring programme for rivers","A Uisce Éireann subsidiary for rural areas"],correct:1,exp:"Group water schemes are cooperative arrangements where rural communities collectively manage their own water supply, often from groundwater sources. There are 643 public and 486 private group water schemes in Ireland, serving about 7% of the population. They receive State funding support for upgrades."},
+    {q:"What is a 'group water scheme' in an Irish context?",opts:["A commercial bottled water operation","A cooperative arrangement where rural communities manage their own water supply","An EPA monitoring programme for rivers","A Uisce Éireann subsidiary for rural areas"],correct:1,exp:"Group water schemes are cooperative arrangements where rural communities collectively manage their own water supply, often from groundwater sources. There are 643 public and 486 private group water schemes in Ireland, supplying about 8% of households. They receive State funding support for upgrades."},
   ]
 },
 
@@ -1185,12 +1636,12 @@ const chapters = [
     &lt;p>Ireland has two distinct water quality stories. The first — the quality of treated drinking water from public supplies — is largely positive: 99.8% compliance with bacterial and chemical standards means your tap water is safe. The second — the ecological health of Ireland's natural waters, the rivers, lakes, estuaries, and coastal waters that feed our supplies — is a story of continuing decline and serious concern for the future.&lt;/p>
 
     &lt;h2 class="section-title">Drinking Water Quality — The Good News&lt;/h2>
-    &lt;p>The EPA's annual reports consistently show that Irish public tap water is among the safest in the world by standard laboratory measures. Compliance with microbiological and chemical standards remains above 99.8%. In 2024, the number of supplies on the EPA's Remedial Action List fell from 57 to 45, and the number of people served by "at-risk" supplies fell from 561,000 to 497,000. Long-term boil water notices decreased from 46 to 33. These are positive trends. &lt;span class="source-tag">EPA Ireland 2025&lt;/span>&lt;/p>
+    &lt;p>The EPA's annual reports consistently show that Irish public tap water is among the safest in the world by standard laboratory measures. In 2025, 99.8% of samples met microbiological limits and 99.7% met chemical limits. The number of supplies on the EPA's Remedial Action List fell from 45 to 35, the number of people served by "at-risk" supplies fell from 497,000 to 467,000, and long-term boil water notices decreased from 33 to 28. However, boil water notices and water restriction notices affected 100 supplies and almost 200,000 people in 2025, up from 84 supplies in 2024. &lt;span class="source-tag">EPA Ireland 2026&lt;/span>&lt;/p>
 
     &lt;div class="stat-grid">
-      &lt;div class="stat-box">&lt;div class="stat-number">99.8%&lt;/div>&lt;div class="stat-label">of public water supply samples compliant with all standards (2024)&lt;/div>&lt;/div>
-      &lt;div class="stat-box blue">&lt;div class="stat-number">45&lt;/div>&lt;div class="stat-label">supplies on EPA's Remedial Action List (down from 57 in 2023)&lt;/div>&lt;/div>
-      &lt;div class="stat-box amber">&lt;div class="stat-number">33&lt;/div>&lt;div class="stat-label">long-term boil water notices in 2024 (down from 46 in 2023)&lt;/div>&lt;/div>
+      &lt;div class="stat-box">&lt;div class="stat-number">99.8%&lt;/div>&lt;div class="stat-label">of public water supply samples compliant with microbiological standards (2025)&lt;/div>&lt;/div>
+      &lt;div class="stat-box blue">&lt;div class="stat-number">35&lt;/div>&lt;div class="stat-label">supplies on EPA's Remedial Action List at end of 2025 (down from 45 in 2024)&lt;/div>&lt;/div>
+      &lt;div class="stat-box amber">&lt;div class="stat-number">28&lt;/div>&lt;div class="stat-label">long-term boil water notices in 2025 (down from 33 in 2024)&lt;/div>&lt;/div>
     &lt;/div>
 
     &lt;h2 class="section-title">The Resilience Gap&lt;/h2>
@@ -1198,7 +1649,7 @@ const chapters = [
 
     &lt;div class="callout callout-warning">
       &lt;div class="callout-label">⚠️ EPA Warning — Resilience&lt;/div>
-      &lt;p>EPA Director Dr Micheál Lehane stated in 2025: &lt;em>"While I welcome the decrease in the number of people served by 'at-risk' supplies, the EPA continues to identify supplies that lack adequate resilience. Uisce Éireann needs to implement the findings of Risk Assessments to improve the resilience of supplies and maintain the quality of our drinking water."&lt;/em>&lt;/p>
+      &lt;p>Launching the 2025 report in July 2026, EPA Director Patrick Byrne said that public water is safe to drink, but EPA audits and enforcement still find supplies that cannot guarantee safe and secure drinking water, and that Uisce Éireann must provide the resources to complete the required upgrades.&lt;/p>
     &lt;/div>
 
     &lt;h2 class="section-title">The State of Ireland's Natural Waters&lt;/h2>
@@ -1269,7 +1720,7 @@ const chapters = [
     &lt;ul class="book-list">
       &lt;li>&lt;strong>Accelerate lead pipe removal&lt;/strong> — with the 2036 tightening of the legal limit approaching, urgent action is needed by Uisce Éireann, the Department of Housing, and homeowners&lt;/li>
       &lt;li>&lt;strong>Reduce agricultural nutrient pollution&lt;/strong> — better compliance with Good Agricultural Practice Regulations and targeted catchment-level measures&lt;/li>
-      &lt;li>&lt;strong>Fix the leakage crisis&lt;/strong> — Ireland cannot keep building new water sources while losing 40% of treated water through old pipes&lt;/li>
+      &lt;li>&lt;strong>Fix the leakage crisis&lt;/strong> — Ireland cannot keep building new water sources while losing over a third (36%) of treated water through old pipes&lt;/li>
       &lt;li>&lt;strong>Upgrade wastewater treatment&lt;/strong> — ending sewage discharges near urban centres is both an ecological and public health imperative&lt;/li>
       &lt;li>&lt;strong>Strengthen private water supply oversight&lt;/strong> — mandatory registration and regular testing of all private supplies&lt;/li>
     &lt;/ul>
@@ -2374,7 +2825,7 @@ p {
     &lt;div class="hero-stats">
       &lt;div class="hero-stat">&lt;strong>9&lt;/strong>&lt;span>Chapters&lt;/span>&lt;/div>
       &lt;div class="hero-stat">&lt;strong>30+&lt;/strong>&lt;span>Technologies&lt;/span>&lt;/div>
-      &lt;div class="hero-stat">&lt;strong>5&lt;/strong>&lt;span>Quizzes&lt;/span>&lt;/div>
+      &lt;div class="hero-stat">&lt;strong>3&lt;/strong>&lt;span>Quizzes&lt;/span>&lt;/div>
       &lt;div class="hero-stat">&lt;strong>Part I&lt;/strong>&lt;span>of II&lt;/span>&lt;/div>
     &lt;/div>
   &lt;/div>
@@ -2418,7 +2869,7 @@ p {
     &lt;div class="card">
       &lt;div class="card-icon">🔥&lt;/div>
       &lt;h4>Wastes Energy&lt;/h4>
-      &lt;p>Scale builds up on heating elements (boilers, immersion heaters, kettles). Even a thin 1mm layer makes the heater work ~7% harder. A 6mm layer can waste 40% more energy. You pay for this on your energy bill every month.&lt;/p>
+      &lt;p>Scale builds up on heating elements (boilers, immersion heaters, kettles). Scale acts like insulation, so more energy is needed to heat the same water — and the thicker the scale, the bigger the loss. You pay for this on your energy bill every month.&lt;/p>
     &lt;/div>
     &lt;div class="card">
       &lt;div class="card-icon">🏠&lt;/div>
@@ -2475,7 +2926,7 @@ p {
 
   &lt;div class="formula">LSI above 0 = water wants to form scale &amp;nbsp;|&amp;nbsp; LSI below 0 = water is slightly corrosive&lt;/div>
 
-  &lt;p>The EU requires drinking water to have an LSI between &lt;strong>−0.5 and +0.5&lt;/strong> — not too scale-forming, and not too corrosive. (Irish Drinking Water Regulations, S.I. No. 122/2014)&lt;/p>
+  &lt;p>Water treatment designers generally aim for an LSI close to zero — roughly between &lt;strong>−0.5 and +0.5&lt;/strong> — so the water is neither strongly scale-forming nor strongly corrosive. This is a design target used by the industry, not a legal limit: neither the EU Drinking Water Directive nor the Irish Drinking Water Regulations set a value for LSI.&lt;/p>
 
   &lt;!-- QUIZ 1 -->
   &lt;div class="quiz-box">
@@ -2521,10 +2972,9 @@ p {
 
   &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 1: Water Hardness&lt;/h5>&lt;ol>
 &lt;li>World Health Organization (2011). &lt;em>Guidelines for Drinking-water Quality, 4th Ed.&lt;/em> — Hardness definition, health relevance, and calcium/magnesium chemistry.&lt;/li>
-&lt;li>European Union (2020). &lt;em>Directive 2020/2184 on the Quality of Water Intended for Human Consumption.&lt;/em> — Langelier Saturation Index requirement: −0.5 to +0.5.&lt;/li>
-&lt;li>Government of Ireland. &lt;em>S.I. No. 122/2014 — European Union (Drinking Water) Regulations 2014.&lt;/em> — LSI parametric value.&lt;/li>
+&lt;li>European Union (2020). &lt;em>Directive 2020/2184 on the Quality of Water Intended for Human Consumption.&lt;/em> — Parametric values for drinking water (no LSI value is set).&lt;/li>
+&lt;li>Government of Ireland. &lt;em>S.I. No. 99 of 2023 — European Union (Drinking Water) Regulations 2023.&lt;/em> — Irish transposition of the Directive.&lt;/li>
 &lt;li>Crittenden, J.C. et al. (2012). &lt;em>MWH's Water Treatment: Principles and Design, 3rd Ed.&lt;/em> John Wiley &amp;amp; Sons — Scale formation chemistry and calcium carbonate precipitation.&lt;/li>
-&lt;li>BSI (2011). &lt;em>PAS 2050 — Specification for the Assessment of the Life Cycle Greenhouse Gas Emissions.&lt;/em> — Energy penalty of limescale on heating elements (~7% per mm).&lt;/li>
 &lt;/ol>&lt;/div>
 
   &lt;div class="chapter-nav">
@@ -2701,11 +3151,12 @@ p {
         &lt;td>Heavy scale everywhere. Softening is strongly recommended.&lt;/td>
       &lt;/tr>
     &lt;/tbody>
-  &lt;/table>
+&lt;/table>
+&lt;p>&lt;em>These bands are a practical guide used in the water treatment trade. There is no official EU hardness classification, and other scales use different bands — for example, the US Geological Survey calls water soft below 60 mg/L, moderately hard at 61–120, hard at 121–180 and very hard above 180 mg/L.&lt;/em>&lt;/p>
 
-  &lt;div class="info-box blue">
-    &lt;strong>🇮🇪 Where Does Irish Water Fall?&lt;/strong>
-    It varies a lot depending on where you live. In limestone areas like the Midlands, Galway, Clare and Tipperary, groundwater hardness is often 250–450 mg/L — that's "very hard." In granite areas like West Cork, Wicklow or Donegal, it can be as low as 10–30 mg/L (soft). This is why it's essential to test water at the actual location before recommending treatment. (Source: EPA Ireland, Drinking Water Report 2022)
+&lt;div class="info-box blue">
+&lt;strong>🇮🇪 Where Does Irish Water Fall?&lt;/strong>
+    It varies a lot depending on where you live. In limestone areas like the Midlands, Galway, Clare and Tipperary, groundwater hardness is often 250–450 mg/L — that's "very hard." In granite areas like Wicklow or Donegal, it can be as low as 10–30 mg/L (soft). This is why it's essential to test water at the actual location before recommending treatment. (Source: EPA Ireland, Drinking Water Report 2022)
   &lt;/div>
 
   &lt;h3>How to Test for Hardness&lt;/h3>
@@ -2736,7 +3187,7 @@ p {
     &lt;h3>🎓 Quick Quiz — Chapter 3&lt;/h3>
     &lt;p>Just one question to check the unit conversions.&lt;/p>
     &lt;div class="quiz-question" id="q3a">
-      &lt;div class="quiz-q">A water report shows 20°dH. Is this water "hard" or "very hard" by EU standards?&lt;/div>
+      &lt;div class="quiz-q">A water report shows 20°dH. Is this water "hard" or "very hard" on the scale in this chapter?&lt;/div>
       &lt;div class="quiz-options">
         &lt;div class="quiz-option" onclick="answerQ(this,'q3a',false,'A')">&lt;span class="quiz-letter">A&lt;/span> Soft — 20 is a low number&lt;/div>
         &lt;div class="quiz-option" onclick="answerQ(this,'q3a',false,'B')">&lt;span class="quiz-letter">B&lt;/span> Moderately hard — 20°dH is about 200 mg/L CaCO₃&lt;/div>
@@ -2751,7 +3202,7 @@ p {
 
   &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 3: Measuring Hardness&lt;/h5>&lt;ol>
 &lt;li>APHA / AWWA / WEF (2017). &lt;em>Standard Methods for the Examination of Water and Wastewater, 23rd Ed.&lt;/em> — EDTA titration method 2340C for total hardness.&lt;/li>
-&lt;li>World Health Organization (2011). &lt;em>Guidelines for Drinking-water Quality, 4th Ed.&lt;/em> — Hardness classification scale (soft / moderately hard / hard / very hard).&lt;/li>
+&lt;li>World Health Organization (2011). &lt;em>Hardness in Drinking-water — Background document for development of WHO Guidelines for Drinking-water Quality.&lt;/em> — Hardness definition and example classifications (the bands in this chapter are a practical trade guide).&lt;/li>
 &lt;li>EPA Ireland (2022). &lt;em>The Provision and Quality of Drinking Water in Ireland — A Report for the Year 2021.&lt;/em> — Regional hardness variation in Irish groundwater.&lt;/li>
 &lt;li>Geological Survey Ireland (2019). &lt;em>Groundwater in Ireland.&lt;/em> — Limestone vs granite aquifer mineralisation across Irish counties.&lt;/li>
 &lt;li>DIN 38409-6 (1986). &lt;em>German Standard for Water Analysis — Determination of Calcium and Magnesium Hardness.&lt;/em> — °dH unit definition and conversion factors.&lt;/li>
@@ -2802,13 +3253,13 @@ p {
   &lt;div class="media-spec">
     &lt;h4> NAC Anti-Scale Filter — Key Facts&lt;/h4>
     &lt;div class="spec-row">&lt;span class="spec-key">Technology&lt;/span>&lt;span class="spec-val">NAC / TAC (physical, no chemicals)&lt;/span>&lt;/div>
-    &lt;div class="spec-row">&lt;span class="spec-key">Works up to&lt;/span>&lt;span class="spec-val">~700 mg/L hardness&lt;/span>&lt;/div>
+    &lt;div class="spec-row">&lt;span class="spec-key">Works up to&lt;/span>&lt;span class="spec-val">~700 mg/L hardness (manufacturer figure — check the product datasheet)&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Salt needed?&lt;/span>&lt;span class="spec-val">No — completely salt-free&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Electricity needed?&lt;/span>&lt;span class="spec-val">No — passive system&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Backwash needed?&lt;/span>&lt;span class="spec-val">No — very low maintenance&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Media replacement&lt;/span>&lt;span class="spec-val">Every 3–5 years&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Does it add sodium?&lt;/span>&lt;span class="spec-val">No — water chemistry unchanged&lt;/span>&lt;/div>
-    &lt;div class="spec-row">&lt;span class="spec-key">Independent testing&lt;/span>&lt;span class="spec-val">Arizona State University (2011): 88% scale reduction vs untreated water&lt;/span>&lt;/div>
+    &lt;div class="spec-row">&lt;span class="spec-key">Independent testing&lt;/span>&lt;span class="spec-val">Arizona State University study (Fox et al.): greater than 88% scale reduction vs untreated water&lt;/span>&lt;/div>
   &lt;/div>
 
   &lt;div class="info-box green">
@@ -2853,11 +3304,11 @@ p {
   &lt;/table>
 
   &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 4: Anti-Scale Filter Technologies&lt;/h5>&lt;ol>
-&lt;li>Cob, S.S. et al. (2011). &lt;em>Scaling Review: Arizona State University Study on Template-Assisted Crystallisation.&lt;/em> — 88% scale reduction vs untreated control in controlled pilot study.&lt;/li>
-&lt;li>Coetzee, P.P. et al. (1998). &lt;em>Magnetic Treatment of Water — Myth or Reality?&lt;/em> Water SA, Vol. 24, No. 1 — Inconsistent results from magnetic conditioner testing.&lt;/li>
-&lt;li>Alimi, F. et al. (2009). &lt;em>Effect of Magnetic Water Treatment on Calcium Carbonate Precipitation.&lt;/em> Water Research — Mixed evidence for magnetic conditioning.&lt;/li>
+&lt;li>Fox, P., Wiest, M., Thomure, T.M. &amp;amp; Lee, W. (2014). &lt;em>Evaluation of Alternatives to Domestic Ion Exchange Water Softeners.&lt;/em> WateReuse Research Foundation, Project 08-06 (Arizona State University; results first presented 2011). — Template-assisted crystallisation reduced scale formation by more than 88%.&lt;/li>
+&lt;li>Coetzee, P.P., Yacoby, M., Howell, S. &amp;amp; Mubenga, S. (1998). &lt;em>Scale reduction and scale modification effects induced by Zn and other metal species in physical water treatment.&lt;/em> Water SA 24(1): 77–84. — Physical (magnetic) water treatment results.&lt;/li>
+&lt;li>Alimi, F. et al. (2009). &lt;em>Effect of magnetic water treatment on calcium carbonate precipitation: Influence of the pipe material.&lt;/em> Chemical Engineering and Processing 48: 1327–1332. — Mixed evidence for magnetic conditioning.&lt;/li>
 &lt;li>Scale Armor (2022). &lt;em>NAC Anti-Scale Filter Technical Data Sheet.&lt;/em> — Media specifications, hardness range, maintenance schedule.&lt;/li>
-&lt;li>NSF International (2018). &lt;em>NSF/ANSI 61 — Drinking Water System Components.&lt;/em> — Food-grade approval for polyphosphate use in drinking water.&lt;/li>
+&lt;li>NSF International. &lt;em>NSF/ANSI/CAN 60 — Drinking Water Treatment Chemicals: Health Effects.&lt;/em> — Certification of polyphosphate as a drinking water treatment chemical.&lt;/li>
 &lt;/ol>&lt;/div>
 
   &lt;div class="chapter-nav">
@@ -2893,7 +3344,7 @@ p {
     &lt;div class="card">
       &lt;div class="card-icon">🦠&lt;/div>
       &lt;h4>Hides Bacteria and Parasites&lt;/h4>
-      &lt;p>This is the biggest concern. Particles in water act like shields — bacteria and parasites like Cryptosporidium and Giardia can "hide" inside or behind particles. UV light and chlorine can't reach them. So turbid water that's been disinfected may still not be safe. The WHO says turbidity must be below 1 NTU before UV treatment can be relied upon.&lt;/p>
+      &lt;p>This is the biggest concern. Particles in water act like shields — bacteria and parasites like Cryptosporidium and Giardia can "hide" inside or behind particles. UV light and chlorine can't reach them. So turbid water that's been disinfected may still not be safe. For UV treatment to be relied upon, turbidity should ideally be below 1 NTU.&lt;/p>
     &lt;/div>
     &lt;div class="card">
       &lt;div class="card-icon">🧪&lt;/div>
@@ -2921,9 +3372,9 @@ p {
     &lt;thead>&lt;tr>&lt;th>NTU Level&lt;/th>&lt;th>What It Looks Like&lt;/th>&lt;th>Status&lt;/th>&lt;/tr>&lt;/thead>
     &lt;tbody>
       &lt;tr>&lt;td>0.1 NTU&lt;/td>&lt;td>Crystal clear — typical clean groundwater&lt;/td>&lt;td>&lt;span class="scale-badge badge-soft">Excellent&lt;/span>&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>1 NTU&lt;/td>&lt;td>Still very clear — WHO target for treated water&lt;/td>&lt;td>&lt;span class="scale-badge badge-soft">Good&lt;/span>&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>4 NTU&lt;/td>&lt;td>Very slight haziness — US maximum for treated water&lt;/td>&lt;td>&lt;span class="scale-badge badge-mod">Borderline&lt;/span>&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>10 NTU&lt;/td>&lt;td>Noticeably hazy — EU/Irish regulatory limit&lt;/td>&lt;td>&lt;span class="scale-badge badge-hard">At Limit&lt;/span>&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>1 NTU&lt;/td>&lt;td>Still very clear — Irish limit for water leaving a surface water treatment plant; target before UV&lt;/td>&lt;td>&lt;span class="scale-badge badge-soft">Good&lt;/span>&lt;/td>&lt;/tr>
+&lt;tr>&lt;td>4 NTU&lt;/td>&lt;td>Looks clear to the eye — Uisce Éireann's guideline value at the tap&lt;/td>&lt;td>&lt;span class="scale-badge badge-mod">Borderline&lt;/span>&lt;/td>&lt;/tr>
+&lt;tr>&lt;td>10 NTU&lt;/td>&lt;td>Noticeably hazy&lt;/td>&lt;td>&lt;span class="scale-badge badge-hard">Treat&lt;/span>&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>50–100 NTU&lt;/td>&lt;td>Clearly cloudy or light brown — heavy rainfall runoff&lt;/td>&lt;td>&lt;span class="scale-badge badge-vhard">Needs Treatment&lt;/span>&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>1000+ NTU&lt;/td>&lt;td>Visibly muddy — flood water, raw river water&lt;/td>&lt;td>&lt;span class="scale-badge badge-vhard">Severe&lt;/span>&lt;/td>&lt;/tr>
     &lt;/tbody>
@@ -2931,12 +3382,13 @@ p {
 
   &lt;div class="info-box gold">
     &lt;strong>📋 What Irish Law Says&lt;/strong>
-    Under Irish Drinking Water Regulations (S.I. No. 122/2014), the legal limit for turbidity at your tap is &lt;strong>10 NTU&lt;/strong>. However, the WHO recommends water be below &lt;strong>1 NTU&lt;/strong> before disinfection — because at higher turbidity levels, even UV and chlorine may not reliably kill all pathogens. For a private well with a UV system, you should aim for below 1 NTU at the UV lamp.
+    The Irish Drinking Water Regulations (S.I. No. 99 of 2023) set no numerical turbidity limit at your tap — the water must be "acceptable to consumers and show no abnormal change". Water leaving a surface water treatment plant must not exceed &lt;strong>1 NTU&lt;/strong>, and Uisce Éireann uses &lt;strong>4 NTU&lt;/strong> as a guideline value at the tap. For disinfection, lower is better: at higher turbidity even UV and chlorine may not reliably inactivate all pathogens. For a private well with a UV system, aim for below 1 NTU at the UV lamp.
   &lt;/div>
 
   &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 5: Turbidity&lt;/h5>&lt;ol>
 &lt;li>World Health Organization (2011). &lt;em>Guidelines for Drinking-water Quality, 4th Ed.&lt;/em> — Turbidity health significance, &amp;lt;1 NTU target before disinfection.&lt;/li>
-&lt;li>Government of Ireland. &lt;em>S.I. No. 122/2014 — European Union (Drinking Water) Regulations 2014.&lt;/em> — Turbidity parametric value: ≤10 NTU at consumer's tap.&lt;/li>
+&lt;li>Government of Ireland. &lt;em>S.I. No. 99 of 2023 — European Union (Drinking Water) Regulations 2023.&lt;/em> — Turbidity: acceptable to consumers and no abnormal change at the tap.&lt;/li>
+&lt;li>Uisce Éireann. &lt;em>Drinking water tests — parameters and exceedances&lt;/em> (water.ie). — 1 NTU limit leaving surface water treatment plants; 4 NTU guideline at the tap.&lt;/li>
 &lt;li>EPA Ireland (2011). &lt;em>Water Treatment Manual: Filtration.&lt;/em> — Turbidity removal requirements for Irish drinking water.&lt;/li>
 &lt;li>USEPA (2002). &lt;em>Long Term 1 Enhanced Surface Water Treatment Rule.&lt;/em> — Turbidity standards and relationship to pathogen protection.&lt;/li>
 &lt;li>Crittenden, J.C. et al. (2012). &lt;em>MWH's Water Treatment: Principles and Design, 3rd Ed.&lt;/em> — Light scattering, nephelometry, and NTU measurement principles.&lt;/li>
@@ -2964,26 +3416,26 @@ p {
   &lt;p>The choice of media determines how small the particles you can remove. Coarser media removes larger particles; finer media removes smaller ones.&lt;/p>
 
   &lt;h3>Media Option 1: Filter Ag&lt;/h3>
-  &lt;p>Filter Ag is made from a naturally occurring volcanic glass called silicite. It looks like irregular pale grey granules. Its jagged, irregular surface gives it more contact area than round sand grains, so it catches more particles per litre of media.&lt;/p>
+  &lt;p>Filter Ag is a silica (crystalline quartz) media made by Clack. It looks like irregular pale granules. Its jagged, irregular surface gives it more contact area than round sand grains, so it catches more particles per litre of media.&lt;/p>
 
   &lt;div class="media-spec">
     &lt;h4>Filter Ag — Key Specs (Clack Corporation, USA)&lt;/h4>
     &lt;div class="spec-row">&lt;span class="spec-key">What it removes&lt;/span>&lt;span class="spec-val">Particles down to ~20–40 µm (finer than a human hair, which is ~70 µm)&lt;/span>&lt;/div>
-    &lt;div class="spec-row">&lt;span class="spec-key">How it compares to sand&lt;/span>&lt;span class="spec-val">2–3× finer filtration than standard sand&lt;/span>&lt;/div>
+    &lt;div class="spec-row">&lt;span class="spec-key">How it compares to sand&lt;/span>&lt;span class="spec-val">Finer filtration and lower pressure loss than standard sand&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Flow rate (service)&lt;/span>&lt;span class="spec-val">5–12 m/h (metres per hour through the bed cross-section)&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Backwash rate&lt;/span>&lt;span class="spec-val">20–25 m/h — fast enough to lift and clean the bed&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Minimum bed depth&lt;/span>&lt;span class="spec-val">750 mm for effective filtration&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Best for&lt;/span>&lt;span class="spec-val">General turbidity, silt, clay in well water and municipal water&lt;/span>&lt;/div>
-    &lt;div class="spec-row">&lt;span class="spec-key">Media lifespan&lt;/span>&lt;span class="spec-val">~5–8 years with regular backwashing&lt;/span>&lt;/div>
+    &lt;div class="spec-row">&lt;span class="spec-key">Media lifespan&lt;/span>&lt;span class="spec-val">Several years with regular backwashing — follow the manufacturer's guidance&lt;/span>&lt;/div>
   &lt;/div>
 
   &lt;h3>Media Option 2: Filter Ag Plus&lt;/h3>
-  &lt;p>Filter Ag Plus is an improved version of Filter Ag — made from a higher-grade material with more surface area per gram. It filters finer particles than standard Filter Ag, and is a better choice when turbidity is more persistent or the particles are finer.&lt;/p>
+  &lt;p>Filter Ag Plus is a different material from Filter Ag — a natural zeolite mineral called clinoptilolite, with a microporous structure and much more surface area. It filters finer particles than standard Filter Ag, and is a better choice when turbidity is more persistent or the particles are finer.&lt;/p>
 
   &lt;div class="media-spec">
     &lt;h4>Filter Ag Plus — Key Specs (Clack Corporation, USA)&lt;/h4>
-    &lt;div class="spec-row">&lt;span class="spec-key">What it removes&lt;/span>&lt;span class="spec-val">Particles down to ~5–10 µm — finer than Filter Ag&lt;/span>&lt;/div>
-    &lt;div class="spec-row">&lt;span class="spec-key">How it compares to sand&lt;/span>&lt;span class="spec-val">4–5× finer filtration than standard sand&lt;/span>&lt;/div>
+    &lt;div class="spec-row">&lt;span class="spec-key">What it removes&lt;/span>&lt;span class="spec-val">Particles down to ~5 µm or less (with adequate bed depth) — finer than Filter Ag&lt;/span>&lt;/div>
+    &lt;div class="spec-row">&lt;span class="spec-key">How it compares to sand&lt;/span>&lt;span class="spec-val">Much finer filtration than standard sand&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Surface area&lt;/span>&lt;span class="spec-val">Greater than standard Filter Ag — catches more fine colloids&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Best for&lt;/span>&lt;span class="spec-val">Higher turbidity, colloidal (very fine) particles, pre-treatment before RO or UV&lt;/span>&lt;/div>
   &lt;/div>
@@ -2994,7 +3446,7 @@ p {
   &lt;div class="media-spec">
     &lt;h4>Zeosorb — Key Specs&lt;/h4>
     &lt;div class="spec-row">&lt;span class="spec-key">What it removes&lt;/span>&lt;span class="spec-val">Particles down to ~3–5 µm — extremely fine&lt;/span>&lt;/div>
-    &lt;div class="spec-row">&lt;span class="spec-key">How it compares to sand&lt;/span>&lt;span class="spec-val">15–20× finer filtration — rivals cartridge filters&lt;/span>&lt;/div>
+    &lt;div class="spec-row">&lt;span class="spec-key">How it compares to sand&lt;/span>&lt;span class="spec-val">Very fine filtration (manufacturer figure)&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Backwash rate&lt;/span>&lt;span class="spec-val">25m/h &lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Bonus property&lt;/span>&lt;span class="spec-val">Slight ion exchange capacity — can adsorb small amounts of ammonium (NH₄⁺)&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Best for&lt;/span>&lt;span class="spec-val">Very fine turbidity, surface water with algae, pre-RO polishing, swimming pools&lt;/span>&lt;/div>
@@ -3004,10 +3456,10 @@ p {
   &lt;table class="data-table">
     &lt;thead>&lt;tr>&lt;th>Media&lt;/th>&lt;th>Finest Particle Removed&lt;/th>&lt;th>vs. Sand&lt;/th>&lt;th>Best Choice For&lt;/th>&lt;/tr>&lt;/thead>
     &lt;tbody>
-      &lt;tr>&lt;td>Sand (baseline)&lt;/td>&lt;td>~70–100 µm&lt;/td>&lt;td>—&lt;/td>&lt;td>Basic, low-cost sediment removal&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>Filter Ag&lt;/td>&lt;td>~20–40 µm&lt;/td>&lt;td>2–3× better&lt;/td>&lt;td>General well water turbidity&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>Filter Ag Plus&lt;/td>&lt;td>~5–10 µm&lt;/td>&lt;td>4–5× better&lt;/td>&lt;td>Higher turbidity, pre-UV/RO&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>Zeosorb&lt;/td>&lt;td>~3–5 µm&lt;/td>&lt;td>15–20× better&lt;/td>&lt;td>Very fine particles, colloidal turbidity&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>Sand (baseline)&lt;/td>&lt;td>Varies with grade&lt;/td>&lt;td>—&lt;/td>&lt;td>Basic, low-cost sediment removal&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>Filter Ag&lt;/td>&lt;td>~20–40 µm&lt;/td>&lt;td>Finer&lt;/td>&lt;td>General well water turbidity&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>Filter Ag Plus&lt;/td>&lt;td>~5 µm or less&lt;/td>&lt;td>Much finer&lt;/td>&lt;td>Higher turbidity, pre-UV/RO&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>Zeosorb&lt;/td>&lt;td>~3–5 µm (manufacturer figure)&lt;/td>&lt;td>Much finer&lt;/td>&lt;td>Very fine particles, colloidal turbidity&lt;/td>&lt;/tr>
     &lt;/tbody>
   &lt;/table>
 
@@ -3018,8 +3470,8 @@ p {
 
   &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 6: Turbidity Filter Media&lt;/h5>&lt;ol>
 &lt;li>Clack Corporation (2023). &lt;em>Filter Ag Technical Data Sheet.&lt;/em> — Particle size, filtration rating (~20–40 µm), backwash rate, bed depth.&lt;/li>
-&lt;li>Clack Corporation (2023). &lt;em>Filter Ag Plus Technical Data Sheet.&lt;/em> — Enhanced filtration rating (~10–20 µm) vs standard Filter Ag.&lt;/li>
-&lt;li>Inversand Company (2020). &lt;em>Zeosorb Natural Zeolite Filter Media — Technical Bulletin.&lt;/em> — Filtration to ~3–5 µm, density, backwash rate.&lt;/li>
+&lt;li>Clack Corporation. &lt;em>Filter-Ag Plus Technical Data Sheet.&lt;/em> — Natural clinoptilolite; reduction of suspended solids to the 5 µm or less range with deep bed filtration.&lt;/li>
+&lt;li>Zeosorb supplier technical data sheet. — Manufacturer's filtration rating (~3–5 µm) and backwash rate.&lt;/li>
 &lt;li>EPA Ireland (2011). &lt;em>Water Treatment Manual: Filtration.&lt;/em> — Media selection and backwashing guidance for Irish water treatment.&lt;/li>
 &lt;li>Crittenden, J.C. et al. (2012). &lt;em>MWH's Water Treatment: Principles and Design, 3rd Ed.&lt;/em> — Granular media filtration principles and backwash design.&lt;/li>
 &lt;/ol>&lt;/div>
@@ -3109,7 +3561,7 @@ p {
 &lt;!-- ===== CHAPTER 9 ===== -->
 &lt;div id="ch9" class="chapter">
   &lt;div class="chapter-header">
-    &lt;span class="chapter-num">CH 09&lt;/span>
+    &lt;span class="chapter-num">CH 08&lt;/span>
     &lt;div>
       &lt;div class="chapter-title">Self-Cleaning (Backwash) Filter Systems&lt;/div>
       &lt;div class="chapter-subtitle">Filters that clean themselves automatically — and why they're used&lt;/div>
@@ -3141,7 +3593,7 @@ p {
     &lt;div class="card">
       &lt;div class="card-icon">🚿&lt;/div>
       &lt;h4>The Drain Connection&lt;/h4>
-      &lt;p>During backwash, the dirty water has to go somewhere — this is the drain pipe that connects to a floor drain or outside drain. Backwash uses 15–40 litres per cycle for a domestic system. Must be sized to handle peak backwash flow without backing up.&lt;/p>
+      &lt;p>During backwash, the dirty water has to go somewhere — this is the drain pipe that connects to a floor drain or outside drain. Backwash typically uses one to several hundred litres per cycle, depending on vessel size and valve settings. Must be sized to handle peak backwash flow without backing up.&lt;/p>
     &lt;/div>
   &lt;/div>
 
@@ -3156,13 +3608,13 @@ p {
 
   &lt;div class="info-box gold">
     &lt;strong>⚠️ Media Still Needs Replacing Eventually&lt;/strong>
-    Backwashing keeps the media clean, but it doesn't last forever. The media gradually breaks down over years of use and can last approximately every 5 years.                        Signs it's time to replace: water pressure stays high after a backwash, water quality deteriorates, or you can see the media has broken down into fine powder. Annual inspection is good practice.
+    Backwashing keeps the media clean, but it doesn't last forever. The media gradually breaks down over years of use, so it needs replacing eventually — follow the manufacturer's guidance.                        Signs it's time to replace: water pressure stays high after a backwash, water quality deteriorates, or you can see the media has broken down into fine powder. Annual inspection is good practice.
   &lt;/div>
 
   &lt;h3>Self-Cleaning Strainer Filters&lt;/h3>
   &lt;p>For coarser filtration (50–500 µm) — like protecting a pump from sand and grit — simpler &lt;span class="highlight">automatic screen filters&lt;/span> (e.g. Amiad, Arkal disc filters) work differently. They use a fine screen or disc stack, and a small electric motor-driven mechanism that physically scrapes the screen clean and flushes it to drain every few minutes or when pressure drop increases. These are common on irrigation systems and well pump outlets.&lt;/p>
 
-  &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 9: Self-Cleaning Backwash Filters&lt;/h5>&lt;ol>
+  &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 8: Self-Cleaning Backwash Filters&lt;/h5>&lt;ol>
 &lt;li>Clack Corporation (2023). &lt;em>WS1 Control Valve Technical Manual.&lt;/em> — Backwash cycle design, timing, service and regeneration modes.&lt;/li>
 &lt;li>Crittenden, J.C. et al. (2012). &lt;em>MWH's Water Treatment: Principles and Design, 3rd Ed.&lt;/em> — Pressure vessel sizing, backwash rates, and media bed expansion.&lt;/li>
 &lt;li>EPA Ireland (2011). &lt;em>Water Treatment Manual: Filtration.&lt;/em> — Recommended backwash frequency and media inspection intervals.&lt;/li>
@@ -3178,7 +3630,7 @@ p {
 &lt;!-- ===== CHAPTER 10 ===== -->
 &lt;div id="ch10" class="chapter">
   &lt;div class="chapter-header">
-    &lt;span class="chapter-num">CH 10&lt;/span>
+    &lt;span class="chapter-num">CH 09&lt;/span>
     &lt;div>
       &lt;div class="chapter-title">Carbon Filters&lt;/div>
       &lt;div class="chapter-subtitle">Removing chlorine, bad taste, chemicals, and odours from water&lt;/div>
@@ -3190,7 +3642,7 @@ p {
 
   &lt;div class="info-box blue">
     &lt;strong>💡 Why is Carbon so Good at This?&lt;/strong>
-    One gram of activated carbon has an internal surface area of over 1,500 square metres — roughly the size of a tennis court — packed into something the size of a sugar cube. All those tiny internal pores create enormous surface area for chemicals to stick to. That's why even a small carbon filter can remove a surprising amount of contamination.
+    One gram of activated carbon has an internal surface area of roughly 500 to 1,500 square metres — several tennis courts' worth — packed into something the size of a sugar cube. All those tiny internal pores create enormous surface area for chemicals to stick to. That's why even a small carbon filter can remove a surprising amount of contamination.
   &lt;/div>
 
   &lt;h3>Three Types of Carbon Used in Water Treatment&lt;/h3>
@@ -3201,7 +3653,7 @@ p {
       &lt;p>&lt;strong>What it looks like:&lt;/strong> Black granules, like coarse coffee grounds, packed into a tank or large cartridge.&lt;/p>
       &lt;p>&lt;strong>Where it comes from:&lt;/strong> Made from coconut shell, coal, or wood, heated to very high temperatures in steam to create millions of tiny pores. Coconut shell carbon is preferred for drinking water — it has higher surface area and is better at removing chlorine and taste/odour compounds.&lt;/p>
       &lt;p>&lt;strong>What it removes:&lt;/strong> Free chlorine (very effectively), chlorine taste and smell, trihalomethanes (THMs — harmful by-products of chlorination), taste and odour compounds like geosmin (earthy smell) and 2-MIB (musty smell), most pesticides and herbicides at low concentrations, colour (light tannin), and many VOCs (volatile organic compounds).&lt;/p>
-      &lt;p>&lt;strong>How long does it last?&lt;/strong> Coconut shell GAC in a domestic tank: 3–5 years. Coal GAC: 2–4 years. It doesn't look different when it's exhausted — you need to test the water or replace on schedule.&lt;/p>
+      &lt;p>&lt;strong>How long does it last?&lt;/strong> It depends heavily on what's in the water and how much water passes through it, so follow the manufacturer's replacement schedule. Carbon doesn't look different when it's exhausted — you need to test the water or replace on schedule.&lt;/p>
       &lt;p>&lt;strong>Contact time matters:&lt;/strong> Carbon needs time to work. Water must flow slowly enough through the carbon bed (EBCT — Empty Bed Contact Time — of 5–10 minutes). Running water through too fast means the chemicals don't have time to stick and pass straight through.&lt;/p>
     &lt;/div>
   &lt;/div>
@@ -3210,7 +3662,7 @@ p {
     &lt;div class="expand-header">&lt;h4>2. Catalytic Carbon — The Upgrade for Chloramines and Sulphur&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
     &lt;div class="expand-body">
       &lt;p>&lt;strong>What makes it different:&lt;/strong> Catalytic carbon is standard activated carbon that has been treated (usually at high temperature in an ammonia atmosphere) to give its surface special chemical properties. Instead of just catching molecules passively, it actively &lt;em>breaks down&lt;/em> certain compounds.&lt;/p>
-      &lt;p>&lt;strong>Chloramines:&lt;/strong> Many water utilities in Ireland and the UK have switched from using plain chlorine to chloramines (a mixture of chlorine and ammonia) for disinfection. Chloramines are harder to remove — standard carbon is quite poor at it. Catalytic carbon breaks down chloramines efficiently.&lt;/p>
+      &lt;p>&lt;strong>Chloramines:&lt;/strong> Some water utilities — particularly in the UK — use chloramines (a mixture of chlorine and ammonia) instead of plain chlorine for disinfection. Irish public supplies are generally disinfected with chlorine, so check with the supplier if chloramines are suspected. Chloramines are harder to remove — standard carbon is quite poor at it. Catalytic carbon breaks down chloramines efficiently.&lt;/p>
       &lt;p>&lt;strong>Hydrogen sulphide (H₂S) — the rotten egg smell:&lt;/strong> Some well water smells like rotten eggs. This is dissolved hydrogen sulphide gas. Catalytic carbon oxidises it and turns it into harmless elemental sulphur that deposits on the carbon. Highly effective up to about 1–2 mg/L H₂S. Above that, you need a dedicated oxidation system first.&lt;/p>
       &lt;p>&lt;strong>When to use it:&lt;/strong> Use catalytic carbon when the water supply uses chloramines instead of free chlorine, when the well water smells sulphurous, or when standard GAC hasn't solved the taste/odour problem.&lt;/p>
     &lt;/div>
@@ -3249,14 +3701,14 @@ p {
 
   &lt;!-- Quiz Ch10 -->
   &lt;div class="quiz-box">
-    &lt;h3>🎓 Quick Quiz — Chapter 10&lt;/h3>
+    &lt;h3>🎓 Quick Quiz — Chapter 9&lt;/h3>
     &lt;p>Carbon filtration — let's see what stuck.&lt;/p>
 
     &lt;div class="quiz-question" id="q10a">
       &lt;div class="quiz-q">1. A customer on a council water supply complains of a chlorine taste but also a slightly musty smell even after fitting a standard carbon filter. What would you try next?&lt;/div>
       &lt;div class="quiz-options">
         &lt;div class="quiz-option" onclick="answerQ(this,'q10a',false,'A')">&lt;span class="quiz-letter">A&lt;/span> Add a second identical carbon filter in series&lt;/div>
-        &lt;div class="quiz-option" onclick="answerQ(this,'q10a',true,'B')">&lt;span class="quiz-letter">B&lt;/span> Switch to catalytic carbon — their water supply likely uses chloramines, not free chlorine&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'q10a',true,'B')">&lt;span class="quiz-letter">B&lt;/span> Switch to catalytic carbon — their supply may use chloramines rather than free chlorine&lt;/div>
         &lt;div class="quiz-option" onclick="answerQ(this,'q10a',false,'C')">&lt;span class="quiz-letter">C&lt;/span> Install a UV system — the musty smell is bacteria&lt;/div>
         &lt;div class="quiz-option" onclick="answerQ(this,'q10a',false,'D')">&lt;span class="quiz-letter">D&lt;/span> The carbon is too fine — switch to a coarser micron rating&lt;/div>
       &lt;/div>
@@ -3294,7 +3746,7 @@ p {
     You've finished Part I of the Water Treatment Learning Guide. You now understand hard water, softeners, anti-scale technologies, turbidity, filter media, cartridge types, sizing, self-cleaning filters, and carbon filtration. Part II covers: pH correction (Juraperle &amp; Corosex), nitrate and arsenic removal, well water treatment, iron and manganese removal, reverse osmosis, UV disinfection, PFAS contamination, and Irish drinking water legislation.
   &lt;/div>
 
-  &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 10: Carbon Filtration&lt;/h5>&lt;ol>
+  &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 9: Carbon Filtration&lt;/h5>&lt;ol>
 &lt;li>AWWA (American Water Works Association) (2011). &lt;em>Activated Carbon: Solutions for Improving Water Quality.&lt;/em> — GAC types, surface area, contaminant removal mechanisms, EBCT.&lt;/li>
 &lt;li>Crittenden, J.C. et al. (2012). &lt;em>MWH's Water Treatment: Principles and Design, 3rd Ed.&lt;/em> — GAC, catalytic carbon, and carbon block performance data.&lt;/li>
 &lt;li>NSF International (2019). &lt;em>NSF/ANSI 42 and NSF/ANSI 53.&lt;/em> — Chlorine taste/odour removal and health-effect contaminant reduction certifications.&lt;/li>
@@ -3653,8 +4105,8 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;/div>
   &lt;div class="nav-section">
     &lt;div class="nav-section-label">Rules &amp; Testing&lt;/div>
-    &lt;div class="nav-item" data-target="ch21" onclick="showSection('ch21',this)">&lt;span class="nav-dot">&lt;/span>21. Irish Drinking Water Law&lt;/div>
-    &lt;div class="nav-item" data-target="ch22" onclick="showSection('ch22',this)">&lt;span class="nav-dot">&lt;/span>22. Reading a Water Test Report&lt;/div>
+    &lt;div class="nav-item" data-target="ch21" onclick="showSection('ch21',this)">&lt;span class="nav-dot">&lt;/span>20. Irish Drinking Water Law&lt;/div>
+    &lt;div class="nav-item" data-target="ch22" onclick="showSection('ch22',this)">&lt;span class="nav-dot">&lt;/span>21. Reading a Water Test Report&lt;/div>
   &lt;/div>
 &lt;/nav>
 
@@ -3715,7 +4167,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;div class="process-step">&lt;div class="step-icon">🚰&lt;/div>&lt;div class="step-label">pH 7–8.5&lt;/div>&lt;div class="step-desc">Good drinking water — slightly alkaline&lt;/div>&lt;/div>
   &lt;/div>
 
-  &lt;p>Irish law (S.I. No. 122/2014) says drinking water must be between &lt;span class="highlight">pH 6.5 and pH 9.5&lt;/span>. But just being within the legal range doesn't mean the water is safe for your pipes — anything below about pH 7 will slowly corrode copper pipes and metal fittings.&lt;/p>
+  &lt;p>Irish law (S.I. No. 99 of 2023) says drinking water must be between &lt;span class="highlight">pH 6.5 and pH 9.5&lt;/span>. But just being within the legal range doesn't mean the water is safe for your pipes — anything below about pH 7 will slowly corrode copper pipes and metal fittings.&lt;/p>
 
   &lt;h3>Why is Low pH (Acidic Water) a Problem?&lt;/h3>
   &lt;div class="cards-grid">
@@ -3821,9 +4273,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
 
   &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 11&lt;/h5>&lt;ol>
 &lt;li>World Health Organization (2011). &lt;em>Guidelines for Drinking-water Quality, 4th Ed.&lt;/em> — pH and corrosivity of water.&lt;/li>
-&lt;li>European Union. &lt;em>S.I. No. 122/2014 — EU (Drinking Water) Regulations, Ireland.&lt;/em> — pH parametric range 6.5–9.5.&lt;/li>
-&lt;li>Environmental Protection Agency Ireland (2022). &lt;em>EPA Code of Practice: Wastewater Treatment and Disposal Systems Serving Single Houses.&lt;/em> — Groundwater pH in granite/peat catchments.&lt;/li>
-&lt;li>Apambire, W.B. et al. (1997). Geochemistry of fluoride-bearing groundwaters in NW Ghana — reference for calcite dissolution chemistry. &lt;em>Environmental Geology.&lt;/em>&lt;/li>
+&lt;li>European Union. &lt;em>S.I. No. 99 of 2023 — European Union (Drinking Water) Regulations 2023.&lt;/em> — pH parametric range 6.5–9.5.&lt;/li>
 &lt;/ol>&lt;/div>
   &lt;div class="chapter-nav">
     &lt;button class="nav-btn" onclick="showSection('home-screen',document.querySelector('[data-target=home-screen]'))">← Home&lt;/button>
@@ -3846,7 +4296,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
 
   &lt;div class="info-box red">
     &lt;strong>☠️ Why Are Nitrates Dangerous?&lt;/strong>
-    Nitrates are especially dangerous for babies under 6 months old. In a baby's stomach, bacteria convert nitrate to nitrite, which then reacts with the baby's haemoglobin (the protein that carries oxygen in blood). This causes a condition called "blue baby syndrome" (methaemoglobinaemia) — the baby literally can't carry enough oxygen. It can be fatal. Adults are generally not at risk from short-term exposure, but long-term high nitrate intake has been linked to increased cancer risk. The EU legal limit is 50 mg/L. Above this, the water must not be used for infant feeding. (WHO, 2011; S.I. 122/2014)
+    Nitrates are especially dangerous for babies under 6 months old. In a baby's stomach, bacteria convert nitrate to nitrite, which then reacts with the baby's haemoglobin (the protein that carries oxygen in blood). This causes a condition called "blue baby syndrome" (methaemoglobinaemia) — the baby literally can't carry enough oxygen. It can be fatal. Adults are generally not at risk from short-term exposure, but long-term high nitrate intake has been linked to increased cancer risk. The EU legal limit is 50 mg/L. The WHO guideline value is also 50 mg/L, set specifically to protect bottle-fed babies. Above this, the water should not be used to make up infant feeds. (WHO, 2011; S.I. No. 99 of 2023)
   &lt;/div>
 
   &lt;h3>How to Remove Nitrates&lt;/h3>
@@ -3857,7 +4307,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
       &lt;p>&lt;strong>How it works:&lt;/strong> A special resin (similar to a water softener resin, but designed for nitrates) captures nitrate ions and swaps them for chloride (Cl⁻) ions — which are harmless at normal levels. The process is called &lt;em>anion exchange&lt;/em> because it swaps negatively charged ions (unlike a softener which swaps positively charged calcium and magnesium).&lt;/p>
       &lt;p>&lt;strong>Regeneration:&lt;/strong> Like a softener, the nitrate resin must be regenerated periodically — using concentrated salt (sodium chloride) brine. The captured nitrates flush to drain.&lt;/p>
       &lt;p>&lt;strong>Effectiveness:&lt;/strong> Removes 85–95% of nitrates reliably. Well-proven technology used in many Irish rural water schemes.&lt;/p>
-      &lt;p>&lt;strong>Limitation:&lt;/strong> Adds chloride to the water. The resin must be specifically designed for nitrate removal — a standard water softener resin prefers sulphates over nitrates and won't work well.&lt;/p>
+      &lt;p>&lt;strong>Limitation:&lt;/strong> Adds chloride to the water. The resin must be specifically designed for nitrate removal. A water softener resin can't help at all — it swaps positive ions (calcium, magnesium), while nitrate is a negative ion. And a standard anion resin prefers sulphate over nitrate, so it can release nitrate back into the water once it fills up ("nitrate dumping").&lt;/p>
     &lt;/div>
   &lt;/div>
 
@@ -3900,10 +4350,10 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;h3>🎓 Quick Quiz — Chapter 12&lt;/h3>
     &lt;p>Test your knowledge on nitrates and arsenic.&lt;/p>
     &lt;div class="quiz-question" id="q12a">
-      &lt;div class="quiz-q">A mother with a 3-month-old baby calls worried about her well water. Tests show nitrates at 45 mg/L — just under the EU legal limit of 50 mg/L. What advice do you give?&lt;/div>
+      &lt;div class="quiz-q">A mother with a 3-month-old bottle-fed baby calls worried about her well water. Tests show nitrates at 62 mg/L. What advice do you give?&lt;/div>
       &lt;div class="quiz-options">
-        &lt;div class="quiz-option" onclick="answerQ(this,'q12a',false,'A')">&lt;span class="quiz-letter">A&lt;/span> The water is legal, so it's completely safe for the baby&lt;/div>
-        &lt;div class="quiz-option" onclick="answerQ(this,'q12a',true,'B')">&lt;span class="quiz-letter">B&lt;/span> Even at 45 mg/L, the WHO recommends infants use water below 10 mg/L — treatment or bottled water should be used for the baby&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'q12a',false,'A')">&lt;span class="quiz-letter">A&lt;/span> It's only slightly over the limit, so it's fine for the baby&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'q12a',true,'B')">&lt;span class="quiz-letter">B&lt;/span> It's above the 50 mg/L limit, which exists to protect bottle-fed babies — use a safe alternative water for the baby's feeds and install nitrate treatment (nitrate-selective resin or RO)&lt;/div>
         &lt;div class="quiz-option" onclick="answerQ(this,'q12a',false,'C')">&lt;span class="quiz-letter">C&lt;/span> Boiling the water will remove the nitrates and make it safe&lt;/div>
         &lt;div class="quiz-option" onclick="answerQ(this,'q12a',false,'D')">&lt;span class="quiz-letter">D&lt;/span> A carbon filter will solve this problem&lt;/div>
       &lt;/div>
@@ -3914,9 +4364,9 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;/div>
 
   &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 12&lt;/h5>&lt;ol>
-&lt;li>World Health Organization (2011). &lt;em>Guidelines for Drinking-water Quality, 4th Ed.&lt;/em> — Nitrate: health effects, methaemoglobinaemia, infant risk limit 10 mg/L.&lt;/li>
-&lt;li>European Union. &lt;em>S.I. No. 122/2014 — EU (Drinking Water) Regulations, Ireland.&lt;/em> — Nitrate limit 50 mg/L; Arsenic limit 10 µg/L.&lt;/li>
-&lt;li>International Agency for Research on Cancer (IARC) (2004). &lt;em>Monograph Vol. 84 — Inorganic and Organic Lead Compounds.&lt;/em> Group 1 carcinogen status for inorganic arsenic.&lt;/li>
+&lt;li>World Health Organization (2011). &lt;em>Guidelines for Drinking-water Quality, 4th Ed.&lt;/em> — Nitrate guideline value 50 mg/L, set to protect bottle-fed infants against methaemoglobinaemia.&lt;/li>
+&lt;li>European Union. &lt;em>S.I. No. 99 of 2023 — European Union (Drinking Water) Regulations 2023.&lt;/em> — Nitrate limit 50 mg/L; Arsenic limit 10 µg/L.&lt;/li>
+&lt;li>International Agency for Research on Cancer (IARC) (2004). &lt;em>Monograph Vol. 84 — Some Drinking-water Disinfectants and Contaminants, including Arsenic.&lt;/em> Group 1 carcinogen status for inorganic arsenic.&lt;/li>
 &lt;li>EPA Ireland (2022). &lt;em>The Provision and Quality of Drinking Water in Ireland — A Report for the Year 2021.&lt;/em> — Nitrate exceedances in agricultural areas.&lt;/li>
 &lt;li>NSF International (2019). &lt;em>NSF/ANSI 58 — Reverse Osmosis Drinking Water Treatment Systems.&lt;/em> — Nitrate and arsenic removal by RO.&lt;/li>
 &lt;/ol>&lt;/div>
@@ -3939,7 +4389,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;h3>The Simple Explanation&lt;/h3>
   &lt;p>When it rains, some of that water soaks into the ground. It moves slowly through soil, sand, gravel, and rock — sometimes for years — until it collects in an underground layer called an &lt;span class="highlight">aquifer&lt;/span>. A well is basically a hole drilled or dug down into that aquifer so you can pump the water up.&lt;/p>
 
-  &lt;p>In Ireland, around &lt;span class="highlight">750,000 people&lt;/span> — nearly 1 in 6 of the population — rely on private wells for their drinking water. That's a huge number, and these people are responsible for managing their own water quality, unlike those on the public mains supply who have Irish Water doing it for them. (EPA Ireland, 2022)&lt;/p>
+  &lt;p>In Ireland, about &lt;span class="highlight">1 in 10 households&lt;/span> (9.9% in the 2022 Census) get their water from private sources — mostly private wells. That's a lot of homes, and these households are responsible for managing their own water quality, unlike those on the public mains supply who have Uisce Éireann doing it for them. (CSO, Census 2022)&lt;/p>
 
   &lt;div class="info-box blue">
     &lt;strong>💡 Why is Well Water So Different From Tap Water?&lt;/strong>
@@ -3992,10 +4442,10 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;/div>
 
   &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 13&lt;/h5>&lt;ol>
-&lt;li>EPA Ireland (2022). &lt;em>The Provision and Quality of Drinking Water in Ireland — A Report for the Year 2021.&lt;/em> — ~750,000 people on private wells in Ireland.&lt;/li>
+&lt;li>CSO (2024). &lt;em>Ireland's UN SDGs — Goal 6: Clean Water and Sanitation&lt;/em> (Census 2022 data). — 9.9% of households supplied by other private sources, mostly private wells.&lt;/li>
 &lt;li>EPA Ireland (2015). &lt;em>Groundwater Quality in Ireland.&lt;/em> — Contaminant profiles by aquifer type.&lt;/li>
 &lt;li>EPA Ireland (2011). &lt;em>Radon in Dwellings in Ireland — 2011 National Survey.&lt;/em> — Elevated radon in granite regions.&lt;/li>
-&lt;li>European Union. &lt;em>S.I. No. 122/2014 — EU (Drinking Water) Regulations, Ireland.&lt;/em> — Parametric values applicable to all regulated supplies.&lt;/li>
+&lt;li>European Union. &lt;em>S.I. No. 99 of 2023 — European Union (Drinking Water) Regulations 2023.&lt;/em> — Parametric values applicable to all regulated supplies.&lt;/li>
 &lt;li>Geological Survey Ireland (GSI). &lt;em>Groundwater Monitoring Programme.&lt;/em> — Aquifer geology and groundwater chemistry across Ireland.&lt;/li>
 &lt;/ol>&lt;/div>
   &lt;div class="chapter-nav">
@@ -4015,7 +4465,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;/div>
 
   &lt;h3>Iron — The Orange Stainer&lt;/h3>
-  &lt;p>Iron is the most common problem in Irish private wells. It occurs naturally as iron-bearing rock dissolves into groundwater. Even at concentrations as low as 0.3 mg/L, you'll notice the effects — and some wells can have iron at 5, 10, or even 20 mg/L. The EU limit for iron in drinking water is just &lt;span class="highlight">0.2 mg/L&lt;/span>.&lt;/p>
+  &lt;p>Iron is one of the most common problems in Irish private wells. It occurs naturally as iron-bearing rock dissolves into groundwater. Even at concentrations as low as 0.3 mg/L, you'll notice the effects — and some wells can have iron at 5, 10, or even 20 mg/L. The EU limit for iron in drinking water is just &lt;span class="highlight">0.2 mg/L&lt;/span>.&lt;/p>
 
   &lt;div class="cards-grid">
     &lt;div class="card">&lt;div class="card-icon">🚰&lt;/div>&lt;h4>Red/Brown Water&lt;/h4>&lt;p>When iron-containing water is exposed to air (oxygen), dissolved iron oxidises and turns orange-brown. You see this in the toilet cistern or when water runs from the tap after standing.&lt;/p>&lt;/div>
@@ -4047,9 +4497,9 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;div class="expand-section" onclick="toggleExpand(this)">
     &lt;div class="expand-header">&lt;h4>Crystal Right — Two Types for Different Problems&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
     &lt;div class="expand-body">
-      &lt;p>&lt;strong>What it is:&lt;/strong> Crystal Right is a synthetic zeolite-based medium that combines ion exchange with adsorption. It comes in two variants:&lt;/p>
-      &lt;p>&lt;strong>Crystal Right CR100:&lt;/strong> Primarily for hardness + iron + manganese removal. Works at a wider pH range than standard resin (effective down to pH 6.5). Best for clear well water that's hard with moderate iron (up to ~5 mg/L iron).&lt;/p>
-      &lt;p>&lt;strong>Crystal Right CR200:&lt;/strong> Has enhanced organic (NOM) removal capacity on top of the CR100 benefits. Better for water with brown/yellow colour from peat organics AND iron/hardness.&lt;/p>
+      &lt;p>&lt;strong>What it is:&lt;/strong> Crystal Right (made by Mineral-Right Inc.) is a synthetic zeolite medium that softens water and removes iron and manganese in one tank. It comes in two main variants, chosen mainly by the pH of the incoming water:&lt;/p>
+      &lt;p>&lt;strong>Crystal Right CR100:&lt;/strong> For water with a pH in the 6–7 range. Removes hardness, iron and manganese and also raises the pH to reduce corrosion. Best for clear well water that's hard with moderate iron (up to ~5 mg/L iron).&lt;/p>
+      &lt;p>&lt;strong>Crystal Right CR200:&lt;/strong> For water with a pH above 7. It has a higher exchange capacity than CR100, so it suits water with higher levels of hardness, iron and manganese. Always confirm limits on the manufacturer's datasheet.&lt;/p>
       &lt;p>&lt;strong>Regeneration:&lt;/strong> Uses salt brine — same as a softener. Easy to maintain.&lt;/p>
       &lt;p>&lt;strong>Key difference from Ecomix:&lt;/strong> Crystal Right is a single media type (synthetic zeolite) rather than a blend. It's simpler and very robust. Ecomix has more components but potentially handles a wider range of parameters. Choice depends on specific water test results — a well water specialist should make the final recommendation based on the analysis.&lt;/p>
     &lt;/div>
@@ -4069,7 +4519,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
       &lt;p>&lt;strong>What it is:&lt;/strong> A naturally mined form of manganese dioxide (MnO₂). Acts as an oxidation catalyst — it takes electrons away from dissolved iron and manganese, converting them to solid form, which are then captured by the media bed itself.&lt;/p>
       &lt;p>&lt;strong>No chemical injection needed:&lt;/strong> Pyrolox is self-regenerating — the manganese dioxide is regenerated by the dissolved oxygen in the water (or by periodic backwashing with clean water). No chemicals required during normal service.&lt;/p>
       &lt;p>&lt;strong>Iron capacity:&lt;/strong> Up to ~10–15 mg/L dissolved iron. Manganese up to ~2–3 mg/L.&lt;/p>
-      &lt;p>&lt;strong>Limitation:&lt;/strong> Pyrolox is quite heavy (density ~3.3 g/cm³) — requires a higher backwash flow rate to clean the bed effectively. Requires a minimum dissolved oxygen level — may need aeration pre-treatment in very oxygen-depleted groundwater.&lt;/p>
+      &lt;p>&lt;strong>Limitation:&lt;/strong> Pyrolox is very heavy (bulk density about 1.9 kg/L; specific gravity about 3.8) — requires a higher backwash flow rate to clean the bed effectively. Requires a minimum dissolved oxygen level — may need aeration pre-treatment in very oxygen-depleted groundwater.&lt;/p>
     &lt;/div>
   &lt;/div>
 
@@ -4077,7 +4527,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;div class="expand-header">&lt;h4>Katalox-Light — The Modern Alternative&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
     &lt;div class="expand-body">
       &lt;p>&lt;strong>What it is:&lt;/strong> A modern engineered media (by Watch Water) — a lightweight core coated with a thin layer of manganese dioxide (MnO₂ content ~10%). Same chemistry as Pyrolox, but much lighter.&lt;/p>
-      &lt;p>&lt;strong>Why it's better than Pyrolox in many cases:&lt;/strong> Because it's lighter (density ~0.9 g/cm³ vs Pyrolox's 3.3), it needs a much lower backwash flow rate and backwash pressure. This means smaller, cheaper systems and lower water waste during backwashing. Easier to use in domestic settings.&lt;/p>
+      &lt;p>&lt;strong>Why it's better than Pyrolox in many cases:&lt;/strong> Because it's lighter (bulk density about 0.9 kg/L vs about 1.9 kg/L for Pyrolox), it needs a much lower backwash flow rate and backwash pressure. This means smaller, cheaper systems and lower water waste during backwashing. Easier to use in domestic settings.&lt;/p>
       &lt;p>&lt;strong>Effectiveness:&lt;/strong> Handles iron up to 15 mg/L, manganese up to 3 mg/L, H₂S (rotten egg smell) up to 5 mg/L. Also reduces colour and turbidity.&lt;/p>
       &lt;p>&lt;strong>When to choose Katalox-Light over Pyrolox:&lt;/strong> In most domestic and light commercial situations, Katalox-Light is preferred because of the lower backwash requirements. Pyrolox is still used in some high-flow commercial applications where its higher density is not a disadvantage.&lt;/p>
     &lt;/div>
@@ -4111,11 +4561,11 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;/div>
 
   &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 14&lt;/h5>&lt;ol>
-&lt;li>European Union. &lt;em>S.I. No. 122/2014 — EU (Drinking Water) Regulations, Ireland.&lt;/em> — Iron limit 0.20 mg/L; Manganese limit 0.05 mg/L.&lt;/li>
+&lt;li>European Union. &lt;em>S.I. No. 99 of 2023 — European Union (Drinking Water) Regulations 2023.&lt;/em> — Iron limit 0.20 mg/L; Manganese limit 0.05 mg/L.&lt;/li>
 &lt;li>World Health Organization (2021). &lt;em>WHO Guidelines for Drinking-water Quality, 4th Ed. incorporating 1st Addendum.&lt;/em> — Updated manganese health guidance.&lt;/li>
-&lt;li>Clack Corporation (2023). &lt;em>Ecomix Technical Data Sheet.&lt;/em> — Multi-media ion exchange for iron, manganese, hardness and NOM.&lt;/li>
+&lt;li>Ecosoft (2023). &lt;em>Ecomix Technical Data Sheet.&lt;/em> — Multi-media ion exchange for iron, manganese, hardness and NOM.&lt;/li>
 &lt;li>Watch Water GmbH (2022). &lt;em>Katalox-Light Technical Specification.&lt;/em> — MnO₂-coated media for iron/manganese/H₂S removal; density 0.9 g/cm³.&lt;/li>
-&lt;li>Inversand Company (2020). &lt;em>Pyrolox Technical Bulletin.&lt;/em> — Manganese dioxide oxidation media; density and backwash requirements.&lt;/li>
+&lt;li>Clack Corporation. &lt;em>Pyrolox Technical Data Sheet.&lt;/em> — Manganese dioxide oxidation media; density and backwash requirements.&lt;/li>
 &lt;/ol>&lt;/div>
   &lt;div class="chapter-nav">
     &lt;button class="nav-btn" onclick="showSection('ch13',document.querySelector('[data-target=ch13]'))">← Well Water&lt;/button>
@@ -4162,7 +4612,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;div class="card">&lt;div class="card-icon">🧂&lt;/div>&lt;h4>Sodium Added by Softeners&lt;/h4>&lt;p>If you have a whole-house softener that adds sodium, an RO system at the kitchen tap removes it. This is why Softener + RO is such a popular combined solution.&lt;/p>&lt;/div>
     &lt;div class="card">&lt;div class="card-icon">🌾&lt;/div>&lt;h4>Nitrates — 90–97%&lt;/h4>&lt;p>One of the best solutions for well water with nitrate contamination — especially for households with young babies.&lt;/p>&lt;/div>
     &lt;div class="card">&lt;div class="card-icon">☠️&lt;/div>&lt;h4>Arsenic — 85–95%&lt;/h4>&lt;p>Very effective against arsenic, especially As(V). Combined with a small arsenic pre-treatment step, can achieve &amp;gt;99% removal.&lt;/p>&lt;/div>
-    &lt;div class="card">&lt;div class="card-icon">🦠&lt;/div>&lt;h4>Bacteria &amp; Viruses&lt;/h4>&lt;p>The RO membrane is a physical barrier — bacteria (1–5 µm) and even viruses (0.02–0.3 µm) are too large to pass. RO provides microbiological protection.&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">🦠&lt;/div>&lt;h4>Bacteria &amp; Viruses&lt;/h4>&lt;p>The RO membrane is a physical barrier — bacteria (1–5 µm) and even viruses (0.02–0.3 µm) are too large to pass. However, home RO units are not certified as a disinfection barrier — seals and fittings can let microbes past — so use UV if the water may be contaminated.&lt;/p>&lt;/div>
     &lt;div class="card">&lt;div class="card-icon">💊&lt;/div>&lt;h4>Pharmaceuticals &amp; Microplastics&lt;/h4>&lt;p>Emerging contaminants that other filters struggle with. RO removes pharmaceuticals, hormones, and microplastics very effectively — a key advantage in the modern world.&lt;/p>&lt;/div>
   &lt;/div>
 
@@ -4170,9 +4620,9 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;table class="data-table">
     &lt;thead>&lt;tr>&lt;th>Membrane&lt;/th>&lt;th>Best For&lt;/th>&lt;th>Rejection Rate&lt;/th>&lt;th>Notes&lt;/th>&lt;/tr>&lt;/thead>
     &lt;tbody>
-      &lt;tr>&lt;td>&lt;strong>Dow Filmtec XLE&lt;/strong>&lt;/td>&lt;td>Low-pressure mains water (1–4 bar)&lt;/td>&lt;td>~98% TDS rejection&lt;/td>&lt;td>Extra Low Energy — works even at low pressure; popular for domestic under-sink use&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>&lt;strong>Dow Filmtec LCLE&lt;/strong>&lt;/td>&lt;td>Very low pressure applications&lt;/td>&lt;td>~95–97% TDS rejection&lt;/td>&lt;td>Low Cost Low Energy — works below 3 bar; useful where mains pressure is low&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>&lt;strong>Ecosoft EXLE&lt;/strong>&lt;/td>&lt;td>Domestic under-sink, light commercial&lt;/td>&lt;td>~98% TDS rejection&lt;/td>&lt;td>European-made alternative to Dow; good performance at domestic pressure; cost-effective&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>&lt;strong>DuPont FilmTec XLE&lt;/strong> (formerly Dow)&lt;/td>&lt;td>Low-pressure mains water (1–4 bar)&lt;/td>&lt;td>~98% TDS rejection&lt;/td>&lt;td>Extra Low Energy — works even at low pressure; popular for domestic under-sink use&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>&lt;strong>DuPont FilmTec LCLE&lt;/strong>&lt;/td>&lt;td>Very low pressure applications&lt;/td>&lt;td>~95–97% TDS rejection&lt;/td>&lt;td>Low Cost Low Energy — works below 3 bar; useful where mains pressure is low&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>&lt;strong>Ecosoft EXLE&lt;/strong>&lt;/td>&lt;td>Domestic under-sink, light commercial&lt;/td>&lt;td>~98% TDS rejection&lt;/td>&lt;td>European-made alternative to FilmTec; good performance at domestic pressure; cost-effective&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>&lt;strong>Standard TFC (Thin Film Composite)&lt;/strong>&lt;/td>&lt;td>Commercial and industrial&lt;/td>&lt;td>98–99.5% TDS rejection&lt;/td>&lt;td>Requires 4–6+ bar pressure; higher output; used in larger systems&lt;/td>&lt;/tr>
     &lt;/tbody>
   &lt;/table>
@@ -4188,7 +4638,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;/div>
 
   &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 15&lt;/h5>&lt;ol>
-&lt;li>Metcalf &amp;amp; Eddy / Tchobanoglous, G. (2014). &lt;em>Water Reuse: Issues, Technologies, and Applications.&lt;/em> — RO membrane science and rejection rates.&lt;/li>
+&lt;li>Metcalf &amp;amp; Eddy / Asano, T. et al. (2007). &lt;em>Water Reuse: Issues, Technologies, and Applications.&lt;/em> — RO membrane science and rejection rates.&lt;/li>
 &lt;li>DuPont Water Solutions (2022). &lt;em>Filmtec XLE and LCLE Reverse Osmosis Elements — Product Data Sheets.&lt;/em> — Membrane performance at low pressure.&lt;/li>
 &lt;li>Ecosoft (2023). &lt;em>EXLE RO Membrane Technical Data Sheet.&lt;/em> — Performance specifications.&lt;/li>
 &lt;li>NSF International (2019). &lt;em>NSF/ANSI 58 — Reverse Osmosis Drinking Water Treatment Systems.&lt;/em> — Contaminant reduction claims including nitrate, arsenic, TDS.&lt;/li>
@@ -4320,8 +4770,8 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;div class="media-spec">
     &lt;h4>Minimum UV Dose Requirements&lt;/h4>
     &lt;div class="spec-row">&lt;span class="spec-key">Bacteria (E. coli, coliforms)&lt;/span>&lt;span class="spec-val">16 mJ/cm² for 4-log (99.99%) kill&lt;/span>&lt;/div>
-    &lt;div class="spec-row">&lt;span class="spec-key">Viruses&lt;/span>&lt;span class="spec-val">100 mJ/cm² for 4-log kill&lt;/span>&lt;/div>
-    &lt;div class="spec-row">&lt;span class="spec-key">Cryptosporidium&lt;/span>&lt;span class="spec-val">10 mJ/cm² for 3-log kill — very UV-sensitive&lt;/span>&lt;/div>
+    &lt;div class="spec-row">&lt;span class="spec-key">Viruses&lt;/span>&lt;span class="spec-val">186 mJ/cm² for 4-log inactivation of adenovirus (the most UV-resistant virus; most other viruses need far less)&lt;/span>&lt;/div>
+    &lt;div class="spec-row">&lt;span class="spec-key">Cryptosporidium&lt;/span>&lt;span class="spec-val">12 mJ/cm² for 3-log inactivation — very UV-sensitive (USEPA LT2)&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Irish EPA recommended minimum&lt;/span>&lt;span class="spec-val">30 mJ/cm² for private well disinfection&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Lamp replacement&lt;/span>&lt;span class="spec-val">Every 12 months regardless of visible light (output decays)&lt;/span>&lt;/div>
     &lt;div class="spec-row">&lt;span class="spec-key">Quartz sleeve&lt;/span>&lt;span class="spec-val">Clean annually — fouling reduces UV transmission&lt;/span>&lt;/div>
@@ -4876,21 +5326,21 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;div class="cards-grid">
     &lt;div class="card">&lt;div class="card-icon">🌍&lt;/div>&lt;h4>Groundwater (Wells &amp; Boreholes)&lt;/h4>&lt;p>Water that has soaked into the ground and been collected from underground. The most varied — quality depends entirely on local geology and land use. Covered in depth in Chapter 13.&lt;/p>&lt;/div>
     &lt;div class="card">&lt;div class="card-icon">🌧️&lt;/div>&lt;h4>Rainwater (Harvested)&lt;/h4>&lt;p>Collected from rooftops or catchment areas. Very soft (almost no minerals), but can pick up bird droppings, moss, pollen, airborne pollutants, and roofing material chemicals on its way down.&lt;/p>&lt;/div>
-    &lt;div class="card">&lt;div class="card-icon">🚰&lt;/div>&lt;h4>Municipal (Mains) Supply&lt;/h4>&lt;p>Treated water from Irish Water (surface water — rivers, lakes — or groundwater). Already filtered and disinfected. Main concerns are residual chlorine, chloramines, and distribution pipe quality.&lt;/p>&lt;/div>
+    &lt;div class="card">&lt;div class="card-icon">🚰&lt;/div>&lt;h4>Municipal (Mains) Supply&lt;/h4>&lt;p>Treated water from Uisce Éireann (surface water — rivers, lakes — or groundwater). Already filtered and disinfected. Main concerns are residual chlorine, chloramines, and distribution pipe quality.&lt;/p>&lt;/div>
   &lt;/div>
 
   &lt;h3>Groundwater — Common Contaminants&lt;/h3>
   &lt;table class="data-table">
     &lt;thead>&lt;tr>&lt;th>Contaminant&lt;/th>&lt;th>Where It Comes From&lt;/th>&lt;th>How to Treat It&lt;/th>&lt;/tr>&lt;/thead>
     &lt;tbody>
-      &lt;tr>&lt;td>Bacteria / E. coli&lt;/td>&lt;td>Septic tanks, animal waste, flooding&lt;/td>&lt;td>UV disinfection (mandatory for private wells)&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>Bacteria / E. coli&lt;/td>&lt;td>Septic tanks, animal waste, flooding&lt;/td>&lt;td>UV disinfection (essential where bacteria are found)&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Iron &amp; Manganese&lt;/td>&lt;td>Dissolves from rock/soil&lt;/td>&lt;td>Oxidation media (Katalox, Pyrolox) or Ecomix&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Hardness (Ca, Mg)&lt;/td>&lt;td>Limestone dissolution&lt;/td>&lt;td>Ion exchange softener, NAC, or RO&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Low pH (acidity)&lt;/td>&lt;td>Granite, peat, CO₂ in rainwater&lt;/td>&lt;td>Juraperle / Corosex pH filter&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Nitrates&lt;/td>&lt;td>Agricultural fertilisers&lt;/td>&lt;td>Nitrate-selective ion exchange or RO&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Arsenic&lt;/td>&lt;td>Natural geological deposits&lt;/td>&lt;td>Iron-based adsorption media or RO&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Radon&lt;/td>&lt;td>Granite bedrock (high in some Irish counties)&lt;/td>&lt;td>Aeration or activated carbon&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>Natural colour (NOM)&lt;/td>&lt;td>Peat, decaying vegetation&lt;/td>&lt;td>Carbon, Ecomix, Crystal Right CR200&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>Natural colour (NOM)&lt;/td>&lt;td>Peat, decaying vegetation&lt;/td>&lt;td>Carbon or Ecomix&lt;/td>&lt;/tr>
     &lt;/tbody>
   &lt;/table>
 
@@ -4913,7 +5363,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;tbody>
       &lt;tr>&lt;td>Chlorine taste/smell&lt;/td>&lt;td>Disinfection residual&lt;/td>&lt;td>GAC or carbon block filter&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Chloramines&lt;/td>&lt;td>Some utilities use chloramine instead of chlorine&lt;/td>&lt;td>Catalytic carbon filter&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>THMs (trihalomethanes)&lt;/td>&lt;td>Chlorine reacting with organic matter in source water&lt;/td>&lt;td>GAC carbon filter — especially important for pregnant women&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>THMs (trihalomethanes)&lt;/td>&lt;td>Chlorine reacting with organic matter in source water&lt;/td>&lt;td>GAC carbon filter with adequate contact time&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Hardness&lt;/td>&lt;td>Source water geology — very variable across Ireland&lt;/td>&lt;td>Softener or NAC depending on level&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Lead (old pipes)&lt;/td>&lt;td>Lead service pipes still present in pre-1970s Irish houses&lt;/td>&lt;td>RO or certified NSF/ANSI 53 carbon block&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Microplastics&lt;/td>&lt;td>Plastic breakdown in source water and distribution&lt;/td>&lt;td>RO most effective&lt;/td>&lt;/tr>
@@ -4922,7 +5372,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
 
   &lt;div class="info-box blue">
     &lt;strong>🔬 Demineralisation (DI Water)&lt;/strong>
-    In some industrial and laboratory applications, you need water with virtually zero dissolved minerals — called &lt;strong>deionised (DI) water&lt;/strong>. This is produced using mixed-bed ion exchange resins (a mix of cation and anion resins) that remove ALL ions from the water. DI water is used in labs, pharmaceuticals, electronics manufacturing, and some medical applications. It's not for drinking — ultra-pure water actually leaches minerals from your body. For most water treatment applications, RO is sufficient; DI water production is a specialist industrial process.
+    In some industrial and laboratory applications, you need water with virtually zero dissolved minerals — called &lt;strong>deionised (DI) water&lt;/strong>. This is produced using mixed-bed ion exchange resins (a mix of cation and anion resins) that remove ALL ions from the water. DI water is used in labs, pharmaceuticals, electronics manufacturing, and some medical applications. It's not intended for drinking — it tastes flat, lacks the minerals normally found in drinking water, and is aggressive to pipework. For most water treatment applications, RO is sufficient; DI water production is a specialist industrial process.
   &lt;/div>
 
   &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 18&lt;/h5>&lt;ol>
@@ -4956,7 +5406,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
 
   &lt;div class="info-box red">
     &lt;strong>☠️ Why Are PFAS Dangerous?&lt;/strong>
-    PFAS accumulate in the human body over time (especially in blood and organs). Research links long-term PFAS exposure to: increased cancer risk (kidney, testicular cancer in particular), immune system disruption (vaccines become less effective), thyroid hormone interference, liver damage, developmental problems in unborn children, and elevated cholesterol. The US EPA set a maximum contaminant level of just 4 nanograms per litre (ng/L) in 2024 — an incredibly small amount showing how seriously regulators now take this. (US EPA, 2024; EU revised Drinking Water Directive 2020/2184)
+    PFAS accumulate in the human body over time (especially in blood and organs). Research links long-term PFAS exposure to: increased cancer risk (kidney, testicular cancer in particular), immune system disruption (vaccines become less effective), thyroid hormone interference, liver damage, developmental problems in unborn children, and elevated cholesterol. The US EPA set a maximum contaminant level of just 4 nanograms per litre (ng/L) in 2024 — an incredibly small amount showing how seriously regulators now take this. In May 2026 the US EPA proposed keeping the 4 ng/L limits for PFOA and PFOS, extending the compliance deadline from 2029 to 2031, and removing the limits for four other PFAS; as of October 2026 these proposals were not final. (US EPA, 2024 and 2026; EU Drinking Water Directive 2020/2184)
   &lt;/div>
 
   &lt;h3>Where Do PFAS Get Into Water?&lt;/h3>
@@ -4984,14 +5434,14 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;/div>
 
     &lt;strong>🇮🇪 Irish Situation&lt;/strong>
-    PFAS in Irish water is an emerging concern. Irish Water has begun monitoring for PFAS in public supplies following the EU Drinking Water Directive 2020/2184, which introduced limits for PFAS from 2026. Private well owners near former military sites, airfields, or industrial areas should consider testing. The EPA has identified several sites of concern in Ireland. Testing for PFAS requires a specialised lab — standard water tests don't include it. (EPA Ireland, PFAS Monitoring Programme 2022)
+    PFAS in Irish water is an emerging concern. Since 12 January 2026, Uisce Éireann must monitor public supplies for PFAS under the Drinking Water Regulations 2023, which apply a limit of 0.1 µg/L (100 ng/L) for the "Sum of PFAS" — 20 individual PFAS compounds. Private well owners near former military sites, airfields, fire training areas or industrial sites should consider testing. Testing for PFAS requires a specialised lab — standard water tests don't include it. (EPA &amp;amp; HSE, Interim Joint Position Paper on PFAS in Drinking Water)
   &lt;/div>
 
   &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 19&lt;/h5>&lt;ol>
-&lt;li>USEPA (2024). &lt;em>PFAS National Primary Drinking Water Regulation.&lt;/em> — MCL of 4 ng/L for PFOA and PFOS.&lt;/li>
+&lt;li>USEPA (2024). &lt;em>PFAS National Primary Drinking Water Regulation.&lt;/em> — MCL of 4 ng/L for PFOA and PFOS. Proposed changes published May 2026 (deadline extension to 2031; rescission of four other PFAS limits) — not final as of October 2026.&lt;/li>
 &lt;li>European Union (2020). &lt;em>Directive 2020/2184 on the Quality of Water Intended for Human Consumption.&lt;/em> — PFAS limits from 2026: sum of 20 PFAS ≤ 100 ng/L; total PFAS ≤ 500 ng/L.&lt;/li>
 &lt;li>NSF International (2020). &lt;em>NSF Protocol P473 — PFOA and PFOS Reduction by Drinking Water Treatment Systems.&lt;/em> — RO and GAC performance data for PFAS removal.&lt;/li>
-&lt;li>EPA Ireland (2022). &lt;em>PFAS in Irish Drinking Water — Monitoring Programme Update.&lt;/em> — Irish sites of concern and monitoring results.&lt;/li>
+&lt;li>EPA Ireland &amp;amp; HSE. &lt;em>Interim Joint Position Paper — Per- and Polyfluoroalkyl Substances (PFAS) in Drinking Water.&lt;/em> — Monitoring required from 12 January 2026; Sum of PFAS limit 0.1 µg/L.&lt;/li>
 &lt;li>ATSDR (2021). &lt;em>Toxicological Profile for Perfluoroalkyls.&lt;/em> U.S. Agency for Toxic Substances and Disease Registry — Health effects of PFAS exposure.&lt;/li>
 &lt;/ol>&lt;/div>
   &lt;div class="chapter-nav">
@@ -5003,7 +5453,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
 &lt;!-- ===== CHAPTER 21: IRISH LEGISLATION ===== -->
 &lt;div id="ch21" class="chapter">
   &lt;div class="chapter-header">
-    &lt;span class="chapter-num">CH 21&lt;/span>
+    &lt;span class="chapter-num">CH 20&lt;/span>
     &lt;div>
       &lt;div class="chapter-title">Irish Drinking Water Law&lt;/div>
       &lt;div class="chapter-subtitle">What the law says your tap water must contain — and what happens if it doesn't&lt;/div>
@@ -5011,23 +5461,23 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;/div>
 
   &lt;h3>Irish Drinking Water Regulations&lt;/h3>
-  &lt;p>In Ireland, drinking water is regulated by &lt;span class="highlight">S.I. No. 122/2014 — The European Union (Drinking Water) Regulations 2014&lt;/span>. This Irish law puts into effect the EU Drinking Water Directive and sets legally binding maximum limits for dozens of substances in public water supplies.&lt;/p>
+  &lt;p>In Ireland, drinking water is regulated by &lt;span class="highlight">S.I. No. 99 of 2023 — The European Union (Drinking Water) Regulations 2023&lt;/span>. This Irish law puts into effect the EU Drinking Water Directive and sets legally binding maximum limits for dozens of substances in public water supplies.&lt;/p>
 
-  &lt;p>These rules apply to water supplied by &lt;strong>Irish Water&lt;/strong> (public mains supply) and to any water supply serving more than 50 people or more than 10 cubic metres per day (so many rural group water schemes are covered). Private wells serving a single household are technically exempt from the regulation, but the EPA strongly recommends they meet the same standards.&lt;/p>
+  &lt;p>These rules apply to water supplied by &lt;strong>Uisce Éireann&lt;/strong> (public mains supply) and to any water supply serving more than 50 people or more than 10 cubic metres per day (so many rural group water schemes are covered). Private wells serving a single household are technically exempt from the regulation, but the EPA strongly recommends they meet the same standards.&lt;/p>
 
   &lt;div class="info-box blue">
     &lt;strong>📋 Who Checks Your Water?&lt;/strong>
-    The EPA (Environmental Protection Agency) is responsible for overseeing water quality in Ireland. Irish Water must regularly test its supply and report results to the EPA. The EPA can issue "remedial action notices" and "boil water notices" if standards aren't met. For private wells, you are your own regulator — which is why testing is so important.
+    The EPA (Environmental Protection Agency) is the drinking water regulator for public supplies. Uisce Éireann must regularly test its supplies and report results to the EPA. The EPA audits supplies, places "at-risk" supplies on its Remedial Action List and can issue legally binding directions to Uisce Éireann. Boil water notices and water restriction notices are imposed by Uisce Éireann, in consultation with the HSE. For private wells, you are your own regulator — which is why testing is so important.
   &lt;/div>
 
   &lt;h3>The Key Chemical Limits&lt;/h3>
   &lt;p>These are the most important chemical parameters and their legal limits under Irish law:&lt;/p>
 
   &lt;table class="law-table">
-    &lt;thead>&lt;tr>&lt;th>Parameter&lt;/th>&lt;th>EU Legal Limit&lt;/th>&lt;th>Unit&lt;/th>&lt;th>Why It Matters&lt;/th>&lt;/tr>&lt;/thead>
+    &lt;thead>&lt;tr>&lt;th>Parameter&lt;/th>&lt;th>Parametric Value&lt;/th>&lt;th>Unit&lt;/th>&lt;th>Why It Matters&lt;/th>&lt;/tr>&lt;/thead>
     &lt;tbody>
       &lt;tr>&lt;td>pH&lt;/td>&lt;td class="limit-ok">6.5 – 9.5&lt;/td>&lt;td>pH units&lt;/td>&lt;td>Too low = corrodes pipes; too high = scale&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>Turbidity&lt;/td>&lt;td class="limit-ok">≤ 10&lt;/td>&lt;td>NTU&lt;/td>&lt;td>Cloudiness — hides bacteria from disinfection&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>Turbidity&lt;/td>&lt;td class="limit-ok">Acceptable to consumers, no abnormal change (≤ 1 leaving surface water treatment plants)&lt;/td>&lt;td>NTU&lt;/td>&lt;td>Cloudiness — hides bacteria from disinfection&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Colour&lt;/td>&lt;td>Acceptable to consumers&lt;/td>&lt;td>—&lt;/td>&lt;td>Water should look clear&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Conductivity&lt;/td>&lt;td class="limit-ok">≤ 2500&lt;/td>&lt;td>µS/cm&lt;/td>&lt;td>Measure of total dissolved minerals&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Total Iron&lt;/td>&lt;td class="limit-ok">≤ 0.20&lt;/td>&lt;td>mg/L&lt;/td>&lt;td>Staining, taste, fouls other filters&lt;/td>&lt;/tr>
@@ -5039,8 +5489,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
       &lt;tr>&lt;td>Aluminium&lt;/td>&lt;td class="limit-ok">≤ 200&lt;/td>&lt;td>µg/L&lt;/td>&lt;td>Used in water treatment — must not remain&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Chloride&lt;/td>&lt;td class="limit-ok">≤ 250&lt;/td>&lt;td>mg/L&lt;/td>&lt;td>Taste threshold; corrosion indicator&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Sodium&lt;/td>&lt;td class="limit-ok">≤ 200&lt;/td>&lt;td>mg/L&lt;/td>&lt;td>Health concern for low-sodium diet; taste&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>Langelier Index (LSI)&lt;/td>&lt;td>–0.5 to +0.5&lt;/td>&lt;td>LSI&lt;/td>&lt;td>Scale or corrosion potential of water&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>Arsenic&lt;/td>&lt;td class="limit-bad">≤ 10&lt;/td>&lt;td>µg/L&lt;/td>&lt;td>Naturally occurring carcinogen — very strict limit&lt;/td>&lt;/tr>
+            &lt;tr>&lt;td>Arsenic&lt;/td>&lt;td class="limit-bad">≤ 10&lt;/td>&lt;td>µg/L&lt;/td>&lt;td>Naturally occurring carcinogen — very strict limit&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Sulphate&lt;/td>&lt;td class="limit-ok">≤ 250&lt;/td>&lt;td>mg/L&lt;/td>&lt;td>Taste; indicator of geological or industrial pollution&lt;/td>&lt;/tr>
     &lt;/tbody>
   &lt;/table>
@@ -5052,31 +5501,30 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;thead>&lt;tr>&lt;th>Bacteria Type&lt;/th>&lt;th>Legal Limit&lt;/th>&lt;th>Why It's Zero&lt;/th>&lt;/tr>&lt;/thead>
     &lt;tbody>
       &lt;tr>&lt;td>Total Coliforms&lt;/td>&lt;td class="limit-bad">&amp;lt; 1 per 100ml&lt;/td>&lt;td>Indicator organism — their presence means faecal contamination may have occurred&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>Faecal Coliforms&lt;/td>&lt;td class="limit-bad">&amp;lt; 1 per 100ml&lt;/td>&lt;td>Specifically from human or animal gut — direct faecal contamination indicator&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>E. coli&lt;/td>&lt;td class="limit-bad">&amp;lt; 1 per 100ml&lt;/td>&lt;td>The most serious coliform — presence means definite faecal contamination&lt;/td>&lt;/tr>
+            &lt;tr>&lt;td>E. coli&lt;/td>&lt;td class="limit-bad">&amp;lt; 1 per 100ml&lt;/td>&lt;td>The most serious coliform — presence means definite faecal contamination&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Enterococci&lt;/td>&lt;td class="limit-bad">&amp;lt; 1 per 100ml&lt;/td>&lt;td>Another faecal indicator; more resistant to disinfection than coliforms&lt;/td>&lt;/tr>
     &lt;/tbody>
   &lt;/table>
 
   &lt;div class="info-box red">
     &lt;strong>⚠️ What Happens When a Limit Is Breached?&lt;/strong>
-    If bacteria are detected in a public water supply, Irish Water must issue a &lt;strong>Boil Water Notice&lt;/strong> immediately — everyone on that supply must boil all drinking and cooking water until the problem is fixed and the supply re-tested. If chemical limits are breached, a Drinking Water Restriction Notice may be issued. These notices are publicly listed on the EPA's website. Serious or persistent failures can result in the EPA taking legal action.
+    If E. coli or other contamination is detected in a public water supply, Uisce Éireann investigates and, in consultation with the HSE, may impose a &lt;strong>Boil Water Notice&lt;/strong> — everyone on that supply must boil all drinking and cooking water until the problem is fixed and the supply re-tested. If chemical limits are breached, a Water Restriction Notice may be issued. Current notices are listed on water.ie. Serious or persistent failures can result in the EPA taking enforcement or legal action.
   &lt;/div>
 
   &lt;div class="info-box gold">
     &lt;strong>🇮🇪 Private Wells and the Law&lt;/strong>
-    If you own a private well, &lt;em>you&lt;/em> are responsible for your own water quality. The Drinking Water Regulations technically don't apply to a single-household private well — but this doesn't mean the water is safe. The EPA recommends private well owners test their water at least once a year for bacteria and every 3 years for a full chemical analysis. Many mortgage lenders and local authorities now require a water test as part of property purchase in rural areas.
+    If you own a private well, &lt;em>you&lt;/em> are responsible for your own water quality. The Drinking Water Regulations technically don't apply to a single-household private well — but this doesn't mean the water is safe. The EPA recommends private well owners test their water at least once a year for bacteria and every 3 years for a full chemical analysis.
   &lt;/div>
 
   &lt;div class="quiz-box">
-    &lt;h3>🎓 Quick Quiz — Chapter 21&lt;/h3>
+    &lt;h3>🎓 Quick Quiz — Chapter 20&lt;/h3>
     &lt;p>Irish drinking water law — let's check the key limits.&lt;/p>
     &lt;div class="quiz-question" id="q21a">
       &lt;div class="quiz-q">1. A water test report shows E. coli detected at 2 per 100ml. Under Irish law, is this water safe to drink?&lt;/div>
       &lt;div class="quiz-options">
         &lt;div class="quiz-option" onclick="answerQ(this,'q21a',false,'A')">&lt;span class="quiz-letter">A&lt;/span> Yes — 2 per 100ml is a small number, well within acceptable range&lt;/div>
         &lt;div class="quiz-option" onclick="answerQ(this,'q21a',true,'B')">&lt;span class="quiz-letter">B&lt;/span> No — the legal limit is zero (less than 1 per 100ml). Any E. coli detection means the water fails&lt;/div>
-        &lt;div class="quiz-option" onclick="answerQ(this,'q21a',false,'C')">&lt;span class="quiz-letter">C&lt;/span> It depends — only fails if turbidity is also above 10 NTU&lt;/div>
+        &lt;div class="quiz-option" onclick="answerQ(this,'q21a',false,'C')">&lt;span class="quiz-letter">C&lt;/span> It depends — only fails if turbidity is also high&lt;/div>
         &lt;div class="quiz-option" onclick="answerQ(this,'q21a',false,'D')">&lt;span class="quiz-letter">D&lt;/span> Yes for adults, but not for children under 5&lt;/div>
       &lt;/div>
       &lt;div class="quiz-feedback" id="fb-q21a">&lt;/div>
@@ -5095,10 +5543,10 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;button class="quiz-submit-btn" onclick="submitQuiz('ch21',['q21a','q21b'])">Submit Answers&lt;/button>
   &lt;/div>
 
-  &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 21&lt;/h5>&lt;ol>
-&lt;li>Government of Ireland. &lt;em>S.I. No. 122/2014 — European Union (Drinking Water) Regulations 2014.&lt;/em> — Full parametric values for chemical and microbiological quality.&lt;/li>
+  &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 20&lt;/h5>&lt;ol>
+&lt;li>Government of Ireland. &lt;em>S.I. No. 99 of 2023 — European Union (Drinking Water) Regulations 2023.&lt;/em> — Full parametric values for chemical and microbiological quality.&lt;/li>
 &lt;li>European Union (2020). &lt;em>Directive 2020/2184 of the European Parliament and of the Council on the Quality of Water Intended for Human Consumption.&lt;/em>&lt;/li>
-&lt;li>EPA Ireland (2022). &lt;em>The Provision and Quality of Drinking Water in Ireland — A Report for the Year 2021.&lt;/em> — National compliance rates and enforcement actions.&lt;/li>
+&lt;li>EPA Ireland (2026). &lt;em>Drinking Water Quality in Public Supplies 2025.&lt;/em> — National compliance rates, Remedial Action List and enforcement actions.&lt;/li>
 &lt;li>World Health Organization (2011). &lt;em>Guidelines for Drinking-water Quality, 4th Ed.&lt;/em> — Scientific basis for parametric limits.&lt;/li>
 &lt;/ol>&lt;/div>
   &lt;div class="chapter-nav">
@@ -5110,7 +5558,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
 &lt;!-- ===== CHAPTER 22: WATER QUALITY PARAMETERS ===== -->
 &lt;div id="ch22" class="chapter">
   &lt;div class="chapter-header">
-    &lt;span class="chapter-num">CH 22&lt;/span>
+    &lt;span class="chapter-num">CH 21&lt;/span>
     &lt;div>
       &lt;div class="chapter-title">Reading a Water Test Report&lt;/div>
       &lt;div class="chapter-subtitle">What all those numbers actually mean — and what treatment they point to&lt;/div>
@@ -5126,7 +5574,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;div class="expand-header">&lt;h4>Turbidity (NTU) — How Cloudy the Water Is&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
     &lt;div class="expand-body">
       &lt;p>&lt;strong>What it means:&lt;/strong> Cloudiness from suspended particles. Higher = more particles floating in the water.&lt;/p>
-      &lt;p>&lt;strong>Legal limit:&lt;/strong> 10 NTU (Ireland/EU). WHO target for pre-disinfection: &amp;lt;1 NTU.&lt;/p>
+      &lt;p>&lt;strong>Legal limit:&lt;/strong> No numerical limit at the tap — it must be acceptable to consumers with no abnormal change. Water leaving a surface water treatment plant must not exceed 1 NTU, and Uisce Éireann uses 4 NTU as a guideline at the tap. Aim for below 1 NTU before disinfection.&lt;/p>
       &lt;p>&lt;strong>If high:&lt;/strong> Install a media backwash filter (Filter Ag, Zeosorb) or fine cartridge filters. Must be below 1 NTU before UV treatment.&lt;/p>
       &lt;p>&lt;strong>Causes:&lt;/strong> Clay, silt, algae, organic particles — usually worse after heavy rain in private wells.&lt;/p>
     &lt;/div>
@@ -5136,8 +5584,8 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;div class="expand-header">&lt;h4>Colour (Hazen Units / HU) — The Yellow or Brown Tint&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
     &lt;div class="expand-body">
       &lt;p>&lt;strong>What it means:&lt;/strong> True colour (after filtering out particles) from dissolved organic compounds — mainly humic and fulvic acids from peat and soil. Common in boggy, peaty areas of Ireland.&lt;/p>
-      &lt;p>&lt;strong>Legal limit:&lt;/strong> "Acceptable to consumers" — practically, above 20 HU is usually unacceptable.&lt;/p>
-      &lt;p>&lt;strong>If high:&lt;/strong> Activated carbon (GAC), Ecomix, or Crystal Right CR200 media. May need coagulation in severe cases.&lt;/p>
+      &lt;p>&lt;strong>Legal limit:&lt;/strong> "Acceptable to consumers and no abnormal change" — the Regulations set no fixed number.&lt;/p>
+      &lt;p>&lt;strong>If high:&lt;/strong> Activated carbon (GAC) or Ecomix media. May need coagulation in severe cases.&lt;/p>
       &lt;p>&lt;strong>Why it matters:&lt;/strong> If the water is ever chlorinated, dissolved organics react with chlorine to form trihalomethanes (THMs) — potential carcinogens. Colour must be removed before any chlorine disinfection.&lt;/p>
     &lt;/div>
   &lt;/div>
@@ -5177,8 +5625,8 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;div class="expand-header">&lt;h4>Iron &amp; Manganese — The Staining Metals&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
     &lt;div class="expand-body">
       &lt;p>&lt;strong>Iron limit:&lt;/strong> 0.20 mg/L. &lt;strong>Manganese limit:&lt;/strong> 0.05 mg/L. Both are extremely strict because even tiny amounts cause visible staining and affect taste.&lt;/p>
-      &lt;p>&lt;strong>If iron is 0.2–3 mg/L:&lt;/strong> Ion exchange (Ecomix, Crystal Right) often sufficient.&lt;/p>
-      &lt;p>&lt;strong>If iron is above 3 mg/L:&lt;/strong> Oxidation media (Katalox-Light, Pyrolox) needed. May also need an air injector to boost dissolved oxygen first.&lt;/p>
+      &lt;p>&lt;strong>Dissolved (clear-water) iron:&lt;/strong> Multi-media ion exchange such as Ecomix can handle up to about 15 mg/L (see Chapter 14 for its limits); Crystal Right suits lower levels (up to about 5 mg/L).&lt;/p>
+      &lt;p>&lt;strong>Particulate (rusty) iron, or levels above the ion-exchange limits:&lt;/strong> Oxidation media (Katalox-Light, Pyrolox) needed. May also need an air injector to boost dissolved oxygen first.&lt;/p>
       &lt;p>&lt;strong>Always remove iron before softener/RO:&lt;/strong> Iron fouls softener resin and destroys RO membranes. Iron must be the first treatment stage after a basic sediment pre-filter.&lt;/p>
     &lt;/div>
   &lt;/div>
@@ -5189,7 +5637,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
       &lt;p>&lt;strong>Nitrate limit:&lt;/strong> 50 mg/L. &lt;strong>Nitrite limit:&lt;/strong> 0.5 mg/L (nitrites are more toxic and act faster).&lt;/p>
       &lt;p>&lt;strong>Source:&lt;/strong> Agricultural land and septic tanks. Very common in rural Ireland.&lt;/p>
       &lt;p>&lt;strong>Treatment:&lt;/strong> Nitrate-selective ion exchange resin, or RO for drinking water. Carbon filters do NOT remove nitrates.&lt;/p>
-      &lt;p>&lt;strong>Special concern:&lt;/strong> Infants under 6 months should not drink water with nitrates above 10 mg/L (WHO recommendation — stricter than the EU legal limit of 50 mg/L).&lt;/p>
+      &lt;p>&lt;strong>Special concern:&lt;/strong> The 50 mg/L limit (the same as the WHO guideline value) is set to protect bottle-fed babies. If nitrate is above 50 mg/L, don't use the water to make up infant feeds.&lt;/p>
     &lt;/div>
   &lt;/div>
 
@@ -5215,7 +5663,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;div class="expand-header">&lt;h4>TDS — Total Dissolved Solids&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
     &lt;div class="expand-body">
       &lt;p>&lt;strong>What it means:&lt;/strong> The total weight of everything dissolved in the water — minerals, salts, metals, everything. Measured in mg/L. Very soft Irish groundwater might be 50–100 mg/L TDS. Hard limestone water might be 400–600 mg/L. Seawater is around 35,000 mg/L.&lt;/p>
-      &lt;p>&lt;strong>EU limit:&lt;/strong> No legal limit in EU Drinking Water Directive. WHO guideline: 600 mg/L. Above 1000 mg/L, most people notice taste effects.&lt;/p>
+      &lt;p>&lt;strong>EU limit:&lt;/strong> No legal limit in the EU Drinking Water Directive. WHO has no health-based guideline value, but notes that water below about 600 mg/L generally tastes good and above about 1,000 mg/L becomes noticeably less palatable.&lt;/p>
       &lt;p>&lt;strong>For RO systems:&lt;/strong> TDS is the most useful quick check — measure input TDS and output TDS. A healthy RO membrane rejects 95–98% of TDS. If rejection drops below 90%, the membrane may be failing.&lt;/p>
       &lt;p>&lt;strong>What reduces TDS:&lt;/strong> RO (&amp;gt;95% reduction), nanofiltration (40–80% reduction), ion exchange softening (reduces hardness portion only). Carbon filtration does NOT significantly reduce TDS.&lt;/p>
     &lt;/div>
@@ -5225,7 +5673,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;div class="expand-header">&lt;h4>Copper &amp; Lead — Pipe Contamination Metals&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
     &lt;div class="expand-body">
       &lt;p>&lt;strong>Copper:&lt;/strong> EU limit 2 mg/L. Usually comes from copper pipes being attacked by acidic or soft water (low pH). Blue-green staining is the visual clue. Fix the cause (pH correction) rather than just filtering the copper. At very high levels, copper causes nausea and liver damage.&lt;/p>
-      &lt;p>&lt;strong>Lead:&lt;/strong> EU limit 5 µg/L (from 2036; currently 10 µg/L). Lead has no safe level — it causes irreversible neurological damage, especially in children. Sources: old lead service pipes (very common in Irish houses built before 1970s), lead solder in older plumbing. Treatment: certified NSF/ANSI 53 carbon block or RO. Irish Water has a lead pipe replacement programme underway.&lt;/p>
+      &lt;p>&lt;strong>Lead:&lt;/strong> EU limit 5 µg/L (from 2036; currently 10 µg/L). Lead has no safe level — it causes irreversible neurological damage, especially in children. Sources: old lead service pipes (very common in Irish houses built before 1970s), lead solder in older plumbing. Treatment: certified NSF/ANSI 53 carbon block or RO. Uisce Éireann has a lead pipe replacement programme underway.&lt;/p>
     &lt;/div>
   &lt;/div>
 
@@ -5242,7 +5690,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     &lt;div class="expand-header">&lt;h4>Radon — The Invisible Radioactive Gas&lt;/h4>&lt;span class="expand-chevron">▾&lt;/span>&lt;/div>
     &lt;div class="expand-body">
       &lt;p>&lt;strong>What it is:&lt;/strong> Radon (Rn-222) is a naturally occurring radioactive gas that forms from the decay of uranium in granite rock. It dissolves in groundwater and can reach significant levels in wells in granite areas. Ireland has one of the highest natural radon levels in Europe — counties like Galway, Mayo, Wicklow, Carlow, and Wexford have elevated radon risk. (EPA Ireland Radon Risk Map)&lt;/p>
-      &lt;p>&lt;strong>Health concern:&lt;/strong> Radon in water releases radon gas into the air when water is used (shower, boiling kettle, running tap). Inhaled radon is the second leading cause of lung cancer after smoking. WHO recommends an action level of 100 Bq/L in drinking water; Ireland's current guidance is 1000 Bq/L (under review).&lt;/p>
+      &lt;p>&lt;strong>Health concern:&lt;/strong> Radon in water releases radon gas into the air when water is used (shower, boiling kettle, running tap). Inhaled radon is the second leading cause of lung cancer after smoking. WHO uses a screening level of 100 Bq/L in drinking water. In Ireland the reference value is 500 Bq/L: above this, public supplies must be remediated, and the EPA advises private well owners to consider remediation.&lt;/p>
       &lt;p>&lt;strong>Treatment:&lt;/strong> (1) Aeration — spraying or aerating the water releases the dissolved radon gas (most effective). (2) Granular activated carbon — adsorbs radon, but the carbon becomes radioactive as radon decays on it, requiring careful disposal. Aeration is generally preferred.&lt;/p>
     &lt;/div>
   &lt;/div>
@@ -5278,7 +5726,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
       &lt;tr>&lt;td>Hardness above 200 mg/L&lt;/td>&lt;td>Check appliances for scale&lt;/td>&lt;td>Ion exchange softener (best) or NAC (salt-free alternative)&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Nitrates above 50 mg/L&lt;/td>&lt;td>Do not use for infants&lt;/td>&lt;td>Nitrate IX resin or RO at kitchen tap&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Turbidity above 1 NTU&lt;/td>&lt;td>Treat before UV&lt;/td>&lt;td>Media filter (Filter Ag / Zeosorb) + 5µm polishing cartridge&lt;/td>&lt;/tr>
-      &lt;tr>&lt;td>Brown colour / COD high&lt;/td>&lt;td>Check for peat influence&lt;/td>&lt;td>GAC carbon or Ecomix / Crystal Right CR200&lt;/td>&lt;/tr>
+      &lt;tr>&lt;td>Brown colour / COD high&lt;/td>&lt;td>Check for peat influence&lt;/td>&lt;td>GAC carbon or Ecomix&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Arsenic above 10 µg/L&lt;/td>&lt;td>Stop drinking immediately&lt;/td>&lt;td>Iron-based adsorption media or RO&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Rotten egg smell (H₂S)&lt;/td>&lt;td>Indicate anaerobic water&lt;/td>&lt;td>Aeration + catalytic carbon or Katalox-Light&lt;/td>&lt;/tr>
       &lt;tr>&lt;td>Chlorine taste/smell&lt;/td>&lt;td>Mains supply issue&lt;/td>&lt;td>GAC carbon filter (or catalytic carbon for chloramines)&lt;/td>&lt;/tr>
@@ -5287,7 +5735,7 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
   &lt;/table>
 
   &lt;div class="quiz-box">
-    &lt;h3>🎓 Final Quiz — Chapter 22 &amp; Part II Summary&lt;/h3>
+    &lt;h3>🎓 Final Quiz — Chapter 21 &amp; Part II Summary&lt;/h3>
     &lt;p>Four questions covering the whole of Part II. See how much you've learned!&lt;/p>
 
     &lt;div class="quiz-question" id="q22a">
@@ -5343,9 +5791,9 @@ p { line-height:1.85; color:var(--text); margin-bottom:14px; font-size:0.97rem; 
     Brilliant work! You've covered all of Part I and Part II — from basic hardness and softeners all the way through to PFAS, reverse osmosis, Irish drinking water law, and how to read a full water quality report. You now have a solid foundation in water treatment that covers everything a beginner in the industry needs to know. Next steps: hands-on experience, manufacturer training days, and real water test reports from local wells will bring all of this to life. Well done!
   &lt;/div>
 
-  &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 22&lt;/h5>&lt;ol>
+  &lt;div class="sources-box">&lt;h5>📚 Sources — Chapter 21&lt;/h5>&lt;ol>
 &lt;li>World Health Organization (2011). &lt;em>Guidelines for Drinking-water Quality, 4th Ed.&lt;/em> — All key chemical and microbiological parameters.&lt;/li>
-&lt;li>European Union. &lt;em>S.I. No. 122/2014 — EU (Drinking Water) Regulations, Ireland.&lt;/em> — Parametric values for iron, manganese, nitrates, arsenic, copper, lead, pH, turbidity, colour, TDS.&lt;/li>
+&lt;li>European Union. &lt;em>S.I. No. 99 of 2023 — European Union (Drinking Water) Regulations 2023.&lt;/em> — Parametric values for iron, manganese, nitrates, arsenic, copper, lead, pH, turbidity, colour, TDS.&lt;/li>
 &lt;li>EPA Ireland (2022). &lt;em>Drinking Water in Private Domestic Wells — Guidance for Well Owners.&lt;/em>&lt;/li>
 &lt;li>APHA / AWWA / WEF (2017). &lt;em>Standard Methods for the Examination of Water and Wastewater, 23rd Ed.&lt;/em> — Analytical methods for all parameters.&lt;/li>
 &lt;li>EPA Ireland (2011). &lt;em>Radon in Dwellings in Ireland — National Survey.&lt;/em> — Radon action levels and treatment.&lt;/li>
@@ -6148,10 +6596,10 @@ body::after {
 &lt;div id="screen-welcome" class="screen active">
   &lt;div class="welcome-badge">Water Treatment Academy · Full Test&lt;/div>
   &lt;h1 class="welcome-title">The &lt;span class="glow-word">Complete&lt;/span> Water Treatment Quiz&lt;/h1>
-  &lt;p class="welcome-sub">50 questions covering everything from hard water and softeners to reverse osmosis, UV disinfection, Irish law, and water quality testing. Pick your categories and go!&lt;/p>
+  &lt;p class="welcome-sub">54 questions covering everything from hard water and softeners to reverse osmosis, UV disinfection, Irish law, and water quality testing. Pick your categories and go!&lt;/p>
 
   &lt;div class="stats-row">
-    &lt;div class="stat-pill">&lt;strong>50&lt;/strong>&lt;span>Questions&lt;/span>&lt;/div>
+    &lt;div class="stat-pill">&lt;strong>54&lt;/strong>&lt;span>Questions&lt;/span>&lt;/div>
     &lt;div class="stat-pill">&lt;strong>10&lt;/strong>&lt;span>Topics&lt;/span>&lt;/div>
     &lt;div class="stat-pill">&lt;strong>Parts I &amp; II&lt;/strong>&lt;span>Full Coverage&lt;/span>&lt;/div>
     &lt;div class="stat-pill">&lt;strong>30s&lt;/strong>&lt;span>Per Question&lt;/span>&lt;/div>
@@ -6227,7 +6675,7 @@ body::after {
   &lt;div class="quiz-topbar">
     &lt;div class="quiz-progress-wrap">
       &lt;div class="progress-meta">
-        &lt;span id="q-counter">Question 1 of 50&lt;/span>
+        &lt;span id="q-counter">Question 1 of 54&lt;/span>
         &lt;span id="q-cat-label">Category&lt;/span>
       &lt;/div>
       &lt;div class="progress-track">&lt;div class="progress-bar" id="progressBar" style="width:0%">&lt;/div>&lt;/div>
@@ -6319,7 +6767,7 @@ const ALL_QUESTIONS = [
     q: "The Langelier Saturation Index (LSI) for a water sample is +0.9. What does this mean?",
     opts: ["The water is corrosive and will dissolve pipes","The water has a strong tendency to deposit scale","The water is perfectly balanced — no treatment needed","The pH is too high for the water to be safe"],
     correct: 1,
-    explanation: "LSI above zero means the water is oversaturated with calcium carbonate and tends to precipitate scale. The EU Drinking Water Regulations (S.I. 122/2014) require LSI between -0.5 and +0.5. An LSI of +0.9 indicates significant scale-forming risk."
+    explanation: "LSI above zero means the water is oversaturated with calcium carbonate and tends to precipitate scale. Water treatment designers usually aim for an LSI close to zero (roughly -0.5 to +0.5) — this is a design target, not a legal limit. An LSI of +0.9 indicates significant scale-forming risk."
   },
   { cat: "hardness", icon: "💧", catName: "Water Hardness",
     q: "Which type of hardness CANNOT be removed by boiling the water?",
@@ -6328,10 +6776,10 @@ const ALL_QUESTIONS = [
     explanation: "Permanent hardness is caused by calcium and magnesium sulphates and chlorides, which remain dissolved even when water is boiled. Only temporary (carbonate/bicarbonate) hardness is removed by boiling. Permanent hardness requires ion exchange or RO."
   },
   { cat: "hardness", icon: "💧", catName: "Water Hardness",
-    q: "Water hardness above which level is generally considered 'Very Hard' by EU classification?",
+    q: "On the hardness scale used in this course, water above which level is considered 'Very Hard'?",
     opts: ["100 mg/L CaCO₃","150 mg/L CaCO₃","200 mg/L CaCO₃","300 mg/L CaCO₃"],
     correct: 3,
-    explanation: "The EU/international hardness classification defines 'Very Hard' as above 300 mg/L CaCO₃ (or >16.8°dH). At this level, heavy scale formation is expected and softening is strongly recommended."
+    explanation: "On the practical trade scale used in this course, 'Very Hard' means above 300 mg/L CaCO₃ (about 17°dH). There is no official EU hardness classification, and other scales use different bands — the US Geological Survey, for example, calls water very hard above 180 mg/L."
   },
 
   // ===== SOFTENERS &amp; ION EXCHANGE (5) =====
@@ -6357,7 +6805,7 @@ const ALL_QUESTIONS = [
     q: "A meter-controlled softener is more efficient than a time-clock softener because:",
     opts: ["It regenerates every night automatically at 2am","It only regenerates when the resin is actually exhausted, saving salt and water","It uses a stronger brine concentration, recharging faster","It backwashes with hot water which cleans the resin better"],
     correct: 1,
-    explanation: "A meter-controlled (demand-initiated) softener measures actual water usage and triggers regeneration only when the resin capacity is genuinely used up. A time-clock regenerates on a fixed schedule regardless of use — wasteful if water usage varies. Meter-controlled systems use 15-25% less salt on average."
+    explanation: "A meter-controlled (demand-initiated) softener measures actual water usage and triggers regeneration only when the resin capacity is genuinely used up. A time-clock regenerates on a fixed schedule regardless of use — wasteful if water usage varies."
   },
   { cat: "softeners", icon: "🔄", catName: "Softeners &amp; Ion Exchange",
     q: "Which of these water problems would make a standard cation resin softener LESS effective over time?",
@@ -6394,16 +6842,16 @@ const ALL_QUESTIONS = [
 
   // ===== TURBIDITY &amp; FILTRATION (6) =====
   { cat: "turbidity", icon: "🌫️", catName: "Turbidity &amp; Filtration",
-    q: "What is the EU/Irish legal limit for turbidity in drinking water at the consumer's tap?",
-    opts: ["1 NTU","4 NTU","10 NTU","25 NTU"],
-    correct: 2,
-    explanation: "Under S.I. No. 122/2014 — EU (Drinking Water) Regulations, Ireland, the parametric value for turbidity is ≤10 NTU. However, the WHO recommends water should be below 1 NTU before UV or chlorine disinfection to ensure effective pathogen inactivation."
+    q: "Under Irish drinking water rules, what is the turbidity limit for water leaving a surface water treatment plant?",
+    opts: ["0.1 NTU","1 NTU","4 NTU","10 NTU"],
+    correct: 1,
+    explanation: "The Drinking Water Regulations (S.I. No. 99 of 2023) set no numerical turbidity limit at the consumer's tap — it must be acceptable to consumers with no abnormal change. Water leaving a surface water treatment plant must not exceed 1 NTU, and Uisce Éireann uses 4 NTU as a guideline at the tap. For reliable UV disinfection, aim for below 1 NTU."
   },
   { cat: "turbidity", icon: "🌫️", catName: "Turbidity &amp; Filtration",
     q: "Why is high turbidity particularly dangerous in water that is then UV disinfected?",
     opts: ["UV light speeds up the turbidity-forming reaction","Particles in the water scatter and block UV light, allowing bacteria to hide in 'shadows' and survive","High turbidity causes the UV lamp to overheat","Turbid water contains fluoride which deactivates UV"],
     correct: 1,
-    explanation: "UV disinfection works by exposing micro-organisms directly to UV light at 254nm. Suspended particles physically shield bacteria and protozoa from the light. The WHO states turbidity must be below 1 NTU for reliable UV disinfection. Above this, organisms can survive even a correctly sized UV system."
+    explanation: "UV disinfection works by exposing micro-organisms directly to UV light at 254nm. Suspended particles physically shield bacteria and protozoa from the light. Turbidity should be below 1 NTU for reliable UV disinfection. Above this, organisms can survive even a correctly sized UV system."
   },
   { cat: "turbidity", icon: "🌫️", catName: "Turbidity &amp; Filtration",
     q: "Which filter media removes the finest particles — down to approximately 3–5 µm?",
@@ -6421,7 +6869,7 @@ const ALL_QUESTIONS = [
     q: "A backwash media filter needs its media replaced when:",
     opts: ["The control valve light flashes red","Water pressure drops even immediately AFTER a completed backwash cycle, or water quality visibly deteriorates","The media has been in use for exactly 365 days","The salt in the brine tank runs out"],
     correct: 1,
-    explanation: "Regular backwashing keeps media clean, but media degrades over years of use. Signs that media needs replacing include: persistently high pressure drop even right after backwash (media has compacted or hardened into 'mudballs'), deteriorating water quality, or media visually broken down into fine powder. Filter Ag lasts ~5-8 years with proper backwashing."
+    explanation: "Regular backwashing keeps media clean, but media degrades over years of use. Signs that media needs replacing include: persistently high pressure drop even right after backwash (media has compacted or hardened into 'mudballs'), deteriorating water quality, or media visually broken down into fine powder."
   },
   { cat: "turbidity", icon: "🌫️", catName: "Turbidity &amp; Filtration",
     q: "What is the recommended cartridge filter size before a UV disinfection unit on a private well?",
@@ -6435,7 +6883,7 @@ const ALL_QUESTIONS = [
     q: "Standard granular activated carbon (GAC) is poor at removing which contaminant?",
     opts: ["Free chlorine","Chlorine taste and odour","Chloramines (combined chlorine)","Trihalomethanes (THMs)"],
     correct: 2,
-    explanation: "Standard GAC removes free chlorine very efficiently but struggles with chloramines (monochloramine, dichloramine). Chloramines require catalytic carbon, which has modified surface chemistry that breaks down chloramine bonds. This matters because many Irish and UK water utilities use chloramines rather than free chlorine as their disinfectant."
+    explanation: "Standard GAC removes free chlorine very efficiently but struggles with chloramines (monochloramine, dichloramine). Chloramines require catalytic carbon, which has modified surface chemistry that breaks down chloramine bonds. This matters because some water utilities, particularly in the UK, use chloramines rather than free chlorine as their disinfectant."
   },
   { cat: "carbon", icon: "🖤", catName: "Carbon Filters",
     q: "Why must a UV disinfection unit ALWAYS be placed DOWNSTREAM (after) a carbon filter?",
@@ -6485,13 +6933,13 @@ const ALL_QUESTIONS = [
     q: "Which of these is NOT a typical contaminant concern for a shallow dug well near agricultural land?",
     opts: ["E. coli and coliform bacteria from animal waste","Nitrates from fertiliser runoff","Radon gas dissolved from deep granite bedrock","Pesticides and herbicides from crop spraying"],
     correct: 2,
-    explanation: "Radon dissolves from deep granite bedrock and is typically a concern for deep drilled boreholes (30m+) in granite areas. Shallow wells (5-15m) are not deep enough to encounter significant radon. However, shallow agricultural wells are highly vulnerable to surface contamination: bacteria from manure/slurry, nitrates from fertilisers, and pesticides/herbicides from crop spraying."
+    explanation: "Radon comes from uranium-bearing bedrock such as granite and is mainly a concern for drilled boreholes in those areas, although it can occasionally affect shallower wells too. The typical risks for agricultural wells are highly vulnerable to surface contamination: bacteria from manure/slurry, nitrates from fertilisers, and pesticides/herbicides from crop spraying."
   },
   { cat: "ph", icon: "🧪", catName: "pH &amp; Well Water",
     q: "A private well owner asks how often they should test their water. The EPA Ireland recommendation is:",
     opts: ["Only when they notice a problem with the taste or colour","Every 5 years for a full chemical analysis is sufficient","At least annually for bacteria, and every 3 years for a full chemical test","Only when buying or selling the property"],
     correct: 2,
-    explanation: "The EPA Ireland recommends private well owners test their water at least once a year for bacterial contamination and every 3 years for a full chemical analysis. Well water quality can change seasonally and after extreme weather. Many mortgage lenders now require a recent water test as part of property purchase in rural areas. (EPA Ireland: Drinking Water in Private Domestic Wells, 2022)"
+    explanation: "The EPA Ireland recommends private well owners test their water at least once a year for bacterial contamination and every 3 years for a full chemical analysis. Well water quality can change seasonally and after extreme weather. (EPA Ireland: Drinking Water in Private Domestic Wells, 2022)"
   },
 
   // ===== IRON, MANGANESE &amp; NITRATES (6) =====
@@ -6503,15 +6951,15 @@ const ALL_QUESTIONS = [
   },
   { cat: "iron", icon: "🦀", catName: "Iron, Manganese &amp; Nitrates",
     q: "Katalox-Light is preferred over Pyrolox for domestic iron removal mainly because:",
-    opts: ["Katalox-Light removes manganese; Pyrolox only removes iron","Katalox-Light is lighter (density ~0.9 g/cm³ vs Pyrolox ~3.3 g/cm³), requiring much lower backwash flow and pressure","Katalox-Light doesn't need oxygen to work, unlike Pyrolox","Katalox-Light has a longer service life — 15 years vs Pyrolox's 3 years"],
+    opts: ["Katalox-Light removes manganese; Pyrolox only removes iron","Katalox-Light is much lighter (bulk density ~0.9 kg/L vs Pyrolox ~1.9 kg/L), requiring much lower backwash flow and pressure","Katalox-Light doesn't need oxygen to work, unlike Pyrolox","Katalox-Light has a longer service life — 15 years vs Pyrolox's 3 years"],
     correct: 1,
-    explanation: "Both Katalox-Light and Pyrolox use manganese dioxide (MnO₂) to oxidise dissolved iron and manganese. The critical difference is density: Pyrolox (~3.3 g/cm³) requires very high backwash flow rates to expand the bed, making it impractical in smaller domestic systems. Katalox-Light's lightweight core (~0.9 g/cm³) needs far lower backwash pressure — ideal for home systems. (Watch Water GmbH, Katalox-Light Technical Specification)"
+    explanation: "Both Katalox-Light and Pyrolox use manganese dioxide (MnO₂) to oxidise dissolved iron and manganese. The critical difference is weight: Pyrolox (bulk density ~1.9 kg/L, specific gravity ~3.8) requires very high backwash flow rates to expand the bed, making it impractical in smaller domestic systems. Katalox-Light's lightweight core (~0.9 kg/L) needs far lower backwash pressure — ideal for home systems. (Watch Water GmbH, Katalox-Light Technical Specification)"
   },
   { cat: "iron", icon: "🦀", catName: "Iron, Manganese &amp; Nitrates",
     q: "What is 'blue baby syndrome' (methaemoglobinaemia) and which contaminant causes it?",
     opts: ["A skin condition caused by high copper in drinking water","A condition where nitrates prevent a baby's blood from carrying oxygen properly, caused by high nitrate intake","A respiratory condition caused by dissolved radon gas in the water","Jaundice caused by high iron levels in infant formula"],
     correct: 1,
-    explanation: "Nitrates in a baby's gut are converted to nitrites by bacteria. Nitrites bind to haemoglobin and convert it to methaemoglobin, which cannot carry oxygen. The baby's skin appears blue (hence the name). Infants under 6 months are most at risk. The WHO recommends nitrates below 10 mg/L for infants — much stricter than the EU legal limit of 50 mg/L. (WHO GDWQ, 4th Ed.)"
+    explanation: "Nitrates in a baby's gut are converted to nitrites by bacteria. Nitrites bind to haemoglobin and convert it to methaemoglobin, which cannot carry oxygen. The baby's skin appears blue (hence the name). Bottle-fed infants under 6 months are most at risk. The EU limit of 50 mg/L is the same as the WHO guideline value, which is set specifically to protect bottle-fed babies. (WHO GDWQ, 4th Ed.)"
   },
   { cat: "iron", icon: "🦀", catName: "Iron, Manganese &amp; Nitrates",
     q: "Ecomix is a multi-media filter that treats several well water problems in one tank. Which combination BEST describes what it addresses?",
@@ -6526,10 +6974,10 @@ const ALL_QUESTIONS = [
     explanation: "Arsenic is classified as a Group 1 carcinogen by the IARC (International Agency for Research on Cancer). It cannot be detected by sight, taste or smell — only laboratory testing. Long-term exposure is linked to cancers of skin, bladder, kidney and lung, as well as nerve damage and skin lesions. EU limit: 10 µg/L. (IARC Monograph 84; WHO GDWQ)"
   },
   { cat: "iron", icon: "🦀", catName: "Iron, Manganese &amp; Nitrates",
-    q: "Crystal Right CR200 is specifically better than Crystal Right CR100 for water that also has:",
-    opts: ["Very high iron levels above 10 mg/L","A low pH below 6.0","Brown colouring from peat organics (natural organic matter)","Arsenic contamination from granite bedrock"],
-    correct: 2,
-    explanation: "Crystal Right CR100 handles hardness + iron + manganese effectively. CR200 has enhanced capacity for natural organic matter (NOM) removal — the brown humic and fulvic acids common in peaty, boggy catchments across west Ireland. If the water test shows colour (HU) or high COD in addition to iron/hardness, CR200 is the better choice. (Watch Water / Ecowater technical documentation)"
+    q: "What mainly decides whether to choose Crystal Right CR100 or CR200?",
+    opts: ["Whether the water contains arsenic","The pH of the incoming water — CR100 for pH 6–7, CR200 for pH above 7","Whether the water is brown from peat","Whether the supply is mains or well water"],
+    correct: 1,
+    explanation: "According to the manufacturer (Mineral-Right Inc.), CR100 is designed for water with a pH in the 6–7 range and raises the pH to reduce corrosion, while CR200 is for water above pH 7 and has a higher cation exchange capacity for hardness, iron and manganese. Neither is an arsenic or colour treatment. (Mineral-Right, Crystal-Right technical data)"
   },
 
   // ===== RO &amp; MEMBRANES (6) =====
@@ -6558,10 +7006,10 @@ const ALL_QUESTIONS = [
     explanation: "UF membranes have pores of ~0.01-0.1 µm — large enough to let dissolved minerals, salts and small molecules through. This means UF removes bacteria, protozoa, viruses (at small pore sizes) and particles — but NOT hardness, nitrates, arsenic or dissolved salts. RO has pores ~0.0001 µm and removes virtually all dissolved substances. Use UF for disinfection; use RO for full purification."
   },
   { cat: "ro", icon: "💎", catName: "RO &amp; Membranes",
-    q: "Dow Filmtec XLE membrane is specifically designed for:",
+    q: "DuPont FilmTec XLE membrane (formerly Dow) is specifically designed for:",
     opts: ["High-pressure industrial desalination at 60 bar","Low-pressure domestic applications (1-4 bar mains pressure)","Nanofiltration of divalent ions only","Hot water treatment at temperatures above 40°C"],
     correct: 1,
-    explanation: "Dow Filmtec XLE (Extra Low Energy) was specifically designed to operate at low pressures typical of domestic mains supplies (1-4 bar). Standard RO membranes require 5-8 bar minimum. XLE achieves ~98% TDS rejection at these lower pressures — making it the go-to choice for under-sink domestic RO systems in Ireland and the UK where mains pressure is often modest. (DuPont Water Solutions, XLE Product Data Sheet)"
+    explanation: "FilmTec XLE (Extra Low Energy) was specifically designed to operate at low pressures typical of domestic mains supplies (1-4 bar). Standard RO membranes require 5-8 bar minimum. XLE achieves ~98% TDS rejection at these lower pressures — making it the go-to choice for under-sink domestic RO systems in Ireland and the UK where mains pressure is often modest. (DuPont Water Solutions, XLE Product Data Sheet)"
   },
   { cat: "ro", icon: "💎", catName: "RO &amp; Membranes",
     q: "What is the main practical limitation of domestic point-of-use RO systems compared to whole-house systems?",
@@ -6581,13 +7029,13 @@ const ALL_QUESTIONS = [
     q: "Which micro-organism is Cryptosporidium MOST resistant to — making UV particularly valuable?",
     opts: ["UV irradiation","Ozone treatment","Chlorine disinfection","Boiling water at 100°C"],
     correct: 2,
-    explanation: "Cryptosporidium parvum oocysts are highly resistant to chlorine at normal drinking water doses — a 3-log (99.9%) inactivation requires impractically high chlorine concentrations. However, Cryptosporidium is actually very SENSITIVE to UV — a dose of just 10 mJ/cm² achieves 3-log inactivation. This is one of the strongest arguments for UV over chlorination for private water supplies. (USEPA LT2 Enhanced Surface Water Treatment Rule, 2006)"
+    explanation: "Cryptosporidium parvum oocysts are highly resistant to chlorine at normal drinking water doses — a 3-log (99.9%) inactivation requires impractically high chlorine concentrations. However, Cryptosporidium is actually very SENSITIVE to UV — a dose of about 12 mJ/cm² achieves 3-log inactivation. This is one of the strongest arguments for UV over chlorination for private water supplies. (USEPA LT2 Enhanced Surface Water Treatment Rule, 2006)"
   },
   { cat: "uv", icon: "☀️", catName: "UV &amp; Disinfection",
     q: "Why does a UV lamp need to be replaced annually even if it still visibly glows?",
-    opts: ["The glass casing becomes radioactive after 12 months","UV output at 254nm decreases by ~30-40% over a year due to lamp ageing, even though visible light output remains","The water flow rate slows down as the lamp ages and heats up","Regulations require annual replacement regardless of lamp condition"],
+    opts: ["The glass casing becomes radioactive after 12 months","Germicidal UV output at 254nm declines as the lamp ages, even though it still glows visibly","The water flow rate slows down as the lamp ages and heats up","Regulations require annual replacement regardless of lamp condition"],
     correct: 1,
-    explanation: "UV lamps degrade over time — their emission at the critical 254nm germicidal wavelength decreases by approximately 30-40% after 8,000-9,000 hours (roughly one year of continuous operation). The lamp may still visibly glow, but the germicidal UV output may be insufficient to achieve the required disinfection dose. Annual replacement is essential regardless of visible appearance. (EPA Ireland Water Treatment Manual: Disinfection)"
+    explanation: "UV lamps degrade over time — their germicidal output at 254nm falls as they age. Manufacturers typically rate lamps for about 9,000 hours (roughly one year of continuous operation). The lamp may still visibly glow, but the germicidal UV output may be insufficient to achieve the required disinfection dose. Annual replacement is essential regardless of visible appearance. (EPA Ireland Water Treatment Manual: Disinfection)"
   },
   { cat: "uv", icon: "☀️", catName: "UV &amp; Disinfection",
     q: "A UV system has NO disinfection residual. What does this mean practically for a private well installation?",
@@ -6598,22 +7046,22 @@ const ALL_QUESTIONS = [
 
   // ===== IRISH LAW &amp; WATER TESTING (7) =====
   { cat: "law", icon: "📋", catName: "Irish Law &amp; Water Testing",
-    q: "Under S.I. No. 122/2014, what is the legal limit for E. coli in Irish drinking water?",
+    q: "Under S.I. No. 99 of 2023, what is the legal limit for E. coli in Irish drinking water?",
     opts: ["Less than 10 per 100ml","Less than 5 per 100ml","Less than 1 per 100ml (effectively zero)","Less than 50 per 100ml"],
     correct: 2,
-    explanation: "The legal parametric value for E. coli under the Irish Drinking Water Regulations is ZERO — less than 1 per 100ml. Any detection of E. coli indicates definite faecal contamination and constitutes a regulatory failure. For public supplies this triggers a Boil Water Notice. E. coli is the most serious microbiological indicator parameter in drinking water quality. (S.I. No. 122/2014)"
+    explanation: "The legal parametric value for E. coli under the Irish Drinking Water Regulations is ZERO — less than 1 per 100ml. Any detection of E. coli indicates definite faecal contamination and constitutes a regulatory failure. For public supplies, Uisce Éireann investigates and, in consultation with the HSE, may impose a Boil Water Notice. E. coli is the most serious microbiological indicator parameter in drinking water quality. (S.I. No. 99 of 2023)"
   },
   { cat: "law", icon: "📋", catName: "Irish Law &amp; Water Testing",
     q: "What is the legal limit for nitrates in Irish drinking water under EU regulations?",
     opts: ["10 mg/L","25 mg/L","50 mg/L","100 mg/L"],
     correct: 2,
-    explanation: "The EU parametric value for nitrates in drinking water is 50 mg/L under the Drinking Water Directive (transposed in Ireland as S.I. No. 122/2014). Note: the WHO guideline specifically recommends water used for infant formula should contain less than 10 mg/L nitrate — significantly stricter than the EU legal limit."
+    explanation: "The EU parametric value for nitrates in drinking water is 50 mg/L under the Drinking Water Directive (transposed in Ireland as S.I. No. 99 of 2023). The WHO guideline value is also 50 mg/L — it is set specifically to protect bottle-fed infants from methaemoglobinaemia."
   },
   { cat: "law", icon: "📋", catName: "Irish Law &amp; Water Testing",
     q: "What is the legal pH range for drinking water in Ireland?",
     opts: ["5.5 to 8.5","6.0 to 9.0","6.5 to 9.5","7.0 to 8.5"],
     correct: 2,
-    explanation: "S.I. No. 122/2014 sets the parametric value for pH between 6.5 and 9.5 for Irish drinking water. Below 6.5 is considered corrosive — it will dissolve copper and lead from pipework. Above 9.5 can indicate contamination or treatment overdose. Practically, treatment targets pH 7.0-8.0 for optimal corrosion protection and taste."
+    explanation: "S.I. No. 99 of 2023 sets the parametric value for pH between 6.5 and 9.5 for Irish drinking water. Below 6.5 is considered corrosive — it will dissolve copper and lead from pipework. Above 9.5 can indicate contamination or treatment overdose. Practically, treatment targets pH 7.0-8.0 for optimal corrosion protection and taste."
   },
   { cat: "law", icon: "📋", catName: "Irish Law &amp; Water Testing",
     q: "What does COD stand for on a water test report and what does a high reading indicate?",
@@ -6637,7 +7085,7 @@ const ALL_QUESTIONS = [
     q: "A water test report shows: E. coli 0/100ml ✓, Total Coliforms 3/100ml ✗, pH 7.2 ✓, Iron 0.08 mg/L ✓, Nitrate 22 mg/L ✓. What is the overall conclusion?",
     opts: ["The water passes all parameters — it is safe to drink","The water fails because total coliforms exceed the legal limit of zero, despite passing all other parameters","The water fails because of the iron reading","The water is borderline — the nitrates are too close to the 50 mg/L limit"],
     correct: 1,
-    explanation: "Total coliforms have a legal parametric value of less than 1 per 100ml (effectively zero) under S.I. 122/2014. A reading of 3/100ml is a clear regulatory failure, even though E. coli was not detected. Total coliforms indicate potential faecal pathway contamination and that the water barrier may have been breached. The water fails regardless of other parameters passing."
+    explanation: "Total coliforms have a legal parametric value of less than 1 per 100ml (effectively zero) under S.I. No. 99 of 2023. A reading of 3/100ml is a clear regulatory failure, even though E. coli was not detected. Total coliforms indicate potential faecal pathway contamination and that the water barrier may have been breached. The water fails regardless of other parameters passing."
   }
 
 ];
